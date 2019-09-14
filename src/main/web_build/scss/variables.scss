@@ -1,0 +1,37 @@
+$pi: 3.14159265359;
+$application_with: 1190px;
+$top_menu_height: 100px;
+
+$application_height_calc: calc(100vh - #{$top_menu_height});
+
+$size_xs: 4px;
+$size_s: 10px;
+$size_m: 16px;
+$size_l: 32px;
+$size_xl: 64px;
+$size_xxl: 320px;
+
+$size_font_ratio: 1.5;
+
+$main_color: #292929;
+$inactive_bg_color: #F5F5F5;
+$inactive_text_color: grey;
+
+$service_icon_bg_color: #65B8DF;
+$service_icon_bg_color_inactive: #CCC;
+
+$control_height: 48px;
+$control_color_grey: #595959;
+$control_color_light: #C7C7C7;
+$control_color_purple: #70F;
+$control_color_orange: #FF4F12;
+$control_color_green: #57D9B7;
+$control_color_deep: #273A64;
+$control_color_pink: #CB7AFF;
+
+$transition_custom_1: .3s cubic-bezier(.4, 0, .2, 1);
+$transition_default: 0.2s ease-in-out;
+
+$border_radius: 4px;
+
+$block_border_color: #D9D9D9;

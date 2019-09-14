@@ -1,0 +1,27 @@
+.idea/*
+!.idea/codeStyles/
+.idea/codeStyles/*
+!.idea/codeStyles/Project.xml
+
+!.idea/inspectionProfiles/
+.idea/inspectionProfiles/*
+!.idea/inspectionProfiles/elk_inspections_profile.xml
+
+
+target/
+*.iml
+/nbactions.xml/bin/
+.project
+.classpath
+.settings/
+*nbactions.xml
+*.netbeans*
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+/out/
+/node_modules/

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="exploded-war" name="Gradle : io.github.relvl : poe.anointments-1.0-SNAPSHOT.war (exploded)">
+      <output-path>$PROJECT_DIR$/build/libs/exploded/poe.anointments-1.0-SNAPSHOT.war</output-path>
+      <properties id="gradle-properties">
+        <options external-project-path="$PROJECT_DIR$">
+          <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+        </options>
+      </properties>
+      <root id="root">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/poe.anointments-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="poe.anointments.main/web/Web Gradle : poe.anointments-1.0-SNAPSHOT.war" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="poe.anointments.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Gradle : io.github.relvl : poe.anointments-1.0-SNAPSHOT.war">
+      <output-path>$PROJECT_DIR$/build/libs</output-path>
+      <properties id="gradle-properties">
+        <options external-project-path="$PROJECT_DIR$" />
+      </properties>
+      <root id="archive" name="poe.anointments-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="Gradle : io.github.relvl : poe.anointments-1.0-SNAPSHOT.war (exploded)" />
+      </root>
+    </artifact>
+  </component>
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="poe.anointments.main" target="1.8" />
+      <module name="poe.anointments.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <option name="PROJECT_PROFILE" value="DartIt" />
+    <option name="USE_PROJECT_PROFILE" value="false" />
+    <version value="1.0" />
+  </component>
+  <component name="ProjectCodeStyleConfiguration">
+    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
+    <code_scheme name="Project" version="173">
+      <option name="USE_SAME_INDENTS" value="true" />
+      <option name="IGNORE_SAME_INDENTS_FOR_LANGUAGES" value="true" />
+      <option name="AUTODETECT_INDENTS" value="false" />
+      <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="666" />
+      <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="666" />
+      <option name="PACKAGES_TO_USE_IMPORT_ON_DEMAND">
+        <value />
+      </option>
+      <option name="IMPORT_LAYOUT_TABLE">
+        <value>
+          <package name="java" withSubpackages="true" static="false" />
+          <package name="java" withSubpackages="true" static="true" />
+          <emptyLine />
+          <package name="javax" withSubpackages="true" static="false" />
+          <package name="javax" withSubpackages="true" static="true" />
+          <emptyLine />
+          <package name="oracle" withSubpackages="true" static="false" />
+          <package name="oracle" withSubpackages="true" static="true" />
+          <emptyLine />
+          <package name="org" withSubpackages="true" static="false" />
+          <package name="org" withSubpackages="true" static="true" />
+          <emptyLine />
+          <package name="" withSubpackages="true" static="false" />
+          <package name="" withSubpackages="true" static="true" />
+          <emptyLine />
+          <package name="com.dart" withSubpackages="true" static="false" />
+          <package name="com.dart" withSubpackages="true" static="true" />
+        </value>
+      </option>
+      <option name="RIGHT_MARGIN" value="200" />
+      <option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" value="true" />
+      <option name="JD_ADD_BLANK_AFTER_RETURN" value="true" />
+      <option name="JD_DO_NOT_WRAP_ONE_LINE_COMMENTS" value="true" />
+      <option name="JD_KEEP_EMPTY_PARAMETER" value="false" />
+      <option name="JD_KEEP_EMPTY_EXCEPTION" value="false" />
+      <option name="JD_KEEP_EMPTY_RETURN" value="false" />
+      <option name="HTML_ATTRIBUTE_WRAP" value="0" />
+      <option name="HTML_TEXT_WRAP" value="0" />
+      <option name="HTML_KEEP_BLANK_LINES" value="1" />
+      <option name="HTML_ALIGN_ATTRIBUTES" value="false" />
+      <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="body,form,span" />
+      <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,body" />
+      <option name="HTML_DO_NOT_ALIGN_CHILDREN_OF_MIN_LINES" value="5000" />
+      <option name="HTML_INLINE_ELEMENTS" value="a,abbr,acronym,b,basefont,bdo,big,br,cite,cite,code,dfn,em,font,i,img,input,kbd,label,q,s,samp,strike,strong,sub,sup,textarea,tt,u,var,option,select,span,svg" />
+      <option name="HTML_DONT_ADD_BREAKS_IF_INLINE_CONTENT" value="title,h1,h2,h3,h4,h5,h6,p,svg" />
+      <option name="FORMATTER_TAGS_ENABLED" value="true" />
+      <option name="CLASS_BRACE_STYLE" value="2" />
+      <option name="METHOD_BRACE_STYLE" value="2" />
+      <CssCodeStyleSettings>
+        <option name="HEX_COLOR_UPPER_CASE" value="true" />
+        <option name="HEX_COLOR_SHORT_FORMAT" value="true" />
+        <option name="KEEP_SINGLE_LINE_BLOCKS" value="true" />
+      </CssCodeStyleSettings>
+      <DB2CodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </DB2CodeStyleSettings>
+      <DerbyCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </DerbyCodeStyleSettings>
+      <H2CodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </H2CodeStyleSettings>
+      <HSQLCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </HSQLCodeStyleSettings>
+      <HTMLCodeStyleSettings>
+        <option name="HTML_ATTRIBUTE_WRAP" value="0" />
+        <option name="HTML_TEXT_WRAP" value="0" />
+        <option name="HTML_KEEP_BLANK_LINES" value="1" />
+        <option name="HTML_ALIGN_ATTRIBUTES" value="false" />
+        <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="body,form,span" />
+        <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,body" />
+        <option name="HTML_DO_NOT_ALIGN_CHILDREN_OF_MIN_LINES" value="5000" />
+        <option name="HTML_INLINE_ELEMENTS" value="a,abbr,acronym,b,basefont,bdo,big,br,cite,cite,code,dfn,em,font,i,img,input,kbd,label,q,s,samp,strike,strong,sub,sup,textarea,tt,u,var,option,select,span,svg" />
+        <option name="HTML_DONT_ADD_BREAKS_IF_INLINE_CONTENT" value="title,h1,h2,h3,h4,h5,h6,p,svg" />
+      </HTMLCodeStyleSettings>
+      <JSCodeStyleSettings version="0">
+        <option name="FORCE_SEMICOLON_STYLE" value="true" />
+        <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
+        <option name="FORCE_QUOTE_STYlE" value="true" />
+        <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
+        <option name="SPACES_WITHIN_OBJECT_TYPE_BRACES" value="false" />
+      </JSCodeStyleSettings>
+      <JavaCodeStyleSettings>
+        <option name="CLASS_NAMES_IN_JAVADOC" value="3" />
+        <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="666" />
+        <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="666" />
+        <option name="PACKAGES_TO_USE_IMPORT_ON_DEMAND">
+          <value />
+        </option>
+        <option name="IMPORT_LAYOUT_TABLE">
+          <value>
+            <package name="java" withSubpackages="true" static="false" />
+            <package name="java" withSubpackages="true" static="true" />
+            <emptyLine />
+            <package name="javax" withSubpackages="true" static="false" />
+            <package name="javax" withSubpackages="true" static="true" />
+            <emptyLine />
+            <package name="oracle" withSubpackages="true" static="false" />
+            <package name="oracle" withSubpackages="true" static="true" />
+            <emptyLine />
+            <package name="org" withSubpackages="true" static="false" />
+            <package name="org" withSubpackages="true" static="true" />
+            <emptyLine />
+            <package name="" withSubpackages="true" static="false" />
+            <package name="" withSubpackages="true" static="true" />
+            <emptyLine />
+            <package name="com.dart" withSubpackages="true" static="false" />
+            <package name="com.dart" withSubpackages="true" static="true" />
+          </value>
+        </option>
+        <option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" value="true" />
+        <option name="JD_ADD_BLANK_AFTER_RETURN" value="true" />
+        <option name="JD_DO_NOT_WRAP_ONE_LINE_COMMENTS" value="true" />
+        <option name="JD_KEEP_EMPTY_PARAMETER" value="false" />
+        <option name="JD_KEEP_EMPTY_EXCEPTION" value="false" />
+        <option name="JD_KEEP_EMPTY_RETURN" value="false" />
+      </JavaCodeStyleSettings>
+      <MSSQLCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </MSSQLCodeStyleSettings>
+      <MySQLCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </MySQLCodeStyleSettings>
+      <OracleCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </OracleCodeStyleSettings>
+      <PostgresCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </PostgresCodeStyleSettings>
+      <Properties>
+        <option name="SPACES_AROUND_KEY_VALUE_DELIMITER" value="true" />
+        <option name="KEEP_BLANK_LINES" value="true" />
+      </Properties>
+      <SQLiteCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </SQLiteCodeStyleSettings>
+      <SqlCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+        <option name="SUBQUERY_L_PAR_NL_INSIDE" value="true" />
+        <option name="SUBQUERY_R_PAR_NL_INSIDE" value="true" />
+        <option name="WRAP_INSIDE_CREATE_TABLE" value="5" />
+      </SqlCodeStyleSettings>
+      <SybaseCodeStyleSettings version="1">
+        <option name="myVersion" value="1" />
+        <option name="ALIAS_CASE" value="1" />
+        <option name="KEYWORD_CASE" value="0" />
+        <option name="TYPE_CASE" value="0" />
+        <option name="IDENTIFIER_CASE" value="1" />
+        <option name="QUERY_IN_ONE_STRING" value="1" />
+        <option name="SELECT_KEEP_N_ITEMS_IN_LINE" value="1" />
+        <option name="TABLE_OPENING" value="1" />
+        <option name="TABLE_CONTENT" value="2" />
+        <option name="TABLE_CLOSING" value="3" />
+        <option name="POST_OPT_WRAP_1" value="true" />
+        <option name="IMP_DECLARE_EL_WRAP" value="1" />
+        <option name="IMP_IF_THEN_WRAP_THEN" value="true" />
+      </SybaseCodeStyleSettings>
+      <TypeScriptCodeStyleSettings version="0">
+        <option name="FORCE_SEMICOLON_STYLE" value="true" />
+        <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
+        <option name="FORCE_QUOTE_STYlE" value="true" />
+        <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
+        <option name="SPACES_WITHIN_OBJECT_TYPE_BRACES" value="false" />
+      </TypeScriptCodeStyleSettings>
+      <XML>
+        <option name="XML_ATTRIBUTE_WRAP" value="4" />
+        <option name="XML_TEXT_WRAP" value="0" />
+        <option name="XML_KEEP_LINE_BREAKS" value="false" />
+        <option name="XML_KEEP_LINE_BREAKS_IN_TEXT" value="false" />
+        <option name="XML_KEEP_BLANK_LINES" value="1" />
+        <option name="XML_WHITE_SPACE_AROUND_CDATA" value="1" />
+        <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+      </XML>
+      <codeStyleSettings language="CSS">
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="4" />
+          <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="ECMA Script Level 4">
+        <option name="CLASS_BRACE_STYLE" value="2" />
+        <option name="METHOD_BRACE_STYLE" value="2" />
+        <indentOptions>
+          <option name="INDENT_SIZE" value="2" />
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="GSP">
+        <indentOptions>
+          <option name="INDENT_SIZE" value="2" />
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="Gherkin">
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="Groovy">
+        <option name="CLASS_BRACE_STYLE" value="2" />
+        <option name="METHOD_BRACE_STYLE" value="2" />
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="4" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="HAML">
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="HTML">
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="4" />
+          <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="JAVA">
+        <option name="RIGHT_MARGIN" value="200" />
+        <option name="KEEP_LINE_BREAKS" value="false" />
+        <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
+        <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
+        <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+        <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="1" />
+        <option name="ELSE_ON_NEW_LINE" value="true" />
+        <option name="WHILE_ON_NEW_LINE" value="true" />
+        <option name="CATCH_ON_NEW_LINE" value="true" />
+        <option name="FINALLY_ON_NEW_LINE" value="true" />
+        <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
+        <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+        <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
+        <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
+        <option name="ALIGN_MULTILINE_THROWS_LIST" value="true" />
+        <option name="ALIGN_MULTILINE_EXTENDS_LIST" value="true" />
+        <option name="SPACE_AFTER_TYPE_CAST" value="false" />
+        <option name="CALL_PARAMETERS_WRAP" value="1" />
+        <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+        <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+        <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
+        <option name="BINARY_OPERATION_WRAP" value="1" />
+        <option name="TERNARY_OPERATION_WRAP" value="5" />
+        <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
+        <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+        <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
+        <option name="IF_BRACE_FORCE" value="3" />
+        <option name="DOWHILE_BRACE_FORCE" value="3" />
+        <option name="WHILE_BRACE_FORCE" value="3" />
+        <option name="FOR_BRACE_FORCE" value="3" />
+        <option name="ENUM_CONSTANTS_WRAP" value="2" />
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="4" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="JSON">
+        <indentOptions>
+          <option name="INDENT_SIZE" value="4" />
+          <option name="CONTINUATION_INDENT_SIZE" value="4" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="JSP">
+        <indentOptions>
+          <option name="INDENT_SIZE" value="2" />
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="JavaScript">
+        <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
+        <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+        <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+        <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
+        <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
+        <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+        <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+        <option name="ARRAY_INITIALIZER_WRAP" value="5" />
+        <option name="IF_BRACE_FORCE" value="3" />
+        <option name="DOWHILE_BRACE_FORCE" value="3" />
+        <option name="WHILE_BRACE_FORCE" value="3" />
+        <option name="FOR_BRACE_FORCE" value="3" />
+        <option name="SOFT_MARGINS" value="200" />
+        <indentOptions>
+          <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="LESS">
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="Properties">
+        <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
+      </codeStyleSettings>
+      <codeStyleSettings language="SASS">
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="SCSS">
+        <indentOptions>
+          <option name="INDENT_SIZE" value="4" />
+          <option name="CONTINUATION_INDENT_SIZE" value="4" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="TypeScript">
+        <option name="RIGHT_MARGIN" value="250" />
+        <option name="KEEP_LINE_BREAKS" value="false" />
+        <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
+        <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+        <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+        <option name="SOFT_MARGINS" value="200" />
+      </codeStyleSettings>
+      <codeStyleSettings language="XML">
+        <option name="RIGHT_MARGIN" value="1000" />
+        <option name="FORCE_REARRANGE_MODE" value="1" />
+        <indentOptions>
+          <option name="CONTINUATION_INDENT_SIZE" value="4" />
+          <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+        </indentOptions>
+      </codeStyleSettings>
+      <codeStyleSettings language="yaml">
+        <indentOptions>
+          <option name="TAB_SIZE" value="2" />
+        </indentOptions>
+      </codeStyleSettings>
+    </code_scheme>
+  </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="karpov-em" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/poe.anointments.iml" filepath="$PROJECT_DIR$/poe.anointments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poe.anointments.main.iml" filepath="$PROJECT_DIR$/poe.anointments.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poe.anointments.test.iml" filepath="$PROJECT_DIR$/poe.anointments.test.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="libraryTable">
+    <library name="Gradle: junit:junit:4.12">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+</project>
