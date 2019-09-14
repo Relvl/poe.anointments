@@ -10,6 +10,8 @@
 
 target/
 *.iml
+*.ipr
+*.iws
 /nbactions.xml/bin/
 .project
 .classpath
