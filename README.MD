@@ -1,0 +1,1 @@
+#Path of Exile: List of anointments
