@@ -2,6 +2,7 @@
 @import "variables";
 @import "margins";
 @import "custom";
+@import "section-common";
 
 body {
     @include flex-col();
@@ -505,6 +506,10 @@ svg {
 
 .position-relative {
     position: relative;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 span {

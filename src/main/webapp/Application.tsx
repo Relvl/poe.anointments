@@ -28,8 +28,12 @@ export default class Application extends React.Component<{}, State> {
                         ? _.any(Database.Crafting[pass.id], oilId => this.state.uncheckedOils[oilId as keyof typeof OilNames] != true)
                         : _.all(Database.Crafting[pass.id], oilId => this.state.uncheckedOils[oilId as keyof typeof OilNames] != true)) &&
                     // Фильтр пассивок подходит
-                    (!this.state.filter || pass.name.contains(this.state.filter.trim(), true) || _.any(pass.stats, s => s.contains(this.state.filter.trim(), true)))
+                    (!this.state.filter ||
+                        pass.name.contains(this.state.filter.trim(), true) ||
+                        _.any(pass.stats, s => s.contains(this.state.filter.trim(), true)) ||
+                        ("unlinked".startsWith(this.state.filter.toLocaleLowerCase()) && !!pass.solo))
             )
+            .sortBy(pass => _.reduce(Database.Crafting[pass.id], (memo, oilId) => memo + Database.Oil[oilId].dropLevel, 0))
             .map((pass, idx: string) => <PassiveCraftingElement passive={pass} key={`passive-c-${idx}`} />)
             .value();
         return (
@@ -43,6 +47,16 @@ export default class Application extends React.Component<{}, State> {
                         [wiki - Oil]
                     </a>
                 </header>
+
+                <p>
+                    * You can type '
+                    <span className="underline pointer" onClick={() => this.setState({filter: "unlinked"})}>
+                        unlinked
+                    </span>
+                    ' in filter box to select all new blight unlinked passives.
+                </p>
+                <p>* Notable passives sorted in total oil 'cost' based by they drop level.</p>
+
                 <div className="flex-row grid-col-12 page-content">
                     <div className="grid-col-8">
                         <header className="flex-row-center col-header">
@@ -94,7 +108,12 @@ export default class Application extends React.Component<{}, State> {
                         </div>
 
                         <div className="margin-top-l">
-                            <p>Repository: <a href="https://github.com/Relvl/poe.anointments" target="_blank">Relvl/poe.anointments</a></p>
+                            <p>
+                                Repository:{" "}
+                                <a href="https://github.com/Relvl/poe.anointments" target="_blank">
+                                    Relvl/poe.anointments
+                                </a>
+                            </p>
                             <p>Feel free to send issues and pull requests!</p>
                         </div>
                     </div>

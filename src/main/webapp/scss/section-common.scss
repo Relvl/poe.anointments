@@ -1,6 +1,16 @@
 @import "variables";
 @import "flex";
 
+section:not(:empty) {
+
+    @extend %section-common;
+
+    &.banner-padding {
+        padding: 25px;
+        max-height: 450px;
+    }
+}
+
 /* базовые стили для белых секций, для extend'а другими классами.
 Вынесено в отдельный файл от section.scss в рамках борьбы с порядком импортов и как следствие порядка классов в финальном бандле:
 т.к. если оставить этот класс в section.scss, то везде где идет импорт - будет также импортиться и section:not(:empty) селектор
