@@ -3,15 +3,16 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const path = require("path");
-const glob = require("glob");
 const _ = require("underscore");
 
 const paths = {
     root: path.resolve(__dirname, ""),
-    src: path.resolve(__dirname, "./src/main/web_build/"),
+    src: path.resolve(__dirname, "./src/main/webapp/"),
     dist: path.resolve(__dirname, "./src/main/webapp/"),
-    artifact: path.join(__dirname, "build", "libs", "exploded", "logging-subsustem-interface-1.0.0-SNAPSHOT.war"),
+    artifact: path.join(__dirname, "docs"),
 };
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     name: "sources",
@@ -20,13 +21,8 @@ module.exports = {
     mode: "development",
     devtool: "source-map",
     entry: {
-        vendor: ["react", "react-dom", "react-router-dom", "underscore"],
-        application: _.flatten([
-            glob.sync("./pages/page_*.tsx", {cwd: paths.src}),
-            /* Application последним, чтобы все предыдущие скрипты подгрузились */
-            "./init.tsx",
-            "./scss/application.scss",
-        ]),
+        vendor: ["react", "react-dom", "underscore"],
+        application: _.flatten(["./init.tsx", "./scss/application.scss"]),
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx"],
@@ -66,11 +62,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: [
-                path.join(paths.artifact, "/*.js"),
-                path.join(paths.artifact, "/*.css"),
-                path.join(paths.artifact, "/*.map"),
-            ],
+            cleanOnceBeforeBuildPatterns: [path.join(paths.artifact, "/*.js"), path.join(paths.artifact, "/*.css"), path.join(paths.artifact, "/*.map")],
         }),
         new HtmlWebpackPlugin({
             title: "List of anointments",
@@ -78,16 +70,10 @@ module.exports = {
             favicon: "./favicon.ico",
         }),
         new MiniCssExtractPlugin({filename: "[name].css"}),
-        /*new OptimizeCssAssetsPlugin({
+        new OptimizeCssAssetsPlugin({
             cssProcessorOptions: {map: {inline: false}},
-            cssProcessorPluginOptions: {preset: ['default', {discardComments: {removeAll: true}}]}
-        }),*/
-        /*
-        new ExtractTextPlugin({
-            filename: '[name]',
-            allChunks: true,
-        })*/
+            cssProcessorPluginOptions: {preset: ["default", {discardComments: {removeAll: true}}]},
+        }),
+        new CopyPlugin([{from: path.join(paths.src, "img"), to: path.join(paths.artifact, "img")}]),
     ],
 };
-
-console.log("Scripts: ", module.exports.entry.application) /*FIXME Убрать!*/;
