@@ -39,7 +39,7 @@
         "webpack-dev-server": "latest"
     },
     "prettier": {
-        "printWidth": 200,
+        "printWidth": 180,
         "tabWidth": 4,
         "trailingComma": "es5",
         "bracketSpacing": false

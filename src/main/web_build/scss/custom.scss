@@ -2,83 +2,88 @@
 @import "mixins";
 @import "margins";
 
-.oil-selector {
-    @include flex-col();
-    @extend .margin-all-bottom-s;
+.page-content {
+    .col-header {
+        height: 24px;
+    }
+    .oil-selector {
+        @include flex-col();
+        @extend .margin-all-bottom-s;
 
-    .oil-item {
-        img {
-            width: $size_l;
-            height: $size_l;
-            margin-right: $size_s;
-        }
+        .oil-item {
+            img {
+                width: $size_l;
+                height: $size_l;
+                margin-right: $size_s;
+            }
 
-        header {
-            font-size: 16px;
-            margin: 0 $size_s 0 0;
-        }
+            header {
+                font-size: 16px;
+                margin: 0 $size_s 0 0;
+            }
 
-        padding: $size_s;
-        cursor: pointer;
-        border: 1px solid darkgrey;
-        border-radius: $border_radius;
-        opacity: 0.7;
+            padding: $size_xs;
+            cursor: pointer;
+            border: 1px solid darkgrey;
+            border-radius: $border_radius;
+            opacity: 0.7;
 
-        &.selected {
-            background: #bcffb4;
-            opacity: 1;
+            &.selected {
+                background: #bcffb4;
+                opacity: 1;
+            }
         }
     }
-}
 
-.passives {
-    @include flex-col();
-    @extend .margin-all-bottom-s;
+    .passives {
+        @include flex-col();
+        @extend .margin-all-bottom-s;
 
-    .passive-item {
-        position: relative;
+        .passive-item {
+            position: relative;
 
-        & > div.pre-img {
-            width: 100px;
-            height: 100px;
-            background-image: url(./img/Notable_passive_frame.png);
-            background-repeat: round;
-            z-index: 2;
-            margin-right: $size_m;
-        }
+            & > div.pre-img {
+                width: 100px;
+                height: 100px;
+                background-image: url(./img/Notable_passive_frame.png);
+                background-repeat: round;
+                z-index: 2;
+                margin-right: $size_m;
+            }
 
-        & > img {
-            position: absolute;
-            z-index: 1;
-            left: 23px;
-            top: 23px;
-            width: 72px;
-            height: 72px;
-        }
+            & > img {
+                position: absolute;
+                z-index: 1;
+                left: 23px;
+                top: 23px;
+                width: 72px;
+                height: 72px;
+            }
 
-        header {
-            font-size: 16px;
-            margin: 0 $size_s $size_s 20px;
-        }
+            header {
+                font-size: 16px;
+                margin: 0 $size_s $size_s 20px;
+            }
 
-        padding: $size_s;
-        border: 1px solid darkgrey;
-        border-radius: $border_radius;
+            padding: $size_s;
+            border: 1px solid darkgrey;
+            border-radius: $border_radius;
 
-        p {
-            margin: 0;
-            line-height: 1.5;
-        }
+            p {
+                margin: 0;
+                line-height: 1.5;
+            }
 
-        .oil-ingredient {
-            @extend .flex-col;
-            @extend .flex-al-center;
-            width: 26%;
+            .oil-ingredient {
+                @extend .flex-col;
+                @extend .flex-al-center;
+                width: 26%;
 
-            img {
-                width: 42px;
-                height: 42px;
-                margin-bottom: 4px;
+                img {
+                    width: 42px;
+                    height: 42px;
+                    margin-bottom: 4px;
+                }
             }
         }
     }
