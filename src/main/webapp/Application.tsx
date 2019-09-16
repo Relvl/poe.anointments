@@ -28,7 +28,7 @@ export default class Application extends React.Component<{}, State> {
                         ? _.any(Database.Crafting[pass.id], oilId => this.state.uncheckedOils[oilId as keyof typeof OilNames] != true)
                         : _.all(Database.Crafting[pass.id], oilId => this.state.uncheckedOils[oilId as keyof typeof OilNames] != true)) &&
                     // Фильтр пассивок подходит
-                    (!this.state.filter || pass.name.contains(this.state.filter, true) || _.any(pass.stats, s => s.contains(this.state.filter, true)))
+                    (!this.state.filter || pass.name.contains(this.state.filter.trim(), true) || _.any(pass.stats, s => s.contains(this.state.filter.trim(), true)))
             )
             .map((pass, idx: string) => <PassiveCraftingElement passive={pass} key={`passive-c-${idx}`} />)
             .value();
@@ -52,7 +52,7 @@ export default class Application extends React.Component<{}, State> {
                                 name="search"
                                 placeholder="Filter passives"
                                 value={this.state.filter}
-                                onChange={e => this.setState({filter: e.target.value.trim()})}
+                                onChange={e => this.setState({filter: e.target.value})}
                                 className="flex-push-right grid-col-4"
                             />
                         </header>

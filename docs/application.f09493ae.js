@@ -31093,7 +31093,7 @@ class Application extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
             ? underscore__WEBPACK_IMPORTED_MODULE_2__["any"](_database__WEBPACK_IMPORTED_MODULE_1__["default"].Crafting[pass.id], oilId => this.state.uncheckedOils[oilId] != true)
             : underscore__WEBPACK_IMPORTED_MODULE_2__["all"](_database__WEBPACK_IMPORTED_MODULE_1__["default"].Crafting[pass.id], oilId => this.state.uncheckedOils[oilId] != true)) &&
             // Фильтр пассивок подходит
-            (!this.state.filter || pass.name.contains(this.state.filter, true) || underscore__WEBPACK_IMPORTED_MODULE_2__["any"](pass.stats, s => s.contains(this.state.filter, true))))
+            (!this.state.filter || pass.name.contains(this.state.filter.trim(), true) || underscore__WEBPACK_IMPORTED_MODULE_2__["any"](pass.stats, s => s.contains(this.state.filter.trim(), true))))
             .map((pass, idx) => react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_PassiveCraftingElement__WEBPACK_IMPORTED_MODULE_4__["default"], { passive: pass, key: `passive-c-${idx}` }))
             .value();
         return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", { className: "page-wrapper" },
@@ -31109,7 +31109,7 @@ class Application extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                             "(",
                             passivesToRender.length,
                             ")"),
-                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { type: "text", name: "search", placeholder: "Filter passives", value: this.state.filter, onChange: e => this.setState({ filter: e.target.value.trim() }), className: "flex-push-right grid-col-4" })),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { type: "text", name: "search", placeholder: "Filter passives", value: this.state.filter, onChange: e => this.setState({ filter: e.target.value }), className: "flex-push-right grid-col-4" })),
                     react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "passives" }, passivesToRender)),
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "grid-col-4" },
                     react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", { className: "col-header" },
@@ -34954,4 +34954,4 @@ module.exports = __webpack_require__(/*! ./scss/application.scss */"./scss/appli
 /***/ })
 
 /******/ });
-//# sourceMappingURL=application.06a8585b.map
+//# sourceMappingURL=application.f09493ae.map
