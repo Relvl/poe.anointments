@@ -1,8 +1,8 @@
 @import "flex";
 @import "variables";
-@import "section";
 @import "margins";
 @import "custom";
+@import "section-common";
 
 body {
     @include flex-col();
@@ -46,7 +46,7 @@ body {
         max-width: $application_with;
         height: 100%;
         margin-bottom: $size_l;
-        margin-top: $size_m + $top_menu_height/2;
+        margin-top: $size_m;
         margin-right: auto;
         margin-left: auto;
         min-height: 55vh;
@@ -506,6 +506,10 @@ svg {
 
 .position-relative {
     position: relative;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 span {

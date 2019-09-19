@@ -1,5 +1,5 @@
 import * as React from "react";
-import {OilType} from "./core/database";
+import {OilType} from "./database";
 
 type Props = {
     oil: OilType;

@@ -1,10 +1,9 @@
 import * as React from "react";
-import Database, {PassiveType} from "./core/database";
+import Database, {PassiveType} from "./database";
 import * as _ from "underscore";
 
 type Props = {
     passive: PassiveType;
-    id: keyof typeof Database.Passives;
 };
 export default class PassiveCraftingElement extends React.Component<Props> {
     render() {
@@ -15,11 +14,10 @@ export default class PassiveCraftingElement extends React.Component<Props> {
                 <div className="grid-col-5">
                     <header>{this.props.passive.name}</header>
                     <div className="flex-row-center">
-                        {_.map(Database.Crafting[this.props.id], oilId => {
-                            if (!oilId) return <div className="oil-ingredient" />;
+                        {_.map(Database.Crafting[this.props.passive.id], (oilId, idx) => {
                             let oil = Database.Oil[oilId];
                             return (
-                                <div className="text-grey-smallest oil-ingredient">
+                                <div className="text-grey-smallest oil-ingredient" key={`passive-oil-${idx}`}>
                                     <img src={`./img/${oil.icon}`} alt={oilId} />
                                     {oil.name}
                                 </div>
