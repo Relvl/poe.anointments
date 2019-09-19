@@ -801,6 +801,7 @@ const Passives: {[name in keyof typeof PassiveNames]: PassiveType} = {
         url: "/Crusader",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a4/MindPact_passive_skill_icon.png",
         stats: ["8% increased maximum Mana", "Transfiguration of Mind"],
+        solo: true,
     },
     Infused: {name: "Infused", url: "/Infused", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Chargeint_passive_skill_icon.png", stats: ["+1 to Maximum Power Charges"]},
     Disintegration: {
@@ -975,7 +976,13 @@ const Passives: {[name in keyof typeof PassiveNames]: PassiveType} = {
         stats: ["25% increased maximum Mana", "15% increased Mana Regeneration Rate"],
     },
     Might: {name: "Might", url: "/Might", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png", stats: ["+30 to Strength"]},
-    Cleansed_Thoughts: {name: "Cleansed Thoughts", url: "", icon: "", stats: ["Chaos Resistance is doubled"], solo: true},
+    Cleansed_Thoughts: {
+        name: "Cleansed Thoughts",
+        url: "/Cleansed_Thoughts",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1c/ChaoticPotential_passive_skill_icon.png",
+        stats: ["Chaos Resistance is doubled"],
+        solo: true,
+    },
     Rampart: {
         name: "Rampart",
         url: "/Rampart",
@@ -999,7 +1006,13 @@ const Passives: {[name in keyof typeof PassiveNames]: PassiveType} = {
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/83/MethodMadess_passive_skill_icon.png",
         stats: ["+8% to Chaos Resistance", "22% increased Chaos Damage", "+8% to Chaos Damage over Time Multiplier"],
     },
-    Way_Of_The_Warrior: {name: "", url: "", icon: "", stats: ["+30 to Strength", "16% increased Melee Damage", "16% increased Armour", "+16 to maximum Life"], solo: true},
+    Way_Of_The_Warrior: {
+        name: "Way of the warrior",
+        url: "/Way_of_the_Warrior",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/19/EyesOfThePowerful_passive_skill_icon.png",
+        stats: ["+30 to Strength", "16% increased Melee Damage", "16% increased Armour", "+16 to maximum Life"],
+        solo: true,
+    },
     Smashing_Strikes: {
         name: "Smashing Strikes",
         url: "/Smashing_Strikes",
@@ -1987,7 +2000,13 @@ const Passives: {[name in keyof typeof PassiveNames]: PassiveType} = {
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/eb/Evasion_passive_skill_icon.png",
         stats: ["30% increased Evasion Rating", "+150 to Evasion Rating", "15% increased Global Accuracy Rating", "+150 to Accuracy Rating"],
     },
-    Hardened_Scars: {name: "Hardened Scars", url: "", icon: "", stats: ["15% increased Life Recovery from Flasks", "You have Fortify during Effect of any Life Flask"], solo: true},
+    Hardened_Scars: {
+        name: "Hardened Scars",
+        url: "/Hardened_Scars",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d8/DarkestHour_passive_skill_icon.png",
+        stats: ["15% increased Life Recovery from Flasks", "You have Fortify during Effect of any Life Flask"],
+        solo: true,
+    },
     Proficiency: {name: "Proficiency", url: "/Proficiency", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/ce/Grace_passive_skill_icon.png", stats: ["+30 to Dexterity"]},
     Enigmatic_Reach: {
         name: "Enigmatic Reach",
@@ -2175,7 +2194,13 @@ const Passives: {[name in keyof typeof PassiveNames]: PassiveType} = {
             "10% chance to gain Phasing for 4 seconds on Kill",
         ],
     },
-    Tribal_Fury: {name: "Tribal Fury", url: "", icon: "", stats: ["12% increased Melee Damage", "Strike Skills target 1 additional nearby Enemy"], solo: true},
+    Tribal_Fury: {
+        name: "Tribal Fury",
+        url: "/Tribal_Fury",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/db/Lineage_passive_skill_icon.png",
+        stats: ["12% increased Melee Damage", "Strike Skills target 1 additional nearby Enemy"],
+        solo: true,
+    },
     Expeditious_Munitions: {
         name: "Expeditious Munitions",
         url: "/Expeditious_Munitions",
@@ -2253,7 +2278,13 @@ const Passives: {[name in keyof typeof PassiveNames]: PassiveType} = {
             "10% chance to gain Unholy Might on block for 3 seconds",
         ],
     },
-    Tranquility: {name: "Tranquility", url: "", icon: "", stats: ["5% increased maximum Energy Shield", "Transfiguration of Soul"], solo: true},
+    Tranquility: {
+        name: "Tranquility",
+        url: "/Tranquility",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/77/SoulPact_passive_skill_icon.png",
+        stats: ["5% increased maximum Energy Shield", "Transfiguration of Soul"],
+        solo: true,
+    },
     Primal_Manifestation: {
         name: "Primal Manifestation",
         url: "/Primal_Manifestation",
