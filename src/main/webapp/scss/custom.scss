@@ -42,6 +42,11 @@
         .passive-item {
             position: relative;
 
+            &.solo-passive {
+                border: 1px solid blue;
+                background: #dbd9ff;
+            }
+
             & > div.pre-img {
                 width: 100px;
                 height: 100px;

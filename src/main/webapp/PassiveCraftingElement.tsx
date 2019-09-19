@@ -8,7 +8,7 @@ type Props = {
 export default class PassiveCraftingElement extends React.Component<Props> {
     render() {
         return (
-            <div className="passive-item flex-row-center">
+            <div className={window.className("passive-item flex-row-center", {"solo-passive": this.props.passive.solo})}>
                 <div className="pre-img" />
                 <img src={this.props.passive.icon} alt={this.props.passive.name} />
                 <div className="grid-col-5">
