@@ -4058,11 +4058,34 @@ const RingCrafting: Array<RingCraftType> = [
     {tower: "Shock_Nova", ingredients: ["Amber", "Verdant"], stats: ["Your Shock Nova Towers deal 25% increased Damage"]},
 ];
 
+const BlightMapCrafting: {[name in keyof typeof OilNames]: {oil: keyof typeof OilNames | ""; stats: Array<string>}} = {
+    Clear: {oil: "", stats: ["+5% Monster pack size", "10% reduced Monster Movement Speed"]},
+    Sepia: {oil: "", stats: ["+5% Monster pack size", "Towers deal 20% more Damage"]},
+    Amber: {oil: "", stats: ["+5% Monster pack size", "20% reduced Cost of Building and Upgrading Towers"]},
+    Verdant: {oil: "", stats: ["+15% Monster pack size"]},
+    Teal: {oil: "", stats: ["+5% Monster pack size", "2 Blight Chests are Lucky"]},
+    Azure: {oil: "", stats: ["+5% Monster pack size", "15% increased Experience gain"]},
+    Violet: {oil: "", stats: ["+5% Monster pack size", "30% increased Quantity of Items found in this Area"]},
+    Crimson: {oil: "", stats: ["+5% Monster pack size", "3 Blight Chests are Lucky"]},
+    Black: {oil: "", stats: ["+5% Monster pack size", "10% chance for Blight Chests to drop an additional Reward"]},
+    Opalescent: {oil: "", stats: ["+25% Monster pack size"]},
+    Silver: {oil: "", stats: ["+5% Monster pack size", "5 Blight Chests are Lucky"]},
+    Golden: {oil: "", stats: ["+5% Monster pack size", "25% chance for Blight Chests to drop an additional Reward"]},
+};
+
+export type BlightMapCraftType = {
+    oil: keyof typeof OilNames;
+    stats: Array<string>;
+};
+
 _.forEach(Passives, (pass, id) => {
     pass.id = id as keyof typeof PassiveNames;
 });
 _.forEach(Oil, (oil, id) => {
     oil.id = id as keyof typeof OilNames;
+});
+_.forEach(BlightMapCrafting, (cr, oil) => {
+    cr.oil = oil as keyof typeof OilNames;
 });
 
 export default class Database {
@@ -4070,4 +4093,5 @@ export default class Database {
     static Passives = Passives;
     static Crafting = Crafting;
     static RingCrafting = RingCrafting;
+    static BlightMapCrafting = BlightMapCrafting as {[name in keyof typeof OilNames]: BlightMapCraftType};
 }

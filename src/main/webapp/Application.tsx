@@ -4,6 +4,7 @@ import * as _ from "underscore";
 import OilSelectionElement from "./OilSelectionElement";
 import PassiveCraftingElement from "./PassiveCraftingElement";
 import RingCraftingElement from "./RingCraftingElement";
+import BlightMapCraftingElement from "./BlightMapCraftingElement";
 
 type State = {
     filter: string;
@@ -11,6 +12,7 @@ type State = {
     oilFilterAnyMode: boolean;
     notablesCollapsed: boolean;
     ringsCollapsed: boolean;
+    mapsCollapsed: boolean;
 };
 
 export default class Application extends React.Component<{}, State> {
@@ -20,8 +22,9 @@ export default class Application extends React.Component<{}, State> {
             filter: "",
             uncheckedOils: {},
             oilFilterAnyMode: false,
-            notablesCollapsed: false,
-            ringsCollapsed: false,
+            notablesCollapsed: true,
+            ringsCollapsed: true,
+            mapsCollapsed: false,
         };
     }
 
@@ -36,7 +39,7 @@ export default class Application extends React.Component<{}, State> {
                             this.setState({notablesCollapsed: !this.state.notablesCollapsed});
                         }}
                         className="margin-right-xs"
-                        title="Collaps/expang group"
+                        title="Collaps/expand group"
                     >
                         [+]
                     </a>
@@ -44,7 +47,7 @@ export default class Application extends React.Component<{}, State> {
                     <input
                         type="text"
                         name="search"
-                        placeholder="Filter passives, rings"
+                        placeholder="Filter passives, rings and maps"
                         value={this.state.filter}
                         onChange={e => this.setState({filter: e.target.value})}
                         className="flex-push-right grid-col-4"
@@ -83,7 +86,7 @@ export default class Application extends React.Component<{}, State> {
                             this.setState({ringsCollapsed: !this.state.ringsCollapsed});
                         }}
                         className="margin-right-xs"
-                        title="Collaps/expang group"
+                        title="Collaps/expand group"
                     >
                         [+]
                     </a>
@@ -91,7 +94,7 @@ export default class Application extends React.Component<{}, State> {
                     <input
                         type="text"
                         name="search"
-                        placeholder="Filter passives, rings"
+                        placeholder="Filter passives, rings and maps"
                         value={this.state.filter}
                         onChange={e => this.setState({filter: e.target.value})}
                         className="flex-push-right grid-col-4"
@@ -111,6 +114,52 @@ export default class Application extends React.Component<{}, State> {
                             )
                             .sortBy(r => _.indexOf(_.keys(Towers), r.tower))
                             .map((r, idx) => <RingCraftingElement ring={r} key={`ring-${idx}-${r.tower}`} />)
+                            .value()}
+                    </div>
+                )}
+            </>
+        );
+    }
+
+    private renderBlightMaps() {
+        return (
+            <>
+                <header className="flex-row-center column-header">
+                    <a
+                        href="."
+                        onClick={e => {
+                            e.preventDefault();
+                            this.setState({mapsCollapsed: !this.state.mapsCollapsed});
+                        }}
+                        className="margin-right-xs"
+                        title="Collaps/expand group"
+                    >
+                        [+]
+                    </a>
+                    <span title="Can be crafted on any rings">Blighted maps anointments</span>{" "}
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Filter passives, rings and maps"
+                        value={this.state.filter}
+                        onChange={e => this.setState({filter: e.target.value})}
+                        className="flex-push-right grid-col-4"
+                    />
+                </header>
+                {this.state.mapsCollapsed ? null : (
+                    <div className="maps margin-bottom-m">
+                        {_.chain(Database.BlightMapCrafting)
+                            .filter(
+                                m =>
+                                    (this.state.oilFilterAnyMode
+                                        ? _.any([m.oil], oilId => !this.state.uncheckedOils[oilId as keyof typeof OilNames])
+                                        : _.all([m.oil], oilId => !this.state.uncheckedOils[oilId as keyof typeof OilNames])) && // Фильтр пассивок подходит //
+                                    (!this.state.filter || //
+                                    m.oil.contains(this.state.filter.trim(), true) || //
+                                        _.any(m.stats, s => s.contains(this.state.filter.trim(), true))) //
+                            )
+                            .sortBy(m => Database.Oil[m.oil].dropLevel)
+                            .map((m, idx) => <BlightMapCraftingElement map={m} key={`ring-${idx}-${m.oil}`} />)
                             .value()}
                     </div>
                 )}
@@ -183,6 +232,7 @@ export default class Application extends React.Component<{}, State> {
                     <div className="grid-col-8">
                         {this.renderNatables()}
                         {this.renderRings()}
+                        {this.renderBlightMaps()}
                     </div>
 
                     <div className="grid-col-4">

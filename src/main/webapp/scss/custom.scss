@@ -7,11 +7,56 @@
         height: 24px;
     }
 
-    .oil-selector {
+    .oil-selector,
+    .passives,
+    .rings,
+    .maps {
         @include flex-col();
         @extend .margin-all-bottom-s;
+        .group-item {
+            padding: $size_s;
+            border: 1px solid darkgrey;
+            border-radius: $border_radius;
 
-        .oil-item {
+            header {
+                font-size: 16px;
+                margin: 0 $size_s $size_s 20px;
+            }
+            p {
+                margin: 0;
+                line-height: 1.5;
+            }
+
+            .oil-ingredient {
+                @extend .flex-col;
+                @extend .flex-al-center;
+                width: 33%;
+
+                img {
+                    width: 42px;
+                    height: 42px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+
+        &:empty:after {
+            @extend .flex-row-center;
+            @extend .text-grey-small;
+            border: 1px solid grey;
+            border-radius: 4px;
+            padding: $size_s;
+            background: #e9e9e9;
+            content: "No matches found :(";
+        }
+    }
+
+    .oil-selector {
+        .group-item {
+            padding: $size_xs;
+            cursor: pointer;
+            opacity: 0.7;
+
             img {
                 width: $size_l;
                 height: $size_l;
@@ -23,12 +68,6 @@
                 margin: 0 $size_s 0 0;
             }
 
-            padding: $size_xs;
-            cursor: pointer;
-            border: 1px solid darkgrey;
-            border-radius: $border_radius;
-            opacity: 0.7;
-
             &.selected {
                 background: #bcffb4;
                 opacity: 1;
@@ -37,10 +76,7 @@
     }
 
     .passives {
-        @include flex-col();
-        @extend .margin-all-bottom-s;
-
-        .passive-item {
+        .group-item {
             &.solo-passive {
                 border: 1px solid blue;
                 background: #dbd9ff;
@@ -69,67 +105,27 @@
                     height: 72px;
                 }
             }
-
-            header {
-                font-size: 16px;
-                margin: 0 $size_s $size_s 20px;
-            }
-
-            padding: $size_s;
-            border: 1px solid darkgrey;
-            border-radius: $border_radius;
-
-            p {
-                margin: 0;
-                line-height: 1.5;
-            }
-
-            .oil-ingredient {
-                @extend .flex-col;
-                @extend .flex-al-center;
-                width: 33%;
-
-                img {
-                    width: 42px;
-                    height: 42px;
-                    margin-bottom: 4px;
-                }
-            }
         }
     }
 
     .rings {
-        @include flex-col();
-        @extend .margin-all-bottom-s;
-
-        .ring-item {
-            header {
-                font-size: 16px;
-                margin: 0 $size_s $size_s 20px;
-            }
-
-            padding: $size_s;
-            border: 1px solid darkgrey;
-            border-radius: $border_radius;
-
-            p {
-                margin: 0;
-                line-height: 1.5;
-            }
-
+        .group-item {
             & > img {
                 width: 14%;
             }
+        }
+    }
 
-            .oil-ingredient {
-                @extend .flex-col;
-                @extend .flex-al-center;
-                width: 26%;
-
-                img {
-                    width: 42px;
-                    height: 42px;
-                    margin-bottom: 4px;
+    .maps {
+        .group-item {
+            header {
+                margin-bottom: 0;
+            }
+            .icon-holder {
+                width: 14%;
+                & > img {
+                    width: 50px;
+                    margin-left: 27px;
                 }
             }
         }

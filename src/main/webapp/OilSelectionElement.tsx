@@ -10,7 +10,14 @@ type Props = {
 export default class OilSelectionElement extends React.Component<Props> {
     render() {
         return (
-            <div className={window.className("oil-item flex-row-center", {selected: this.props.selected})} onClick={this.props.onChanged}>
+            <div
+                className={window.className("group-item flex-row-center", {selected: this.props.selected})}
+                onClick={(e: any) => {
+                    if (!e.target.href) {
+                        this.props.onChanged();
+                    }
+                }}
+            >
                 <img src={`./img/${this.props.oil.icon}`} alt={this.props.oil.name} />
                 <header>
                     {this.props.oil.name}{" "}

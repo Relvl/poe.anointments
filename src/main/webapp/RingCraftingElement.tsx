@@ -8,11 +8,11 @@ type Props = {
 export default class RingCraftingElement extends React.Component<Props> {
     render() {
         return (
-            <div className="ring-item flex-row-center">
+            <div className="group-item flex-row-center">
                 <img src={Towers[this.props.ring.tower].icon} alt={this.props.ring.tower} />
 
                 <div className="grid-col-4">
-                    <header>{this.props.ring.tower}</header>
+                    <header>{Towers[this.props.ring.tower].name}</header>
                     <div className="flex-row-center">
                         {_.map(this.props.ring.ingredients, (oilId, idx) => {
                             let oil = Database.Oil[oilId];
