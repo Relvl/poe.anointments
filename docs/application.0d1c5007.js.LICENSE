@@ -1,0 +1,199 @@
+/*!*************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/object-assign/index.js ***!
+  \*************************************************************************/
+
+/*! no static exports found */
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!*******************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/prop-types/checkPropTypes.js ***!
+  \*******************************************************************************/
+
+/*! ./lib/ReactPropTypesSecret */
+
+/*!*****************************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \*****************************************************************************************/
+
+/*!*****************************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/react-dom/cjs/react-dom.development.js ***!
+  \*****************************************************************************************/
+
+/** @license React v16.9.0
+ * react-dom.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*! react */
+
+/*! object-assign */
+
+/*! prop-types/checkPropTypes */
+
+/*! scheduler */
+
+/*! scheduler/tracing */
+
+/**
+ * Checks if an event is supported in the current execution environment.
+ *
+ * NOTE: This will not work correctly for non-generic events such as `change`,
+ * `reset`, `load`, `error`, and `select`.
+ *
+ * Borrows from Modernizr.
+ *
+ * @param {string} eventNameSuffix Event name, e.g. "click".
+ * @return {boolean} True if the event is supported.
+ * @internal
+ * @license Modernizr 3.0.0pre (Custom Build) | MIT
+ */
+
+/*!*********************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/react-dom/index.js ***!
+  \*********************************************************************/
+
+/*! ./cjs/react-dom.development.js */
+
+/*!*********************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/react/cjs/react.development.js ***!
+  \*********************************************************************************/
+
+/** @license React v16.9.0
+ * react.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*!*****************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/react/index.js ***!
+  \*****************************************************************/
+
+/*! ./cjs/react.development.js */
+
+/*!*************************************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
+  \*************************************************************************************************/
+
+/** @license React v0.15.0
+ * scheduler-tracing.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*!*****************************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/scheduler/cjs/scheduler.development.js ***!
+  \*****************************************************************************************/
+
+/** @license React v0.15.0
+ * scheduler.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*!*********************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/scheduler/index.js ***!
+  \*********************************************************************/
+
+/*! ./cjs/scheduler.development.js */
+
+/*!***********************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/scheduler/tracing.js ***!
+  \***********************************************************************/
+
+/*! ./cjs/scheduler-tracing.development.js */
+
+/*!***************************************************************************!*\
+  !*** C:/WORK/_CODE/poe.anointments/node_modules/underscore/underscore.js ***!
+  \***************************************************************************/
+
+/*! ./../webpack/buildin/global.js */
+
+/*! ./../webpack/buildin/module.js */
+
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+
+/*!***********************************!*\
+  !*** (webpack)/buildin/module.js ***!
+  \***********************************/
+
+/*!*************************!*\
+  !*** ./Application.tsx ***!
+  \*************************/
+
+/*! exports provided: default */
+
+/*! ./database */
+
+/*! underscore */
+
+/*! ./OilSelectionElement */
+
+/*! ./PassiveCraftingElement */
+
+/*! ./RingCraftingElement */
+
+/*! ./BlightMapCraftingElement */
+
+/*!**************************************!*\
+  !*** ./BlightMapCraftingElement.tsx ***!
+  \**************************************/
+
+/*!*********************************!*\
+  !*** ./OilSelectionElement.tsx ***!
+  \*********************************/
+
+/*!************************************!*\
+  !*** ./PassiveCraftingElement.tsx ***!
+  \************************************/
+
+/*!*********************************!*\
+  !*** ./RingCraftingElement.tsx ***!
+  \*********************************/
+
+/*!*********************!*\
+  !*** ./database.ts ***!
+  \*********************/
+
+/*! exports provided: OilNames, PassiveNames, TowerTypes, Towers, default */
+
+/*!******************!*\
+  !*** ./init.tsx ***!
+  \******************/
+
+/*! no exports provided */
+
+/*! react-dom */
+
+/*! ./Application */
+
+/*!*******************************!*\
+  !*** ./scss/application.scss ***!
+  \*******************************/
+
+/*!************************************************!*\
+  !*** multi ./init.tsx ./scss/application.scss ***!
+  \************************************************/
+
+/*! ./init.tsx */
+
+/*! ./scss/application.scss */
