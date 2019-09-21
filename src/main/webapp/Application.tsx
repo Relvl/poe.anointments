@@ -22,8 +22,8 @@ export default class Application extends React.Component<{}, State> {
             filter: "",
             uncheckedOils: {},
             oilFilterAnyMode: false,
-            notablesCollapsed: true,
-            ringsCollapsed: true,
+            notablesCollapsed: false,
+            ringsCollapsed: false,
             mapsCollapsed: false,
         };
     }
