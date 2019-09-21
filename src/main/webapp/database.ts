@@ -30,6 +30,7 @@ export enum OilNames {
     Silver,
     Golden,
 }
+
 const OilOmited: {[name in keyof typeof OilNames]: Omit<OilType, "id">} = {
     Clear: {
         name: "Clear oil",
@@ -472,10 +473,11 @@ export enum PassiveNames {
     Gladiator_s_Perseverance,
     Hunter_s_Gambit,
 }
+
 const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "id">} = {
     Lord_of_the_Dead: {
         name: "Lord of the Dead",
-        url: "/Lord_of_the_Dead",
+        url: "https://pathofexile.gamepedia.com/Lord_of_the_Dead",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e9/Lordofthedead_passive_skill_icon.png",
         stats: [
             "+1 to Maximum number of Skeletons",
@@ -487,20 +489,20 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Path_of_the_Warrior: {
         name: "Path of the Warrior",
-        url: "/Path_of_the_Warrior",
+        url: "https://pathofexile.gamepedia.com/Path_of_the_Warrior",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e2/Warrior_passive_skill_icon.png",
         stats: ["+20 to Strength", "12% increased Physical Damage", "+10 to Armour"],
     },
     Instability: {
         name: "Instability",
-        url: "/Instability",
+        url: "https://pathofexile.gamepedia.com/Instability",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Chargeint_passive_skill_icon.png",
         stats: ["+1 to Maximum Power Charges"],
     },
     Successive_Detonations: {
         name: "Successive Detonations",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Successive_Detonations",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Chargeint_passive_skill_icon.png",
         stats: [
             "20% increased Critical Strike Chance for each Mine Detonated Recently, up to 100%",
             "+8% to Critical Strike Multiplier for each Mine Detonated Recently, up to 40%",
@@ -508,7 +510,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Razor_s_Edge: {
         name: "Razor's Edge",
-        url: "/Razor%27s_Edge",
+        url: "https://pathofexile.gamepedia.com/Razor%27s_Edge",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/83/Razorsedge_passive_skill_icon.png",
         stats: [
             "30% increased Physical Damage with Swords",
@@ -519,13 +521,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Acuity: {
         name: "Acuity",
-        url: "/Acuity",
+        url: "https://pathofexile.gamepedia.com/Acuity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/34/Accuracydex_passive_skill_icon.png",
         stats: ["15% increased Global Accuracy Rating", "+20 to Dexterity", "5% increased Attack Speed", "+100 to Accuracy Rating"],
     },
     Sacrifice: {
         name: "Sacrifice",
-        url: "/Sacrifice",
+        url: "https://pathofexile.gamepedia.com/Sacrifice",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/11/Graveexpectations_passive_skill_icon.png",
         stats: [
             "Minions have +10% to all Elemental Resistances",
@@ -536,7 +538,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Command_of_the_Elements: {
         name: "Command of the Elements",
-        url: "/Command_of_the_Elements",
+        url: "https://pathofexile.gamepedia.com/Command_of_the_Elements",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e7/ShieldAttackDamage_passive_skill_icon.png",
         stats: [
             "Damage with Weapons Penetrates 4% Elemental Resistance",
@@ -547,13 +549,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Mystic_Bulwark: {
         name: "Mystic Bulwark",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Mystic_Bulwark",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/54/ManaandSpellBlock_passive_skill_icon.png",
         stats: ["15% increased maximum Mana", "6% Chance to Block Spell Damage", "1% increased Mana Regeneration Rate per 1% Chance to Block Spell Damage"],
     },
     Command_of_Steel: {
         name: "Command of Steel",
-        url: "/Command_of_Steel",
+        url: "https://pathofexile.gamepedia.com/Command_of_Steel",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/60/CommandofSteel_passive_skill_icon.png",
         stats: [
             "+3% Chance to Block Attack Damage while holding a Shield",
@@ -564,19 +566,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Combat_Stamina: {
         name: "Combat Stamina",
-        url: "/Combat_Stamina",
+        url: "https://pathofexile.gamepedia.com/Combat_Stamina",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/35/CombatStamina_passive_skill_icon.png",
         stats: ["Regenerate 1% of Life per second", "20% increased Armour", "5% increased maximum Life"],
     },
     Cloth_and_Chain: {
         name: "Cloth and Chain",
-        url: "/Cloth_and_Chain",
+        url: "https://pathofexile.gamepedia.com/Cloth_and_Chain",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1c/Newevadepercentage_passive_skill_icon.png",
         stats: ["24% increased Evasion Rating and Armour", "+12% to all Elemental Resistances"],
     },
     Arcane_Capacitor: {
         name: "Arcane Capacitor",
-        url: "/Arcane_Capacitor",
+        url: "https://pathofexile.gamepedia.com/Arcane_Capacitor",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/54/ManaandArcaneSurge_passive_skill_icon.png",
         stats: [
             "15% increased maximum Mana",
@@ -587,32 +589,32 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Devotion: {
         name: "Devotion",
-        url: "/Devotion",
+        url: "https://pathofexile.gamepedia.com/Devotion",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/60/Titanicmight_passive_skill_icon.png",
         stats: ["+20 to Strength", "8% increased maximum Life", "3% increased effect of Non-Curse Auras from your Skills"],
     },
     Righteous_Army: {
         name: "Righteous Army",
-        url: "/Righteous_Army",
+        url: "https://pathofexile.gamepedia.com/Righteous_Army",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/67/RighteousArmy_passive_skill_icon.png",
         stats: ["Minions deal 20% increased Damage", "Minions have 20% increased maximum Life", "Minions Regenerate 1% of Life per second", "Regenerate 1% of Life per second"],
     },
     Fending: {
         name: "Fending",
-        url: "/Fending",
+        url: "https://pathofexile.gamepedia.com/Fending",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3a/Fending_passive_skill_icon.png",
         stats: ["25% increased Knockback Distance", "12% chance to Knock Enemies Back on hit"],
     },
     Toxic_Strikes: {
         name: "Toxic Strikes",
-        url: "/Toxic_Strikes",
+        url: "https://pathofexile.gamepedia.com/Toxic_Strikes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/68/Poison_passive_skill_icon.png",
         stats: ["30% increased Chaos Damage with Attack Skills", "10% increased Poison Duration", "10% chance to Poison on Hit", "+8% to Damage over Time Multiplier for Poison"],
     },
     Ravenous_Horde: {
         name: "Ravenous Horde",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Ravenous_Horde",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/bb/DamageofMinionsNotable_passive_skill_icon.png",
         stats: [
             "Minions deal 20% increased Damage",
             "Minions have 5% increased Attack Speed",
@@ -623,13 +625,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Efficient_Explosives: {
         name: "Efficient Explosives",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Efficient_Explosives",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/04/MineManaReservationNotable_passive_skill_icon.png",
         stats: ["25% increased Mine Damage", "12% reduced Mana Reservation of Skills that throw Mines", "20% increased Mine Duration"],
     },
     Fingers_of_Frost: {
         name: "Fingers of Frost",
-        url: "/Fingers_of_Frost",
+        url: "https://pathofexile.gamepedia.com/Fingers_of_Frost",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/ba/Breathofrime_passive_skill_icon.png",
         stats: [
             "Enemies Become Chilled as they Unfreeze",
@@ -641,7 +643,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Claws_of_the_Magpie: {
         name: "Claws of the Magpie",
-        url: "/Claws_of_the_Magpie",
+        url: "https://pathofexile.gamepedia.com/Claws_of_the_Magpie",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Eagletalons_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Claws",
@@ -652,13 +654,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Retribution: {
         name: "Retribution",
-        url: "/Retribution",
+        url: "https://pathofexile.gamepedia.com/Retribution",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/9d/Retribution_passive_skill_icon.png",
         stats: ["+10 to Strength and Intelligence", "14% increased Damage", "5% increased Attack and Cast Speed", "Minions deal 10% increased Damage"],
     },
     Spiritual_Command: {
         name: "Spiritual Command",
-        url: "/Spiritual_Command",
+        url: "https://pathofexile.gamepedia.com/Spiritual_Command",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/72/SpiritualCommand_passive_skill_icon.png",
         stats: [
             "Minions have 8% increased Attack Speed",
@@ -669,13 +671,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Coldhearted_Calculation: {
         name: "Coldhearted Calculation",
-        url: "/Coldhearted_Calculation",
+        url: "https://pathofexile.gamepedia.com/Coldhearted_Calculation",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/24/ColdheartedCalculation2_passive_skill_icon.png",
         stats: ["20% increased Mana Regeneration Rate", "+20 to Intelligence", "12% increased Spell Damage", "12% increased Attack Damage"],
     },
     Harvester_of_Foes: {
         name: "Harvester of Foes",
-        url: "/Harvester_of_Foes",
+        url: "https://pathofexile.gamepedia.com/Harvester_of_Foes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ec/AxeNotable1_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Axes",
@@ -686,7 +688,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Essence_Sap: {
         name: "Essence Sap",
-        url: "/Essence_Sap",
+        url: "https://pathofexile.gamepedia.com/Essence_Sap",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/eb/Minddrinker_passive_skill_icon.png",
         stats: [
             "20% increased total Recovery per second from Mana Leech",
@@ -697,13 +699,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Eagle_Eye: {
         name: "Eagle Eye",
-        url: "/Eagle_Eye",
+        url: "https://pathofexile.gamepedia.com/Eagle_Eye",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c9/Eagleeye_passive_skill_icon.png",
         stats: ["15% increased Global Accuracy Rating", "30% increased Critical Strike Chance", "+100 to Accuracy Rating"],
     },
     Light_Eater: {
         name: "Light Eater",
-        url: "/Light_Eater",
+        url: "https://pathofexile.gamepedia.com/Light_Eater",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/32/SoulSiphoning_passive_skill_icon.png",
         stats: [
             "0.8% of Spell Damage Leeched as Energy Shield",
@@ -713,7 +715,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Retaliation: {
         name: "Retaliation",
-        url: "/Retaliation",
+        url: "https://pathofexile.gamepedia.com/Retaliation",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e7/Retaliation_passive_skill_icon.png",
         stats: [
             "20% increased Attack Damage while holding a Shield",
@@ -724,7 +726,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Volatile_Mines: {
         name: "Volatile Mines",
-        url: "/Volatile_Mines",
+        url: "https://pathofexile.gamepedia.com/Volatile_Mines",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/85/Volitilemines_passive_skill_icon.png",
         stats: [
             "20% increased Mine Damage",
@@ -735,19 +737,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Arcane_Expanse: {
         name: "Arcane Expanse",
-        url: "/Arcane_Expanse",
+        url: "https://pathofexile.gamepedia.com/Arcane_Expanse",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a0/Blastradius_passive_skill_icon.png",
         stats: ["Spell Skills have 10% increased Area of Effect", "15% increased Spell Damage", "10% increased Area of Effect if you've Killed Recently", "+10 to Intelligence"],
     },
     Utmost_Might: {
         name: "Utmost Might",
-        url: "/Utmost_Might",
+        url: "https://pathofexile.gamepedia.com/Utmost_Might",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e4/Plusstrength_passive_skill_icon.png",
         stats: ["+40 to Strength", "8% increased Strength"],
     },
     Bludgeon_Blitz: {
         name: "Bludgeon Blitz",
-        url: "/Bludgeon_Blitz",
+        url: "https://pathofexile.gamepedia.com/Bludgeon_Blitz",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/8c/MaceNotable3_passive_skill_icon.png",
         stats: [
             "18% increased Damage with Maces and Sceptres",
@@ -759,37 +761,37 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Faith_and_Steel: {
         name: "Faith and Steel",
-        url: "/Faith_and_Steel",
+        url: "https://pathofexile.gamepedia.com/Faith_and_Steel",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/26/Bodysoul_passive_skill_icon.png",
         stats: ["20% increased Armour", "10% increased maximum Energy Shield", "+8% to all Elemental Resistances", "10% increased Energy Shield Recharge Rate"],
     },
     Magmatic_Strikes: {
         name: "Magmatic Strikes",
-        url: "/Magmatic_Strikes",
+        url: "https://pathofexile.gamepedia.com/Magmatic_Strikes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0d/MeleeFireNotable_passive_skill_icon.png",
         stats: ["24% increased Fire Damage with Attack Skills", "Gain 5% of Physical Damage as Extra Fire Damage"],
     },
     Born_to_Fight: {
         name: "Born to Fight",
-        url: "/Born_to_Fight",
+        url: "https://pathofexile.gamepedia.com/Born_to_Fight",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/97/Borntofight_passive_skill_icon.png",
         stats: ["+20 to Strength", "26% increased Melee Physical Damage", "4% increased Melee Attack Speed", "+20 to Accuracy Rating"],
     },
     Quick_Recovery: {
         name: "Quick Recovery",
-        url: "/Quick_Recovery",
+        url: "https://pathofexile.gamepedia.com/Quick_Recovery",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/51/QuickRecovery_passive_skill_icon.png",
         stats: ["6% increased maximum Life", "20% increased Mana Regeneration Rate", "Regenerate 0.8% of Life per second"],
     },
     Master_of_Force: {
         name: "Master of Force",
-        url: "/Master_of_Force",
+        url: "https://pathofexile.gamepedia.com/Master_of_Force",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/79/MasterofForce_passive_skill_icon.png",
         stats: ["20% increased Physical Damage", "20% reduced Reflected Physical Damage taken", "4% chance to deal Double Damage", "+20 to Strength"],
     },
     Claws_of_the_Falcon: {
         name: "Claws of the Falcon",
-        url: "/Claws_of_the_Falcon",
+        url: "https://pathofexile.gamepedia.com/Claws_of_the_Falcon",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Eagletalons_passive_skill_icon.png",
         stats: [
             "16% increased Damage with Claws",
@@ -800,19 +802,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Silent_Steps: {
         name: "Silent Steps",
-        url: "/Silent_Steps",
+        url: "https://pathofexile.gamepedia.com/Silent_Steps",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/50/EvasionAndBlindNotable_passive_skill_icon.png",
         stats: ["20% increased Evasion Rating", "5% reduced Damage taken from Blinded Enemies", "60% chance to Avoid Blind"],
     },
     Will_of_Blades: {
         name: "Will of Blades",
-        url: "/Will_of_Blades",
+        url: "https://pathofexile.gamepedia.com/Will_of_Blades",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/80/PhysicalDamageNotableGreen_passive_skill_icon.png",
         stats: ["25% increased Physical Damage", "25% increased Critical Strike Chance"],
     },
     Gravepact: {
         name: "Gravepact",
-        url: "/Gravepact",
+        url: "https://pathofexile.gamepedia.com/Gravepact",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/87/Gravepact_passive_skill_icon.png",
         stats: [
             "Minions deal 15% increased Damage",
@@ -823,39 +825,39 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Crusader: {
         name: "Crusader",
-        url: "/Crusader",
+        url: "https://pathofexile.gamepedia.com/Crusader",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a4/MindPact_passive_skill_icon.png",
         stats: ["8% increased maximum Mana", "Transfiguration of Mind"],
         solo: true,
     },
     Infused: {
         name: "Infused",
-        url: "/Infused",
+        url: "https://pathofexile.gamepedia.com/Infused",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Chargeint_passive_skill_icon.png",
         stats: ["+1 to Maximum Power Charges"],
     },
     Disintegration: {
         name: "Disintegration",
-        url: "/Disintegration",
+        url: "https://pathofexile.gamepedia.com/Disintegration",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1b/Masterywand_passive_skill_icon.png",
         stats: ["60% increased Critical Strike Chance with Wands", "+30% to Critical Strike Multiplier with Wands", "+20 to Intelligence"],
     },
     Overcharge: {
         name: "Overcharge",
-        url: "/Overcharge",
+        url: "https://pathofexile.gamepedia.com/Overcharge",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Chargeint_passive_skill_icon.png",
         stats: ["+1 to Maximum Power Charges"],
     },
     True_Strike: {
         name: "True Strike",
-        url: "/True_Strike",
+        url: "https://pathofexile.gamepedia.com/True_Strike",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c1/TrueStriker_passive_skill_icon.png",
         stats: ["+12% to Critical Strike Multiplier", "45% increased Critical Strike Chance"],
     },
     Indomitable_Army: {
         name: "Indomitable Army",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Indomitable_Army",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/cb/LifeandResistancesofMinions_passive_skill_icon.png",
         stats: [
             "Minions have 15% increased maximum Life",
             "Minions have +15% to all Elemental Resistances",
@@ -865,19 +867,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Depth_Perception: {
         name: "Depth Perception",
-        url: "/Depth_Perception",
+        url: "https://pathofexile.gamepedia.com/Depth_Perception",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/34/Accuracydex_passive_skill_icon.png",
         stats: ["15% increased Global Accuracy Rating", "+20 to Dexterity", "25% increased Critical Strike Chance", "+100 to Accuracy Rating"],
     },
     Cursed_Concoction: {
         name: "Cursed Concoction",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Cursed_Concoction",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3e/ManaandCurses_passive_skill_icon.png",
         stats: ["15% increased maximum Mana", "10% increased Effect of your Curses if you've spent 200 total Mana Recently", "Remove a Curse when you use a Mana Flask"],
     },
     Dirty_Techniques: {
         name: "Dirty Techniques",
-        url: "/Dirty_Techniques",
+        url: "https://pathofexile.gamepedia.com/Dirty_Techniques",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d9/BleedPoison_passive_skill_icon.png",
         stats: [
             "20% increased Poison Duration",
@@ -889,13 +891,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Serpent_Stance: {
         name: "Serpent Stance",
-        url: "/Serpent_Stance",
+        url: "https://pathofexile.gamepedia.com/Serpent_Stance",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/ac/Serpentstance_passive_skill_icon.png",
         stats: ["40% increased Global Critical Strike Chance while wielding a Staff", "+35% to Global Critical Strike Multiplier while wielding a Staff"],
     },
     Master_Sapper: {
         name: "Master Sapper",
-        url: "/Master_Sapper",
+        url: "https://pathofexile.gamepedia.com/Master_Sapper",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b8/Mastersapper_passive_skill_icon.png",
         stats: [
             "30% increased Trap Damage",
@@ -906,7 +908,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Deflection: {
         name: "Deflection",
-        url: "/Deflection",
+        url: "https://pathofexile.gamepedia.com/Deflection",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/36/Barricade_passive_skill_icon.png",
         stats: [
             "+4% Chance to Block Attack Damage while holding a Shield",
@@ -917,13 +919,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Savagery: {
         name: "Savagery",
-        url: "/Savagery",
+        url: "https://pathofexile.gamepedia.com/Savagery",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c0/Chargedex_passive_skill_icon.png",
         stats: ["+1 to Maximum Frenzy Charges"],
     },
     Slaughter: {
         name: "Slaughter",
-        url: "/Slaughter",
+        url: "https://pathofexile.gamepedia.com/Slaughter",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d3/Fellingtheweak_passive_skill_icon.png",
         stats: [
             "25% increased Physical Damage with Axes",
@@ -934,13 +936,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Prodigal_Perfection: {
         name: "Prodigal Perfection",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Prodigal_Perfection",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c6/ManaandSpellDamage_passive_skill_icon.png",
         stats: ["15% increased maximum Mana", "10% increased Spell Damage", "2% increased Spell Damage per 100 Maximum Mana, up to 40%"],
     },
     Aspect_of_the_Panther: {
         name: "Aspect of the Panther",
-        url: "/Aspect_of_the_Panther",
+        url: "https://pathofexile.gamepedia.com/Aspect_of_the_Panther",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a6/Heartofthepanther_passive_skill_icon.png",
         stats: [
             "16% increased Weapon Damage while Dual Wielding",
@@ -952,7 +954,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Kinetic_Impacts: {
         name: "Kinetic Impacts",
-        url: "/Kinetic_Impacts",
+        url: "https://pathofexile.gamepedia.com/Kinetic_Impacts",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/2a/2handeddamage_passive_skill_icon.png",
         stats: [
             "24% increased Physical Damage with Two Handed Melee Weapons",
@@ -963,7 +965,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Martial_Experience: {
         name: "Martial Experience",
-        url: "/Martial_Experience",
+        url: "https://pathofexile.gamepedia.com/Martial_Experience",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/9f/MartialExperience_passive_skill_icon.png",
         stats: [
             "30% increased Physical Damage with Two Handed Melee Weapons",
@@ -974,64 +976,69 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Ironwood: {
         name: "Ironwood",
-        url: "/Ironwood",
+        url: "https://pathofexile.gamepedia.com/Ironwood",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/ba/Ironwoodtotem_passive_skill_icon.png",
         stats: ["25% increased Totem Damage", "Totems gain +16% to all Elemental Resistances", "Totems have 10% additional Physical Damage Reduction"],
     },
     Dismembering: {
         name: "Dismembering",
-        url: "/Dismembering",
+        url: "https://pathofexile.gamepedia.com/Dismembering",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/01/MeleeCriticalStrikesNotable_passive_skill_icon.png",
         stats: ["30% increased Melee Critical Strike Chance", "+30% to Melee Critical Strike Multiplier", "20% chance to Maim Enemies on Critical Strike with Attacks"],
     },
     Sentinel: {
         name: "Sentinel",
-        url: "/Sentinel",
+        url: "https://pathofexile.gamepedia.com/Sentinel",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Sentinel_passive_skill_icon.png",
         stats: ["24% increased Evasion Rating and Armour", "+10% to all Elemental Resistances"],
     },
     Explosive_Impact: {
         name: "Explosive Impact",
-        url: "/Explosive_Impact",
+        url: "https://pathofexile.gamepedia.com/Explosive_Impact",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/6d/Firedamage_passive_skill_icon.png",
         stats: ["25% increased Fire Damage", "8% increased Area of Effect"],
     },
     Crackling_Speed: {
         name: "Crackling Speed",
-        url: "/Crackling_Speed",
+        url: "https://pathofexile.gamepedia.com/Crackling_Speed",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/52/Lightningint_passive_skill_icon.png",
         stats: ["16% increased Lightning Damage", "4% increased Cast Speed", "+15% to Critical Strike Multiplier", "10% increased Effect of Shock"],
     },
     Lava_Lash: {
         name: "Lava Lash",
-        url: "/Lava_Lash",
+        url: "https://pathofexile.gamepedia.com/Lava_Lash",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e2/Lavalash_passive_skill_icon.png",
         stats: ["30% increased Fire Damage with Attack Skills", "Damage with Weapons Penetrates 8% Fire Resistance"],
     },
     Transcendence: {
         name: "Transcendence",
-        url: "/Transcendence",
+        url: "https://pathofexile.gamepedia.com/Transcendence",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ee/ShrugOff_passive_skill_icon.png",
         stats: ["-10 Physical Damage taken from Hits", "-1 Physical Damage taken from Hits per Level"],
         solo: true,
     },
     Dreamer: {
         name: "Dreamer",
-        url: "/Dreamer",
+        url: "https://pathofexile.gamepedia.com/Dreamer",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/05/Dreamer_passive_skill_icon.png",
         stats: ["25% increased maximum Mana", "15% increased Mana Regeneration Rate"],
     },
-    Might: {name: "Might", url: "/Might", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png", stats: ["+30 to Strength"]},
+    Might: {
+        name: "Might",
+        url: "https://pathofexile.gamepedia.com/Might",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png",
+        stats: ["+30 to Strength"],
+    },
     Cleansed_Thoughts: {
         name: "Cleansed Thoughts",
-        url: "/Cleansed_Thoughts",
+        url: "https://pathofexile.gamepedia.com/Cleansed_Thoughts",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1c/ChaoticPotential_passive_skill_icon.png",
         stats: ["Chaos Resistance is doubled"],
         solo: true,
     },
     Rampart: {
         name: "Rampart",
-        url: "/Rampart",
+        url: "https://pathofexile.gamepedia.com/Rampart",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/13/FortifyNotable1_passive_skill_icon.png",
         stats: [
             "10% increased Effect of Fortify on you",
@@ -1042,26 +1049,26 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Ash_Frost_and_Storm: {
         name: "Ash, Frost and Storm",
-        url: "/Ash,_Frost_and_Storm",
+        url: "https://pathofexile.gamepedia.com/Ash,_Frost_and_Storm",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/82/Ashfrostandstorm_passive_skill_icon.png",
         stats: ["20% increased Elemental Damage", "20% reduced Reflected Elemental Damage taken", "+6% to all Elemental Resistances"],
     },
     Method_to_the_Madness: {
         name: "Method to the Madness",
-        url: "/Method_to_the_Madness",
+        url: "https://pathofexile.gamepedia.com/Method_to_the_Madness",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/83/MethodMadess_passive_skill_icon.png",
         stats: ["+8% to Chaos Resistance", "22% increased Chaos Damage", "+8% to Chaos Damage over Time Multiplier"],
     },
     Way_Of_The_Warrior: {
         name: "Way of the warrior",
-        url: "/Way_of_the_Warrior",
+        url: "https://pathofexile.gamepedia.com/Way_of_the_Warrior",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/19/EyesOfThePowerful_passive_skill_icon.png",
         stats: ["+30 to Strength", "16% increased Melee Damage", "16% increased Armour", "+16 to maximum Life"],
         solo: true,
     },
     Smashing_Strikes: {
         name: "Smashing Strikes",
-        url: "/Smashing_Strikes",
+        url: "https://pathofexile.gamepedia.com/Smashing_Strikes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e7/Stunstaff_passive_skill_icon.png",
         stats: [
             "30% increased Damage with Staves",
@@ -1073,7 +1080,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Flaying: {
         name: "Flaying",
-        url: "/Flaying",
+        url: "https://pathofexile.gamepedia.com/Flaying",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/24/Flaying_passive_skill_icon.png",
         stats: [
             "24% increased Damage with Daggers",
@@ -1085,7 +1092,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Destroyer: {
         name: "Destroyer",
-        url: "/Destroyer",
+        url: "https://pathofexile.gamepedia.com/Destroyer",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/89/Executioner_passive_skill_icon.png",
         stats: [
             "12% increased Accuracy Rating with Two Handed Melee Weapons",
@@ -1096,19 +1103,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Steadfast: {
         name: "Steadfast",
-        url: "/Steadfast",
+        url: "https://pathofexile.gamepedia.com/Steadfast",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b9/FortifyNotable2_passive_skill_icon.png",
         stats: ["10% increased Effect of Fortify on you", "10% increased Effect of Fortify on you while Stationary", "30% increased Armour while you have Fortify"],
     },
     Unnatural_Calm: {
         name: "Unnatural Calm",
-        url: "/Unnatural_Calm",
+        url: "https://pathofexile.gamepedia.com/Unnatural_Calm",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/ad/Arcane_focus_passive_skill_icon.png",
         stats: ["18% increased maximum Energy Shield", "+1% to maximum Lightning Resistance", "15% increased Energy Shield Recharge Rate"],
     },
     Shaman_s_Dominion: {
         name: "Shaman's Dominion",
-        url: "/Shaman%27s_Dominion",
+        url: "https://pathofexile.gamepedia.com/Shaman%27s_Dominion",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/28/Totemandbrandrange_passive_skill_icon.png",
         stats: [
             "+20% to Critical Strike Multiplier with Totem Skills",
@@ -1119,19 +1126,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Versatility: {
         name: "Versatility",
-        url: "/Versatility",
+        url: "https://pathofexile.gamepedia.com/Versatility",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/23/Precision_passive_skill_icon.png",
         stats: ["10% increased Global Accuracy Rating", "20% increased Critical Strike Chance", "+20 to Dexterity and Intelligence", "5% increased Attack Speed"],
     },
     Shamanistic_Fury: {
         name: "Shamanistic Fury",
-        url: "/Shamanistic_Fury",
+        url: "https://pathofexile.gamepedia.com/Shamanistic_Fury",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/bb/Shamsnisticfury_passive_skill_icon.png",
         stats: ["30% increased Totem Damage", "15% increased Totem Placement speed"],
     },
     Stun_Mastery: {
         name: "Stun Mastery",
-        url: "/Stun_Mastery",
+        url: "https://pathofexile.gamepedia.com/Stun_Mastery",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1d/StunMastery_passive_skill_icon.png",
         stats: [
             "10% reduced Enemy Stun Threshold",
@@ -1142,13 +1149,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Mind_Drinker: {
         name: "Mind Drinker",
-        url: "/Mind_Drinker",
+        url: "https://pathofexile.gamepedia.com/Mind_Drinker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/eb/Minddrinker_passive_skill_icon.png",
         stats: ["0.4% of Attack Damage Leeched as Mana", "18% increased maximum Mana", "Recover 2% of Mana on Kill"],
     },
     Honed_Edge: {
         name: "Honed Edge",
-        url: "/Honed_Edge",
+        url: "https://pathofexile.gamepedia.com/Honed_Edge",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/78/SwordNotable2_passive_skill_icon.png",
         stats: [
             "24% increased Damage with Swords",
@@ -1160,7 +1167,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     High_Explosives: {
         name: "High Explosives",
-        url: "/High_Explosives",
+        url: "https://pathofexile.gamepedia.com/High_Explosives",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/f0/Highexplosives_passive_skill_icon.png",
         stats: [
             "Trap Damage Penetrates 10% Elemental Resistances",
@@ -1171,13 +1178,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Arcane_Vision: {
         name: "Arcane Vision",
-        url: "/Arcane_Vision",
+        url: "https://pathofexile.gamepedia.com/Arcane_Vision",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3e/Arcaneradience_passive_skill_icon.png",
         stats: ["Light Radius is based on Energy Shield instead of Life", "+30 to Accuracy Rating"],
     },
     Divine_Wrath: {
         name: "Divine Wrath",
-        url: "/Divine_Wrath",
+        url: "https://pathofexile.gamepedia.com/Divine_Wrath",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/de/DivineWrath_passive_skill_icon.png",
         stats: [
             "12% increased Elemental Damage",
@@ -1188,7 +1195,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Mysticism: {
         name: "Mysticism",
-        url: "/Mysticism",
+        url: "https://pathofexile.gamepedia.com/Mysticism",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/30/DualWieldNotable_passive_skill_icon.png",
         stats: [
             "16% increased Spell Damage while Dual Wielding",
@@ -1200,7 +1207,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Stabbing_Thirst: {
         name: "Stabbing Thirst",
-        url: "/Stabbing_Thirst",
+        url: "https://pathofexile.gamepedia.com/Stabbing_Thirst",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e2/DaggerNotable2_passive_skill_icon.png",
         stats: [
             "24% increased Damage with Daggers",
@@ -1212,13 +1219,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Unstable_Munitions: {
         name: "Unstable Munitions",
-        url: "/Unstable_Munitions",
+        url: "https://pathofexile.gamepedia.com/Unstable_Munitions",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/27/Trap2_passive_skill_icon.png",
         stats: ["24% increased Trap Damage", "8% increased Area of Effect", "40% increased Trap Trigger Area of Effect"],
     },
     Farsight: {
         name: "Farsight",
-        url: "/Farsight",
+        url: "https://pathofexile.gamepedia.com/Farsight",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/44/Attackspeedbow_passive_skill_icon.png",
         stats: [
             "24% increased Damage with Bows",
@@ -1229,7 +1236,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Ribcage_Crusher: {
         name: "Ribcage Crusher",
-        url: "/Ribcage_Crusher",
+        url: "https://pathofexile.gamepedia.com/Ribcage_Crusher",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/12/BloodyBludgeon_passive_skill_icon.png",
         stats: [
             "18% increased Damage with Maces and Sceptres",
@@ -1240,7 +1247,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Divine_Judgement: {
         name: "Divine Judgement",
-        url: "/Divine_Judgement",
+        url: "https://pathofexile.gamepedia.com/Divine_Judgement",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/cb/CelestialPunishment_passive_skill_icon.png",
         stats: [
             "18% increased Elemental Damage",
@@ -1251,19 +1258,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Potency_of_Will: {
         name: "Potency of Will",
-        url: "/Potency_of_Will",
+        url: "https://pathofexile.gamepedia.com/Potency_of_Will",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/41/Potencyofwill_passive_skill_icon.png",
         stats: ["25% increased Skill Effect Duration"],
     },
     Druidic_Rite: {
         name: "Druidic Rite",
-        url: "/Druidic_Rite",
+        url: "https://pathofexile.gamepedia.com/Druidic_Rite",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e7/DruidicRite_passive_skill_icon.png",
         stats: ["15% increased maximum Mana", "20% increased Flask Charges gained", "20% increased Flask Effect Duration", "+15 to maximum Mana"],
     },
     Executioner: {
         name: "Executioner",
-        url: "/Executioner",
+        url: "https://pathofexile.gamepedia.com/Executioner",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/86/Reaver_passive_skill_icon.png",
         stats: [
             "24% increased Physical Damage with Two Handed Melee Weapons",
@@ -1274,49 +1281,49 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Finesse: {
         name: "Finesse",
-        url: "/Finesse",
+        url: "https://pathofexile.gamepedia.com/Finesse",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/5c/Finesse_passive_skill_icon.png",
         stats: ["+20 to Dexterity", "8% increased Attack Speed", "15% increased Global Accuracy Rating"],
     },
     Heart_of_Oak: {
         name: "Heart of Oak",
-        url: "/Heart_of_Oak",
+        url: "https://pathofexile.gamepedia.com/Heart_of_Oak",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/4e/HeartoftheOak_passive_skill_icon.png",
         stats: ["20% chance to Avoid being Stunned", "8% increased maximum Life", "Regenerate 1% of Life per second", "20% increased Stun and Block Recovery"],
     },
     Winter_Spirit: {
         name: "Winter Spirit",
-        url: "/Winter_Spirit",
+        url: "https://pathofexile.gamepedia.com/Winter_Spirit",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e2/ColdWeaponDmg_passive_skill_icon.png",
         stats: ["16% increased Cold Damage with Attack Skills", "20% of Physical Damage Converted to Cold Damage"],
     },
     Tempest_Blast: {
         name: "Tempest Blast",
-        url: "/Tempest_Blast",
+        url: "https://pathofexile.gamepedia.com/Tempest_Blast",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/f9/TempestBlast_passive_skill_icon.png",
         stats: ["Gain 20% of Wand Physical Damage as Extra Lightning Damage"],
     },
     Written_in_Blood: {
         name: "Written in Blood",
-        url: "/Written_in_Blood",
+        url: "https://pathofexile.gamepedia.com/Written_in_Blood",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/4f/WritteninBlood_passive_skill_icon.png",
         stats: ["8% increased maximum Life", "10% increased maximum Energy Shield", "+10 to Strength"],
     },
     Path_of_the_Hunter: {
         name: "Path of the Hunter",
-        url: "/Path_of_the_Hunter",
+        url: "https://pathofexile.gamepedia.com/Path_of_the_Hunter",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/42/Hunter_passive_skill_icon.png",
         stats: ["+20 to Dexterity", "12% increased Projectile Damage", "+20 to Accuracy Rating"],
     },
     Hex_Master: {
         name: "Hex Master",
-        url: "/Hex_Master",
+        url: "https://pathofexile.gamepedia.com/Hex_Master",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/f6/KeystoneHexMaster_passive_skill_icon.png",
         stats: ["Curse Skills have 80% increased Skill Effect Duration", "5% increased Effect of your Curses", "40% increased Area of Effect of Curse Skills"],
     },
     Adamant: {
         name: "Adamant",
-        url: "/Adamant",
+        url: "https://pathofexile.gamepedia.com/Adamant",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/07/ArmourGuardsNotable_passive_skill_icon.png",
         stats: [
             "20% increased Armour",
@@ -1327,67 +1334,67 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Fangs_of_the_Viper: {
         name: "Fangs of the Viper",
-        url: "/Fangs_of_the_Viper",
+        url: "https://pathofexile.gamepedia.com/Fangs_of_the_Viper",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/13/Newnewattackspeed_passive_skill_icon.png",
         stats: ["+20 to Dexterity", "5% increased Movement Speed", "20% increased Physical Damage", "20% increased Chaos Damage"],
     },
     Sanctity: {
         name: "Sanctity",
-        url: "/Sanctity",
+        url: "https://pathofexile.gamepedia.com/Sanctity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/26/Bodysoul_passive_skill_icon.png",
         stats: ["+10 to Strength and Intelligence", "20% increased Armour", "10% increased maximum Energy Shield", "Regenerate 1% of Life per second"],
     },
     Warrior_s_Blood: {
         name: "Warrior's Blood",
-        url: "/Warrior%27s_Blood",
+        url: "https://pathofexile.gamepedia.com/Warrior%27s_Blood",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ef/Trollblood_passive_skill_icon.png",
         stats: ["Regenerate 1.8% of Life per second", "+20 to Strength", "20% increased Stun Threshold"],
     },
     Discipline_and_Training: {
         name: "Discipline and Training",
-        url: "/Discipline_and_Training",
+        url: "https://pathofexile.gamepedia.com/Discipline_and_Training",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/51/Newtitanicmight_passive_skill_icon.png",
         stats: ["+30 to maximum Life", "10% increased maximum Life"],
     },
     Melding: {
         name: "Melding",
-        url: "/Melding",
+        url: "https://pathofexile.gamepedia.com/Melding",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/5b/Melding_passive_skill_icon.png",
         stats: ["6% increased maximum Life", "10% increased maximum Energy Shield"],
     },
     Corruption: {
         name: "Corruption",
-        url: "/Corruption",
+        url: "https://pathofexile.gamepedia.com/Corruption",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0f/Corruption_passive_skill_icon.png",
         stats: ["15% increased Chaos Damage", "15% increased Damage over Time", "+10% to Chaos Damage over Time Multiplier"],
     },
     Ballistic_Mastery: {
         name: "Ballistic Mastery",
-        url: "/Ballistic_Mastery",
+        url: "https://pathofexile.gamepedia.com/Ballistic_Mastery",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b7/Perfectaim_passive_skill_icon.png",
         stats: ["15% increased Projectile Damage", "+20 to Dexterity", "20% increased Projectile Speed"],
     },
     Sovereignty: {
         name: "Sovereignty",
-        url: "/Sovereignty",
+        url: "https://pathofexile.gamepedia.com/Sovereignty",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/03/Sovereignty_passive_skill_icon.png",
         stats: ["6% reduced Mana Reserved", "10% increased effect of Non-Curse Auras from your Skills"],
     },
     Disciple_of_the_Slaughter: {
         name: "Disciple of the Slaughter",
-        url: "/Disciple_of_the_Slaughter",
+        url: "https://pathofexile.gamepedia.com/Disciple_of_the_Slaughter",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b6/FrenzyChargeNotable_passive_skill_icon.png",
         stats: ["+1 to Minimum Frenzy Charges", "5% chance to gain a Frenzy Charge on Kill", "5% increased Damage per Frenzy Charge"],
     },
     Barbarism: {
         name: "Barbarism",
-        url: "/Barbarism",
+        url: "https://pathofexile.gamepedia.com/Barbarism",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/60/Titanicmight_passive_skill_icon.png",
         stats: ["6% increased maximum Life", "+1% to maximum Fire Resistance", "+8% to Fire Resistance"],
     },
     Lethality: {
         name: "Lethality",
-        url: "/Lethality",
+        url: "https://pathofexile.gamepedia.com/Lethality",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/5d/Heartpierce_passive_skill_icon.png",
         stats: [
             "+30% to Critical Strike Multiplier with Bows",
@@ -1398,7 +1405,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Grave_Intentions: {
         name: "Grave Intentions",
-        url: "/Grave_Intentions",
+        url: "https://pathofexile.gamepedia.com/Grave_Intentions",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/25/Graveintentions_passive_skill_icon.png",
         stats: [
             "Minions have +15% to Chaos Resistance",
@@ -1408,13 +1415,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Breath_of_Flames: {
         name: "Breath of Flames",
-        url: "/Breath_of_Flames",
+        url: "https://pathofexile.gamepedia.com/Breath_of_Flames",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/62/BreathofFlames2_passive_skill_icon.png",
         stats: ["20% increased Ignite Duration on Enemies", "20% chance to Ignite", "20% increased Fire Damage", "+10% to Fire Damage over Time Multiplier"],
     },
     Swagger: {
         name: "Swagger",
-        url: "/Swagger",
+        url: "https://pathofexile.gamepedia.com/Swagger",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/fc/Swagger_passive_skill_icon.png",
         stats: [
             "20% increased Weapon Damage while Dual Wielding",
@@ -1426,19 +1433,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Ancestral_Knowledge: {
         name: "Ancestral Knowledge",
-        url: "/Ancestral_Knowledge",
+        url: "https://pathofexile.gamepedia.com/Ancestral_Knowledge",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3f/Savant_passive_skill_icon.png",
         stats: ["+30 to Intelligence"],
     },
     Prism_Weave: {
         name: "Prism Weave",
-        url: "/Prism_Weave",
+        url: "https://pathofexile.gamepedia.com/Prism_Weave",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1b/Masterywand_passive_skill_icon.png",
         stats: ["24% increased Elemental Damage with Wands", "6% increased Attack Speed with Wands", "Damage with Weapons Penetrates 5% Elemental Resistance"],
     },
     Steelwood_Stance: {
         name: "Steelwood Stance",
-        url: "/Steelwood_Stance",
+        url: "https://pathofexile.gamepedia.com/Steelwood_Stance",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/28/StaffNotable3_passive_skill_icon.png",
         stats: [
             "30% increased Damage with Staves",
@@ -1450,7 +1457,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Precise_Interception: {
         name: "Precise Interception",
-        url: "/Precise_Interception",
+        url: "https://pathofexile.gamepedia.com/Precise_Interception",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/84/Preciseinterception_passive_skill_icon.png",
         stats: [
             "+3% Chance to Block Attack Damage while holding a Shield",
@@ -1462,7 +1469,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Blunt_Trauma: {
         name: "Blunt Trauma",
-        url: "/Blunt_Trauma",
+        url: "https://pathofexile.gamepedia.com/Blunt_Trauma",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/90/Hammerblows_passive_skill_icon.png",
         stats: [
             "Knocks Back Enemies if you get a Critical Strike with a Staff",
@@ -1473,19 +1480,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     One_with_the_River: {
         name: "One with the River",
-        url: "/One_with_the_River",
+        url: "https://pathofexile.gamepedia.com/One_with_the_River",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d0/StaffNotable2_passive_skill_icon.png",
         stats: ["30% increased Elemental Damage with Staves", "Damage with Weapons Penetrates 5% Elemental Resistance", "5% reduced Elemental Damage taken while stationary"],
     },
     Arcane_Will: {
         name: "Arcane Will",
-        url: "/Arcane_Will",
+        url: "https://pathofexile.gamepedia.com/Arcane_Will",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/8c/ManaDamageKeystone_passive_skill_icon.png",
         stats: ["Regenerate 2 Mana per second", "20% increased maximum Mana", "20% increased Mana Recovery from Flasks", "Gain 4% of Maximum Mana as Extra Maximum Energy Shield"],
     },
     Divine_Fury: {
         name: "Divine Fury",
-        url: "/Divine_Fury",
+        url: "https://pathofexile.gamepedia.com/Divine_Fury",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/44/DivineFury_passive_skill_icon.png",
         stats: [
             "12% increased Elemental Damage",
@@ -1496,19 +1503,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Berserking: {
         name: "Berserking",
-        url: "/Berserking",
+        url: "https://pathofexile.gamepedia.com/Berserking",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/bc/Berserking_passive_skill_icon.png",
         stats: ["12% increased Attack Speed"],
     },
     Fangs_of_Frost: {
         name: "Fangs of Frost",
-        url: "/Fangs_of_Frost",
+        url: "https://pathofexile.gamepedia.com/Fangs_of_Frost",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e4/Icebite_passive_skill_icon.png",
         stats: ["30% increased Cold Damage with Attack Skills", "Damage with Weapons Penetrates 8% Cold Resistance", "10% increased Effect of Chill"],
     },
     Light_of_Divinity: {
         name: "Light of Divinity",
-        url: "/Light_of_Divinity",
+        url: "https://pathofexile.gamepedia.com/Light_of_Divinity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/64/LightOfDivinity_passive_skill_icon.png",
         stats: [
             "15% increased Spell Damage",
@@ -1520,13 +1527,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Precision: {
         name: "Precision",
-        url: "/Precision",
+        url: "https://pathofexile.gamepedia.com/Precision",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/23/Precision_passive_skill_icon.png",
         stats: ["+20 to Dexterity", "10% increased Global Accuracy Rating", "4% increased Movement Speed", "5% increased Attack and Cast Speed"],
     },
     Poisonous_Fangs: {
         name: "Poisonous Fangs",
-        url: "/Poisonous_Fangs",
+        url: "https://pathofexile.gamepedia.com/Poisonous_Fangs",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0e/ClawNotable2_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Claws",
@@ -1538,7 +1545,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Ophidian_Aim: {
         name: "Ophidian Aim",
-        url: "/Ophidian_Aim",
+        url: "https://pathofexile.gamepedia.com/Ophidian_Aim",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/16/StaffNotable1_passive_skill_icon.png",
         stats: [
             "12% increased Accuracy Rating with Staves",
@@ -1549,19 +1556,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Path_of_the_Savant: {
         name: "Path of the Savant",
-        url: "/Path_of_the_Savant",
+        url: "https://pathofexile.gamepedia.com/Path_of_the_Savant",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c2/SavantPath_passive_skill_icon.png",
         stats: ["+20 to Intelligence", "+20 to maximum Mana", "16% increased Spell Damage"],
     },
     Juggernaut: {
         name: "Juggernaut",
-        url: "/Juggernaut",
+        url: "https://pathofexile.gamepedia.com/Juggernaut",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/53/Increased_armor_passive_skill_icon.png",
         stats: ["6% increased maximum Life", "16% increased Armour", "20% increased Life Recovery from Flasks"],
     },
     Aggressive_Bastion: {
         name: "Aggressive Bastion",
-        url: "/Aggressive_Bastion",
+        url: "https://pathofexile.gamepedia.com/Aggressive_Bastion",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e7/ShieldAttackDamage_passive_skill_icon.png",
         stats: [
             "30% increased Physical Attack Damage while holding a Shield",
@@ -1572,7 +1579,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Blade_Barrier: {
         name: "Blade Barrier",
-        url: "/Blade_Barrier",
+        url: "https://pathofexile.gamepedia.com/Blade_Barrier",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/11/Dualwieldblock_passive_skill_icon.png",
         stats: [
             "+5% Chance to Block Attack Damage while Dual Wielding",
@@ -1583,7 +1590,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Fatal_Blade: {
         name: "Fatal Blade",
-        url: "/Fatal_Blade",
+        url: "https://pathofexile.gamepedia.com/Fatal_Blade",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/74/FatalBlade_passive_skill_icon.png",
         stats: [
             "+30% to Critical Strike Multiplier with Swords",
@@ -1594,39 +1601,39 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Art_of_the_Gladiator: {
         name: "Art of the Gladiator",
-        url: "/Art_of_the_Gladiator",
+        url: "https://pathofexile.gamepedia.com/Art_of_the_Gladiator",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/13/Newnewattackspeed_passive_skill_icon.png",
         stats: ["12% increased Attack Speed", "+20 to Dexterity", "Ignore all Movement Penalties from Armour", "10% increased Global Accuracy Rating"],
     },
     Mystic_Talents: {
         name: "Mystic Talents",
-        url: "/Mystic_Talents",
+        url: "https://pathofexile.gamepedia.com/Mystic_Talents",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/16/EyesOfTheSavant_passive_skill_icon.png",
         stats: ["+30 to Intelligence", "16% increased Spell Damage", "25% increased Mana Regeneration Rate", "+14 to maximum Energy Shield"],
         solo: true,
     },
     Endurance: {
         name: "Endurance",
-        url: "/Endurance",
+        url: "https://pathofexile.gamepedia.com/Endurance",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/78/Chargestr_passive_skill_icon.png",
         stats: ["+1 to Maximum Endurance Charges"],
     },
     Deep_Thoughts: {
         name: "Deep Thoughts",
-        url: "/Deep_Thoughts",
+        url: "https://pathofexile.gamepedia.com/Deep_Thoughts",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a9/Deepthoughts_passive_skill_icon.png",
         stats: ["20% increased maximum Mana", "20% increased Mana Regeneration Rate", "+20 to Intelligence"],
     },
     Deadly_Inclinations: {
         name: "Deadly Inclinations",
-        url: "/Deadly_Inclinations",
+        url: "https://pathofexile.gamepedia.com/Deadly_Inclinations",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d0/EyesOfTheDeadly_passive_skill_icon.png",
         stats: ["+30 to Dexterity", "16% increased Projectile Damage", "18% increased Evasion Rating", "+12 to maximum Life"],
         solo: true,
     },
     Heavy_Draw: {
         name: "Heavy Draw",
-        url: "/Heavy_Draw",
+        url: "https://pathofexile.gamepedia.com/Heavy_Draw",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/ba/Heavydraw_passive_skill_icon.png",
         stats: [
             "20% increased Physical Damage with Bows",
@@ -1638,7 +1645,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Runesmith: {
         name: "Runesmith",
-        url: "/Runesmith",
+        url: "https://pathofexile.gamepedia.com/Runesmith",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/fa/Brand4_passive_skill_icon.png",
         stats: [
             "12% increased Brand Activation frequency",
@@ -1649,13 +1656,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Fury_Bolts: {
         name: "Fury Bolts",
-        url: "/Fury_Bolts",
+        url: "https://pathofexile.gamepedia.com/Fury_Bolts",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/6a/Furybolts_passive_skill_icon.png",
         stats: ["20% increased Projectile Damage", "+20 to Strength", "10% increased Global Accuracy Rating"],
     },
     Elemental_Focus: {
         name: "Elemental Focus",
-        url: "/Elemental_Focus",
+        url: "https://pathofexile.gamepedia.com/Elemental_Focus",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/74/ElementalFocus_passive_skill_icon.png",
         stats: [
             "16% increased Elemental Damage",
@@ -1666,7 +1673,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Clever_Construction: {
         name: "Clever Construction",
-        url: "/Clever_Construction",
+        url: "https://pathofexile.gamepedia.com/Clever_Construction",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/7a/Cleverconstruction_passive_skill_icon.png",
         stats: [
             "Traps cannot be Damaged for 5 seconds after being Thrown",
@@ -1677,13 +1684,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Bloodless: {
         name: "Bloodless",
-        url: "/Bloodless",
+        url: "https://pathofexile.gamepedia.com/Bloodless",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0b/Lifeleechimmunity_passive_skill_icon.png",
         stats: ["Enemies Cannot Leech Life From you", "8% increased maximum Life"],
     },
     Blast_Cascade: {
         name: "Blast Cascade",
-        url: "/Blast_Cascade",
+        url: "https://pathofexile.gamepedia.com/Blast_Cascade",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e8/Trapsradius_passive_skill_icon.png",
         stats: [
             "+30% to Critical Strike Multiplier with Traps",
@@ -1694,7 +1701,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Spiritual_Aid: {
         name: "Spiritual Aid",
-        url: "/Spiritual_Aid",
+        url: "https://pathofexile.gamepedia.com/Spiritual_Aid",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/84/SpiritualAid_passive_skill_icon.png",
         stats: [
             "Increases and Reductions to Minion Damage also affect you",
@@ -1705,31 +1712,31 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Exceptional_Performance: {
         name: "Exceptional Performance",
-        url: "/Exceptional_Performance",
+        url: "https://pathofexile.gamepedia.com/Exceptional_Performance",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/06/ExceptionalPerformance_passive_skill_icon.png",
         stats: ["25% increased Skill Effect Duration"],
     },
     Whispers_of_Doom: {
         name: "Whispers of Doom",
-        url: "/Whispers_of_Doom",
+        url: "https://pathofexile.gamepedia.com/Whispers_of_Doom",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/fc/KeystoneWhispersOfDoom_passive_skill_icon.png",
         stats: ["You can apply an additional Curse"],
     },
     Purity_of_Flesh: {
         name: "Purity of Flesh",
-        url: "/Purity_of_Flesh",
+        url: "https://pathofexile.gamepedia.com/Purity_of_Flesh",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a7/Life1_passive_skill_icon.png",
         stats: ["8% increased maximum Life", "+8% to Chaos Resistance", "+10 to Strength"],
     },
     Battle_Rouse: {
         name: "Battle Rouse",
-        url: "/Battle_Rouse",
+        url: "https://pathofexile.gamepedia.com/Battle_Rouse",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/07/BattleRouse_passive_skill_icon.png",
         stats: ["8% of Damage taken gained as Mana over 4 seconds when Hit", "15% increased maximum Mana", "+15 to maximum Mana"],
     },
     Ambidexterity: {
         name: "Ambidexterity",
-        url: "/Ambidexterity",
+        url: "https://pathofexile.gamepedia.com/Ambidexterity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/7b/Ambidexterity_passive_skill_icon.png",
         stats: [
             "50% increased Attack Damage with Main Hand",
@@ -1739,13 +1746,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Tireless: {
         name: "Tireless",
-        url: "/Tireless",
+        url: "https://pathofexile.gamepedia.com/Tireless",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c6/Unrelenting_passive_skill_icon.png",
         stats: ["8% increased maximum Life", "6% reduced Mana Cost of Skills"],
     },
     Vitality_Void: {
         name: "Vitality Void",
-        url: "/Vitality_Void",
+        url: "https://pathofexile.gamepedia.com/Vitality_Void",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3c/Lifeleech_passive_skill_icon.png",
         stats: [
             "20% increased total Recovery per second from Life Leech",
@@ -1755,7 +1762,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Spinecruncher: {
         name: "Spinecruncher",
-        url: "/Spinecruncher",
+        url: "https://pathofexile.gamepedia.com/Spinecruncher",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/68/Stunmace_passive_skill_icon.png",
         stats: [
             "28% increased Physical Damage with Maces and Sceptres",
@@ -1766,19 +1773,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Influence: {
         name: "Influence",
-        url: "/Influence",
+        url: "https://pathofexile.gamepedia.com/Influence",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/21/Influence_passive_skill_icon.png",
         stats: ["14% increased effect of Non-Curse Auras from your Skills"],
     },
     Swift_Skewering: {
         name: "Swift Skewering",
-        url: "/Swift_Skewering",
+        url: "https://pathofexile.gamepedia.com/Swift_Skewering",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e3/ImpaleNotable1_passive_skill_icon.png",
         stats: ["15% chance to Impale Enemies on Hit with Attacks", "15% increased Attack Physical Damage", "5% increased Attack Speed"],
     },
     Wrecking_Ball: {
         name: "Wrecking Ball",
-        url: "/Wrecking_Ball",
+        url: "https://pathofexile.gamepedia.com/Wrecking_Ball",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0e/Wreckingball_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Two Handed Weapons",
@@ -1789,13 +1796,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Battle_Cry: {
         name: "Battle Cry",
-        url: "/Battle_Cry",
+        url: "https://pathofexile.gamepedia.com/Battle_Cry",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1a/Battlecry_passive_skill_icon.png",
         stats: ["Using Warcries is Instant", "20% increased Warcry Buff Effect", "10% increased Warcry Cooldown Recovery Speed"],
     },
     Primeval_Force: {
         name: "Primeval Force",
-        url: "/Primeval_Force",
+        url: "https://pathofexile.gamepedia.com/Primeval_Force",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/7a/WeaponElementalNotable_passive_skill_icon.png",
         stats: [
             "20% increased Elemental Damage with Attack Skills",
@@ -1806,7 +1813,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Nimbleness: {
         name: "Nimbleness",
-        url: "/Nimbleness",
+        url: "https://pathofexile.gamepedia.com/Nimbleness",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/04/Nimbleness_passive_skill_icon.png",
         stats: [
             "6% increased Cast Speed",
@@ -1817,43 +1824,43 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Arcane_Focus: {
         name: "Arcane Focus",
-        url: "/Arcane_Focus",
+        url: "https://pathofexile.gamepedia.com/Arcane_Focus",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/ad/Arcane_focus_passive_skill_icon.png",
         stats: ["18% increased maximum Energy Shield", "10% increased Energy Shield Recharge Rate"],
     },
     Dazzling_Strikes: {
         name: "Dazzling Strikes",
-        url: "/Dazzling_Strikes",
+        url: "https://pathofexile.gamepedia.com/Dazzling_Strikes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c5/AttackBlindNotable_passive_skill_icon.png",
         stats: ["10% chance to Blind Enemies on Hit with Attacks", "40% increased Critical Strike Chance against Blinded Enemies", "15% increased Global Accuracy Rating"],
     },
     Arcane_Potency: {
         name: "Arcane Potency",
-        url: "/Arcane_Potency",
+        url: "https://pathofexile.gamepedia.com/Arcane_Potency",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/8f/Arcanepotency_passive_skill_icon.png",
         stats: ["+30% to Critical Strike Multiplier for Spells", "30% increased Critical Strike Chance for Spells"],
     },
     Doom_Cast: {
         name: "Doom Cast",
-        url: "/Doom_Cast",
+        url: "https://pathofexile.gamepedia.com/Doom_Cast",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/fa/Doomcast_passive_skill_icon.png",
         stats: ["60% increased Critical Strike Chance for Spells", "+15% to Critical Strike Multiplier for Spells"],
     },
     Leadership: {
         name: "Leadership",
-        url: "/Leadership",
+        url: "https://pathofexile.gamepedia.com/Leadership",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/34/Leadership_passive_skill_icon.png",
         stats: ["30% increased Area of Effect of Aura Skills", "6% increased effect of Non-Curse Auras from your Skills"],
     },
     Weathered_Hunter: {
         name: "Weathered Hunter",
-        url: "/Weathered_Hunter",
+        url: "https://pathofexile.gamepedia.com/Weathered_Hunter",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/34/Accuracydex_passive_skill_icon.png",
         stats: ["15% increased Global Accuracy Rating", "+20 to Dexterity", "+10% to all Elemental Resistances", "+100 to Accuracy Rating"],
     },
     Breath_of_Rime: {
         name: "Breath of Rime",
-        url: "/Breath_of_Rime",
+        url: "https://pathofexile.gamepedia.com/Breath_of_Rime",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/5f/BreathofRime2_passive_skill_icon.png",
         stats: [
             "20% increased Freeze Duration on Enemies",
@@ -1865,19 +1872,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Thick_Skin: {
         name: "Thick Skin",
-        url: "/Thick_Skin",
+        url: "https://pathofexile.gamepedia.com/Thick_Skin",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/28/Thickskin_passive_skill_icon.png",
         stats: ["10% increased maximum Life", "8% chance to Avoid Elemental Ailments"],
     },
     Bravery: {
         name: "Bravery",
-        url: "/Bravery",
+        url: "https://pathofexile.gamepedia.com/Bravery",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/2f/LifeArmourAndEvasion_passive_skill_icon.png",
         stats: ["24% increased Evasion Rating and Armour", "8% increased maximum Life"],
     },
     Graceful_Assault: {
         name: "Graceful Assault",
-        url: "/Graceful_Assault",
+        url: "https://pathofexile.gamepedia.com/Graceful_Assault",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/7d/AttackDamangeAndEvasionNotableIcon_passive_skill_icon.png",
         stats: [
             "20% increased Attack Damage",
@@ -1888,7 +1895,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Sleight_of_Hand: {
         name: "Sleight of Hand",
-        url: "/Sleight_of_Hand",
+        url: "https://pathofexile.gamepedia.com/Sleight_of_Hand",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/92/Swashbuckler_passive_skill_icon.png",
         stats: [
             "20% increased Damage with One Handed Weapons",
@@ -1898,19 +1905,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Claws_of_the_Hawk: {
         name: "Claws of the Hawk",
-        url: "/Claws_of_the_Hawk",
+        url: "https://pathofexile.gamepedia.com/Claws_of_the_Hawk",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a5/ClawNotable1_passive_skill_icon.png",
         stats: ["40% increased Critical Strike Chance with Claws", "+25% to Critical Strike Multiplier with Claws", "10% chance to Blind Enemies on Critical Strike"],
     },
     Blast_Radius: {
         name: "Blast Radius",
-        url: "/Blast_Radius",
+        url: "https://pathofexile.gamepedia.com/Blast_Radius",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a0/Blastradius_passive_skill_icon.png",
         stats: ["10% increased Area of Effect", "20% increased Area Damage"],
     },
     Avatar_of_the_Hunt: {
         name: "Avatar of the Hunt",
-        url: "/Avatar_of_the_Hunt",
+        url: "https://pathofexile.gamepedia.com/Avatar_of_the_Hunt",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/42/AvataroftheHunt2_passive_skill_icon.png",
         stats: [
             "24% increased Damage with Bows",
@@ -1922,7 +1929,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Feller_of_Foes: {
         name: "Feller of Foes",
-        url: "/Feller_of_Foes",
+        url: "https://pathofexile.gamepedia.com/Feller_of_Foes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/38/AxeNotable2_passive_skill_icon.png",
         stats: [
             "30% increased Damage with Axes",
@@ -1933,26 +1940,31 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Snowforged: {
         name: "Snowforged",
-        url: "/Snowforged",
+        url: "https://pathofexile.gamepedia.com/Snowforged",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/62/ColdAndFireHybridNotable_passive_skill_icon.png",
         stats: ["25% increased Fire Damage", "25% increased Cold Damage", "30% increased Critical Strike Chance", "+10% to Fire and Cold Resistances"],
     },
-    Prowess: {name: "Prowess", url: "/Prowess", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png", stats: ["+30 to Strength"]},
+    Prowess: {
+        name: "Prowess",
+        url: "https://pathofexile.gamepedia.com/Prowess",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png",
+        stats: ["+30 to Strength"],
+    },
     Twin_Terrors: {
         name: "Twin Terrors",
-        url: "/Twin_Terrors",
+        url: "https://pathofexile.gamepedia.com/Twin_Terrors",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/94/Scissorblades_passive_skill_icon.png",
         stats: ["75% increased Weapon Critical Strike Chance while Dual Wielding", "12% increased Accuracy Rating while Dual Wielding"],
     },
     Disciple_Of_The_Forbidden: {
         name: "Disciple of the Forbidden",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Disciple_of_the_Forbidden",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/35/PowerChargeNotable_passive_skill_icon.png",
         stats: ["+1 to Minimum Power Charges", "5% chance to gain a Power Charge on Kill", "5% increased Damage per Power Charge"],
     },
     Hematophagy: {
         name: "Hematophagy",
-        url: "/Hematophagy",
+        url: "https://pathofexile.gamepedia.com/Hematophagy",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3c/Lifeleech_passive_skill_icon.png",
         stats: [
             "20% increased total Recovery per second from Life Leech",
@@ -1963,7 +1975,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Master_Fletcher: {
         name: "Master Fletcher",
-        url: "/Master_Fletcher",
+        url: "https://pathofexile.gamepedia.com/Master_Fletcher",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/02/Masterfletcher_passive_skill_icon.png",
         stats: [
             "12% increased Damage with Bows",
@@ -1975,13 +1987,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Harrier: {
         name: "Harrier",
-        url: "/Harrier",
+        url: "https://pathofexile.gamepedia.com/Harrier",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/05/Harrier_passive_skill_icon.png",
         stats: ["5% increased Movement Speed", "9% increased Attack Speed", "5% increased Cast Speed"],
     },
     Defiance: {
         name: "Defiance",
-        url: "/Defiance",
+        url: "https://pathofexile.gamepedia.com/Defiance",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/42/Shieldwall_passive_skill_icon.png",
         stats: [
             "20% increased Attack Damage while holding a Shield",
@@ -1992,7 +2004,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Golem_Commander: {
         name: "Golem Commander",
-        url: "/Golem_Commander",
+        url: "https://pathofexile.gamepedia.com/Golem_Commander",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/03/GolemsNotable_passive_skill_icon.png",
         stats: [
             "+1 to maximum number of Golems",
@@ -2003,13 +2015,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Practical_Application: {
         name: "Practical Application",
-        url: "/Practical_Application",
+        url: "https://pathofexile.gamepedia.com/Practical_Application",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/89/Castavoidinterruption_passive_skill_icon.png",
         stats: ["25% chance to Avoid interruption from Stuns while Casting", "+20 to Strength and Dexterity"],
     },
     Death_Attunement: {
         name: "Death Attunement",
-        url: "/Death_Attunement",
+        url: "https://pathofexile.gamepedia.com/Death_Attunement",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/8f/Deathattunement_passive_skill_icon.png",
         stats: [
             "+1 to Maximum number of Spectres",
@@ -2021,25 +2033,25 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Heart_of_Thunder: {
         name: "Heart of Thunder",
-        url: "/Heart_of_Thunder",
+        url: "https://pathofexile.gamepedia.com/Heart_of_Thunder",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/52/Lightningint_passive_skill_icon.png",
         stats: ["25% increased Lightning Damage", "Damage Penetrates 6% Lightning Resistance", "0.2% of Lightning Damage Leeched as Energy Shield"],
     },
     Trickery: {
         name: "Trickery",
-        url: "/Trickery",
+        url: "https://pathofexile.gamepedia.com/Trickery",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/53/Mentalacuity_passive_skill_icon.png",
         stats: ["20% increased Critical Strike Chance", "20% increased Damage", "+10 to Dexterity and Intelligence"],
     },
     Shaper: {
         name: "Shaper",
-        url: "/Shaper",
+        url: "https://pathofexile.gamepedia.com/Shaper",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/35/Shaper_passive_skill_icon.png",
         stats: ["40% increased Mana Regeneration Rate", "Regenerate 1% of Life per second"],
     },
     Arcane_Guarding: {
         name: "Arcane Guarding",
-        url: "/Arcane_Guarding",
+        url: "https://pathofexile.gamepedia.com/Arcane_Guarding",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a1/ShieldNotable_passive_skill_icon.png",
         stats: [
             "60% increased Energy Shield from Equipped Shield",
@@ -2050,13 +2062,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Heartseeker: {
         name: "Heartseeker",
-        url: "/Heartseeker",
+        url: "https://pathofexile.gamepedia.com/Heartseeker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/39/Heartseeker_passive_skill_icon.png",
         stats: ["+30% to Critical Strike Multiplier"],
     },
     Weapon_Artistry: {
         name: "Weapon Artistry",
-        url: "/Weapon_Artistry",
+        url: "https://pathofexile.gamepedia.com/Weapon_Artistry",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/6d/Blademistress_passive_skill_icon.png",
         stats: [
             "16% increased Attack Damage",
@@ -2067,7 +2079,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Cleaving: {
         name: "Cleaving",
-        url: "/Cleaving",
+        url: "https://pathofexile.gamepedia.com/Cleaving",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b7/Hatchetmaster_passive_skill_icon.png",
         stats: [
             "20% increased Physical Damage with Axes",
@@ -2079,19 +2091,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Disemboweling: {
         name: "Disemboweling",
-        url: "/Disemboweling",
+        url: "https://pathofexile.gamepedia.com/Disemboweling",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/66/Deadlyprecision_passive_skill_icon.png",
         stats: ["50% increased Melee Critical Strike Chance", "+25% to Melee Critical Strike Multiplier"],
     },
     Aspect_of_the_Lynx: {
         name: "Aspect of the Lynx",
-        url: "/Aspect_of_the_Lynx",
+        url: "https://pathofexile.gamepedia.com/Aspect_of_the_Lynx",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/00/AspectOfTheLynx_passive_skill_icon.png",
         stats: ["16% increased Attack Damage", "4% increased Movement Speed", "20% increased Critical Strike Chance", "+10 to Dexterity and Intelligence"],
     },
     Blade_of_Cunning: {
         name: "Blade of Cunning",
-        url: "/Blade_of_Cunning",
+        url: "https://pathofexile.gamepedia.com/Blade_of_Cunning",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1d/Legendaryswordsman_passive_skill_icon.png",
         stats: [
             "20% increased Physical Damage with Swords",
@@ -2102,13 +2114,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Coordination: {
         name: "Coordination",
-        url: "/Coordination",
+        url: "https://pathofexile.gamepedia.com/Coordination",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/af/Coordination_passive_skill_icon.png",
         stats: ["12% increased Attack Speed", "6% increased Cast Speed", "+10 to Dexterity and Intelligence"],
     },
     Testudo: {
         name: "Testudo",
-        url: "/Testudo",
+        url: "https://pathofexile.gamepedia.com/Testudo",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/36/Barricade_passive_skill_icon.png",
         stats: [
             "+5% Chance to Block Attack Damage while holding a Shield",
@@ -2119,38 +2131,38 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Revelry: {
         name: "Revelry",
-        url: "/Revelry",
+        url: "https://pathofexile.gamepedia.com/Revelry",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/54/Revelry_passive_skill_icon.png",
         stats: ["+2 Mana gained for each Enemy hit by your Attacks", "15% increased maximum Mana", "+20 to maximum Mana"],
     },
     Annihilation: {
         name: "Annihilation",
-        url: "/Annihilation",
+        url: "https://pathofexile.gamepedia.com/Annihilation",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/6d/Annihilation_passive_skill_icon.png",
         stats: ["+15% to Critical Strike Multiplier for Spells", "50% increased Critical Strike Chance for Spells"],
     },
     Reflexes: {
         name: "Reflexes",
-        url: "/Reflexes",
+        url: "https://pathofexile.gamepedia.com/Reflexes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/eb/Evasion_passive_skill_icon.png",
         stats: ["30% increased Evasion Rating", "+150 to Evasion Rating", "15% increased Global Accuracy Rating", "+150 to Accuracy Rating"],
     },
     Hardened_Scars: {
         name: "Hardened Scars",
-        url: "/Hardened_Scars",
+        url: "https://pathofexile.gamepedia.com/Hardened_Scars",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d8/DarkestHour_passive_skill_icon.png",
         stats: ["15% increased Life Recovery from Flasks", "You have Fortify during Effect of any Life Flask"],
         solo: true,
     },
     Proficiency: {
         name: "Proficiency",
-        url: "/Proficiency",
+        url: "https://pathofexile.gamepedia.com/Proficiency",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/ce/Grace_passive_skill_icon.png",
         stats: ["+30 to Dexterity"],
     },
     Enigmatic_Reach: {
         name: "Enigmatic Reach",
-        url: "/Enigmatic_Reach",
+        url: "https://pathofexile.gamepedia.com/Enigmatic_Reach",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/9d/StaffNotable_passive_skill_icon.png",
         stats: [
             "10% increased Area of Effect while wielding a Staff",
@@ -2161,13 +2173,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Soul_of_Steel: {
         name: "Soul of Steel",
-        url: "/Soul_of_Steel",
+        url: "https://pathofexile.gamepedia.com/Soul_of_Steel",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/f8/Armourmastery_passive_skill_icon.png",
         stats: ["30% increased Armour", "5% additional Physical Damage Reduction", "+1% to all maximum Elemental Resistances", "+150 to Armour"],
     },
     Static_Blows: {
         name: "Static Blows",
-        url: "/Static_Blows",
+        url: "https://pathofexile.gamepedia.com/Static_Blows",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/2f/Staticshield_passive_skill_icon.png",
         stats: [
             "20% increased Shock Duration on Enemies",
@@ -2178,13 +2190,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Thief_s_Craft: {
         name: "Thief's Craft",
-        url: "/Thief%27s_Craft",
+        url: "https://pathofexile.gamepedia.com/Thief%27s_Craft",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3f/Savant_passive_skill_icon.png",
         stats: ["+30 to Intelligence"],
     },
     Blacksmith_s_Clout: {
         name: "Blacksmith's Clout",
-        url: "/Blacksmith%27s_Clout",
+        url: "https://pathofexile.gamepedia.com/Blacksmith%27s_Clout",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e3/MaceNotable1_passive_skill_icon.png",
         stats: [
             "18% increased Physical Damage with Maces and Sceptres",
@@ -2195,25 +2207,25 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Holy_Dominion: {
         name: "Holy Dominion",
-        url: "/Holy_Dominion",
+        url: "https://pathofexile.gamepedia.com/Holy_Dominion",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/4d/Elementalist_passive_skill_icon.png",
         stats: ["12% increased Elemental Damage", "+12% to all Elemental Resistances", "5% chance to Freeze, Shock and Ignite", "12% increased Physical Damage"],
     },
     Void_Barrier: {
         name: "Void Barrier",
-        url: "/Void_Barrier",
+        url: "https://pathofexile.gamepedia.com/Void_Barrier",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/36/Newenergyshield_passive_skill_icon.png",
         stats: ["10% increased maximum Energy Shield", "15% increased Evasion Rating", "+8% to all Elemental Resistances", "10% increased Energy Shield Recharge Rate"],
     },
     Skittering_Runes: {
         name: "Skittering Runes",
-        url: "/Skittering_Runes",
+        url: "https://pathofexile.gamepedia.com/Skittering_Runes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a6/SkitteringRunes_passive_skill_icon.png",
         stats: ["15% increased Effect of your Curses"],
     },
     Butchery: {
         name: "Butchery",
-        url: "/Butchery",
+        url: "https://pathofexile.gamepedia.com/Butchery",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/5a/Butchery_passive_skill_icon.png",
         stats: [
             "25% increased Physical Damage with Two Handed Melee Weapons",
@@ -2224,25 +2236,25 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Constitution: {
         name: "Constitution",
-        url: "/Constitution",
+        url: "https://pathofexile.gamepedia.com/Constitution",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a9/Constitution_passive_skill_icon.png",
         stats: ["14% increased maximum Life", "+20 to maximum Life"],
     },
     Revenge_of_the_Hunted: {
         name: "Revenge of the Hunted",
-        url: "/Revenge_of_the_Hunted",
+        url: "https://pathofexile.gamepedia.com/Revenge_of_the_Hunted",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/73/Revengeofthehunted_passive_skill_icon.png",
         stats: ["18% increased Evasion Rating", "8% increased maximum Life", "12% increased Physical Damage"],
     },
     Utmost_Intellect: {
         name: "Utmost Intellect",
-        url: "/Utmost_Intellect",
+        url: "https://pathofexile.gamepedia.com/Utmost_Intellect",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/40/Plusintelligence_passive_skill_icon.png",
         stats: ["+40 to Intelligence", "8% increased Intelligence"],
     },
     Spirit_Void: {
         name: "Spirit Void",
-        url: "/Spirit_Void",
+        url: "https://pathofexile.gamepedia.com/Spirit_Void",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/eb/Minddrinker_passive_skill_icon.png",
         stats: [
             "20% increased total Recovery per second from Mana Leech",
@@ -2252,7 +2264,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Redemption: {
         name: "Redemption",
-        url: "/Redemption",
+        url: "https://pathofexile.gamepedia.com/Redemption",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/df/Redemption_passive_skill_icon.png",
         stats: [
             "Minions have 5% increased Attack Speed",
@@ -2264,13 +2276,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Champion_of_the_Cause: {
         name: "Champion of the Cause",
-        url: "/Champion_of_the_Cause",
+        url: "https://pathofexile.gamepedia.com/Champion_of_the_Cause",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/9d/Champion_passive_skill_icon.png",
         stats: ["6% increased effect of Non-Curse Auras from your Skills", "4% reduced Mana Reserved", "12% increased Area of Effect of Aura Skills"],
     },
     Splitting_Strikes: {
         name: "Splitting Strikes",
-        url: "/Splitting_Strikes",
+        url: "https://pathofexile.gamepedia.com/Splitting_Strikes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/cd/Cleavage_passive_skill_icon.png",
         stats: [
             "26% increased Physical Damage with Axes",
@@ -2281,7 +2293,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Devastating_Devices: {
         name: "Devastating Devices",
-        url: "/Devastating_Devices",
+        url: "https://pathofexile.gamepedia.com/Devastating_Devices",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/ab/Trapcriticalstrike_passive_skill_icon.png",
         stats: [
             "50% increased Critical Strike Chance with Traps",
@@ -2292,19 +2304,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Forceful_Skewering: {
         name: "Forceful Skewering",
-        url: "/Forceful_Skewering",
+        url: "https://pathofexile.gamepedia.com/Forceful_Skewering",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/14/ImpaleNotable2_passive_skill_icon.png",
         stats: ["15% chance to Impale Enemies on Hit with Attacks", "5% increased Impale Effect", "+20 to Strength"],
     },
     Flash_Freeze: {
         name: "Flash Freeze",
-        url: "/Flash_Freeze",
+        url: "https://pathofexile.gamepedia.com/Flash_Freeze",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/cd/Newcolddamage_passive_skill_icon.png",
         stats: ["24% increased Cold Damage", "20% increased Projectile Speed", "10% increased Effect of Chill"],
     },
     Sanctuary: {
         name: "Sanctuary (passive skill)",
-        url: "/Sanctuary_(passive_skill)",
+        url: "https://pathofexile.gamepedia.com/Sanctuary_(passive_skill)",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/36/Barricade_passive_skill_icon.png",
         stats: [
             "+3% Chance to Block Attack Damage while holding a Shield",
@@ -2314,13 +2326,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Wisdom_of_the_Glade: {
         name: "Wisdom of the Glade",
-        url: "/Wisdom_of_the_Glade",
+        url: "https://pathofexile.gamepedia.com/Wisdom_of_the_Glade",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3f/Savant_passive_skill_icon.png",
         stats: ["+30 to Intelligence"],
     },
     Whirling_Barrier: {
         name: "Whirling Barrier",
-        url: "/Whirling_Barrier",
+        url: "https://pathofexile.gamepedia.com/Whirling_Barrier",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/12/Whirlingstaff_passive_skill_icon.png",
         stats: [
             "+6% Chance to Block Attack Damage while wielding a Staff",
@@ -2330,7 +2342,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Hatchet_Master: {
         name: "Hatchet Master",
-        url: "/Hatchet_Master",
+        url: "https://pathofexile.gamepedia.com/Hatchet_Master",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b7/Hatchetmaster_passive_skill_icon.png",
         stats: [
             "25% increased Damage with Axes",
@@ -2341,7 +2353,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     From_the_Shadows: {
         name: "From the Shadows",
-        url: "/From_the_Shadows",
+        url: "https://pathofexile.gamepedia.com/From_the_Shadows",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/62/Daggerpenetration_passive_skill_icon.png",
         stats: [
             "15% increased Damage with Daggers",
@@ -2353,20 +2365,20 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Tribal_Fury: {
         name: "Tribal Fury",
-        url: "/Tribal_Fury",
+        url: "https://pathofexile.gamepedia.com/Tribal_Fury",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/db/Lineage_passive_skill_icon.png",
         stats: ["12% increased Melee Damage", "Strike Skills target 1 additional nearby Enemy"],
         solo: true,
     },
     Expeditious_Munitions: {
         name: "Expeditious Munitions",
-        url: "/Expeditious_Munitions",
+        url: "https://pathofexile.gamepedia.com/Expeditious_Munitions",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/74/Expeditiousmunitions_passive_skill_icon.png",
         stats: ["8% increased Trap Throwing Speed", "30% increased Trap Trigger Area of Effect", "20% increased Trap Damage"],
     },
     Wandslinger: {
         name: "Wandslinger",
-        url: "/Wandslinger",
+        url: "https://pathofexile.gamepedia.com/Wandslinger",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d6/Wandslingersprowess_passive_skill_icon.png",
         stats: [
             "16% increased Damage with Wands",
@@ -2377,62 +2389,62 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Atrophy: {
         name: "Atrophy",
-        url: "/Atrophy",
+        url: "https://pathofexile.gamepedia.com/Atrophy",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b7/ChaosDamage2_passive_skill_icon.png",
         stats: ["20% increased Chaos Damage", "4% increased Cast Speed with Chaos Skills", "+8% to Chaos Resistance", "+10% to Chaos Damage over Time Multiplier"],
     },
     Storm_Weaver: {
         name: "Storm Weaver",
-        url: "/Storm_Weaver",
+        url: "https://pathofexile.gamepedia.com/Storm_Weaver",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c6/Storm_Weaver_passive_skill_icon.png",
         stats: ["25% increased Cold Damage", "25% increased Lightning Damage", "20% increased Mana Regeneration Rate", "10% increased Effect of non-Damaging Ailments on Enemies"],
     },
     Heart_of_Flame: {
         name: "Heart of Flame",
-        url: "/Heart_of_Flame",
+        url: "https://pathofexile.gamepedia.com/Heart_of_Flame",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/eb/Hellfire_passive_skill_icon.png",
         stats: ["25% increased Fire Damage", "Damage Penetrates 6% Fire Resistance", "0.2% of Fire Damage Leeched as Energy Shield"],
     },
     Elder_Power: {
         name: "Elder Power",
-        url: "/Elder_Power",
+        url: "https://pathofexile.gamepedia.com/Elder_Power",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/14/Elderpower_passive_skill_icon.png",
         stats: ["10% increased Wand Damage per Power Charge", "10% chance to gain a Power Charge on Kill"],
     },
     Lust_for_Carnage: {
         name: "Lust for Carnage",
-        url: "/Lust_for_Carnage",
+        url: "https://pathofexile.gamepedia.com/Lust_for_Carnage",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/61/LustforCarnage_passive_skill_icon.png",
         stats: ["1.2% of Physical Attack Damage Leeched as Life", "20% increased total Recovery per second from Life Leech", "12% increased Attack Speed"],
     },
     Hired_Killer: {
         name: "Hired Killer",
-        url: "/Hired_Killer",
+        url: "https://pathofexile.gamepedia.com/Hired_Killer",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1a/HiredKiller2_passive_skill_icon.png",
         stats: ["+10 Life gained on Kill", "6% increased maximum Life"],
     },
     Utmost_Swiftness: {
         name: "Utmost Swiftness",
-        url: "/Utmost_Swiftness",
+        url: "https://pathofexile.gamepedia.com/Utmost_Swiftness",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c4/Plusdexterity_passive_skill_icon.png",
         stats: ["+40 to Dexterity", "8% increased Dexterity"],
     },
     Aspect_Of_Stone: {
         name: "Aspect of Stone",
-        url: "/Aspect_of_Stone",
+        url: "https://pathofexile.gamepedia.com/Aspect_of_Stone",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/1b/IgnorePain_passive_skill_icon.png",
         stats: ["20% chance to Avoid Physical Damage from Hits"],
         solo: true,
     },
     Golem_s_Blood: {
         name: "Golem's Blood",
-        url: "/Golem%27s_Blood",
+        url: "https://pathofexile.gamepedia.com/Golem%27s_Blood",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d5/Golemsblood_passive_skill_icon.png",
         stats: ["Regenerate 1.6% of Life per second", "10% increased maximum Life"],
     },
     Enigmatic_Defence: {
         name: "Enigmatic Defence",
-        url: "/Enigmatic_Defence",
+        url: "https://pathofexile.gamepedia.com/Enigmatic_Defence",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/9d/StaffNotable_passive_skill_icon.png",
         stats: [
             "15% increased Spell Damage while wielding a Staff",
@@ -2443,14 +2455,14 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Tranquility: {
         name: "Tranquility",
-        url: "/Tranquility",
+        url: "https://pathofexile.gamepedia.com/Tranquility",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/77/SoulPact_passive_skill_icon.png",
         stats: ["5% increased maximum Energy Shield", "Transfiguration of Soul"],
         solo: true,
     },
     Primal_Manifestation: {
         name: "Primal Manifestation",
-        url: "/Primal_Manifestation",
+        url: "https://pathofexile.gamepedia.com/Primal_Manifestation",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/33/Totemicmastery_passive_skill_icon.png",
         stats: [
             "24% increased Totem Damage",
@@ -2462,33 +2474,33 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Agility: {
         name: "Agility",
-        url: "/Agility",
+        url: "https://pathofexile.gamepedia.com/Agility",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/ce/Grace_passive_skill_icon.png",
         stats: ["+30 to Dexterity"],
     },
     Vengeant_Cascade: {
         name: "Vengeant Cascade",
-        url: "/Vengeant_Cascade",
+        url: "https://pathofexile.gamepedia.com/Vengeant_Cascade",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/47/Boomerang_passive_skill_icon.png",
         stats: ["15% increased Projectile Speed", "Attack Projectiles Return to you from final Target", "Returning Projectiles Pierce all Targets"],
         solo: true,
     },
     Herbalism: {
         name: "Herbalism",
-        url: "/Herbalism",
+        url: "https://pathofexile.gamepedia.com/Herbalism",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/2f/Arcaneefficiency_passive_skill_icon.png",
         stats: ["20% increased Life Recovery from Flasks", "20% increased Flask Recovery rate", "10% increased maximum Life"],
     },
     Thunderous_Salvos: {
         name: "Thunderous Salvos",
-        url: "/Thunderous_Salvos",
+        url: "https://pathofexile.gamepedia.com/Thunderous_Salvos",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e2/ArcaneSeal_passive_skill_icon.png",
         stats: ["30% increased Critical Strike Chance for Spells", "Skills supported by Unleash have +1 to maximum number of Seals"],
         solo: true,
     },
     Claws_of_the_Pride: {
         name: "Claws of the Pride",
-        url: "/Claws_of_the_Pride",
+        url: "https://pathofexile.gamepedia.com/Claws_of_the_Pride",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/9e/Clawsofthepride_passive_skill_icon.png",
         stats: [
             "25% increased Damage with Claws",
@@ -2499,7 +2511,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Bladedancer: {
         name: "Bladedancer",
-        url: "/Bladedancer",
+        url: "https://pathofexile.gamepedia.com/Bladedancer",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/53/SwordNotable1_passive_skill_icon.png",
         stats: [
             "24% increased Damage with Swords",
@@ -2509,9 +2521,9 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
         ],
     },
     Blast_Waves: {
-        name: "",
-        url: "",
-        icon: "",
+        name: "Blast Waves",
+        url: "https://pathofexile.gamepedia.com/Blast_Waves",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/52/MineAreaOfEffectNotable_passive_skill_icon.png",
         stats: [
             "Skills used by Mines deal 30% increased Area Damage if you Detonated a Mine Recently",
             "Skills used by Mines have 10% increased Area of Effect",
@@ -2520,37 +2532,37 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Entropy: {
         name: "Entropy",
-        url: "/Entropy",
+        url: "https://pathofexile.gamepedia.com/Entropy",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ed/Entropy_passive_skill_icon.png",
         stats: ["27% increased Damage over Time", "5% increased Skill Effect Duration"],
     },
     Arcing_Blows: {
         name: "Arcing Blows",
-        url: "/Arcing_Blows",
+        url: "https://pathofexile.gamepedia.com/Arcing_Blows",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3e/Sparkingattacks_passive_skill_icon.png",
         stats: ["30% increased Lightning Damage with Attack Skills", "Damage with Weapons Penetrates 8% Lightning Resistance", "10% increased Effect of Shock"],
     },
     Deep_Wisdom: {
         name: "Deep Wisdom",
-        url: "/Deep_Wisdom",
+        url: "https://pathofexile.gamepedia.com/Deep_Wisdom",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b6/Deepwisdom_passive_skill_icon.png",
         stats: ["+20 to Intelligence", "+20 to maximum Mana", "+20 to maximum Energy Shield"],
     },
     Insightfulness: {
         name: "Insightfulness",
-        url: "/Insightfulness",
+        url: "https://pathofexile.gamepedia.com/Insightfulness",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e1/Inspiration_passive_skill_icon.png",
         stats: ["10% increased maximum Energy Shield", "10% increased maximum Mana", "10% reduced Mana Cost of Skills while on Full Energy Shield", "+10 to Intelligence"],
     },
     Assassination: {
         name: "Assassination",
-        url: "/Assassination",
+        url: "https://pathofexile.gamepedia.com/Assassination",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/53/Newincreasedcritical_passive_skill_icon.png",
         stats: ["+35% to Critical Strike Multiplier", "30% increased Critical Strike Chance"],
     },
     Longshot: {
         name: "Longshot",
-        url: "/Longshot",
+        url: "https://pathofexile.gamepedia.com/Longshot",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b4/ProjectilesNode2_passive_skill_icon.png",
         stats: [
             "20% increased Projectile Attack Damage",
@@ -2561,19 +2573,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Dire_Torment: {
         name: "Dire Torment",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Dire_Torment",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/fd/DireTorment_passive_skill_icon.png",
         stats: ["30% increased Critical Strike Chance", "+20% to Damage over Time Multiplier for Ailments from Critical Strikes"],
     },
     Essence_Surge: {
         name: "Essence Surge",
-        url: "/Essence_Surge",
+        url: "https://pathofexile.gamepedia.com/Essence_Surge",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/ff/EssenceSurge_passive_skill_icon.png",
         stats: ["+30 to maximum Energy Shield", "10% increased Energy Shield Recharge Rate", "15% faster start of Energy Shield Recharge"],
     },
     Galvanic_Hammer: {
         name: "Galvanic Hammer",
-        url: "/Galvanic_Hammer",
+        url: "https://pathofexile.gamepedia.com/Galvanic_Hammer",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/22/Galvanichammer_passive_skill_icon.png",
         stats: [
             "25% increased Elemental Damage with Maces and Sceptres",
@@ -2583,25 +2595,25 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Stamina: {
         name: "Stamina",
-        url: "/Stamina",
+        url: "https://pathofexile.gamepedia.com/Stamina",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/78/Chargestr_passive_skill_icon.png",
         stats: ["+1 to Maximum Endurance Charges"],
     },
     Sanctum_of_Thought: {
         name: "Sanctum of Thought",
-        url: "/Sanctum_of_Thought",
+        url: "https://pathofexile.gamepedia.com/Sanctum_of_Thought",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/41/Unwavering_passive_skill_icon.png",
         stats: ["You take 20% reduced Extra Damage from Critical Strikes", "30% increased Armour", "20% reduced Effect of Curses on you"],
     },
     Resourcefulness: {
         name: "Resourcefulness",
-        url: "/Resourcefulness",
+        url: "https://pathofexile.gamepedia.com/Resourcefulness",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c5/Resourcefulness_passive_skill_icon.png",
         stats: ["5% increased maximum Life", "10% increased maximum Energy Shield", "15% increased Evasion Rating", "Regenerate 0.5% of Life per second"],
     },
     Ethereal_Feast: {
         name: "Ethereal Feast",
-        url: "/Ethereal_Feast",
+        url: "https://pathofexile.gamepedia.com/Ethereal_Feast",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b6/ArcaneReaping_passive_skill_icon.png",
         stats: [
             "0.6% of Spell Damage Leeched as Energy Shield",
@@ -2611,32 +2623,32 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Blood_Drinker: {
         name: "Blood Drinker",
-        url: "/Blood_Drinker",
+        url: "https://pathofexile.gamepedia.com/Blood_Drinker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3c/Lifeleech_passive_skill_icon.png",
         stats: ["8% increased maximum Life", "0.4% of Attack Damage Leeched as Life"],
     },
     Heart_of_Ice: {
         name: "Heart of Ice",
-        url: "/Heart_of_Ice",
+        url: "https://pathofexile.gamepedia.com/Heart_of_Ice",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/21/Iceheart_passive_skill_icon.png",
         stats: ["25% increased Cold Damage", "Damage Penetrates 6% Cold Resistance", "0.2% of Cold Damage Leeched as Energy Shield"],
     },
     Soul_Siphon: {
         name: "Soul Siphon",
-        url: "/Soul_Siphon",
+        url: "https://pathofexile.gamepedia.com/Soul_Siphon",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c3/Soulsyphon_passive_skill_icon.png",
         stats: ["18% increased maximum Mana", "+5 Mana gained on Kill", "+10 to maximum Mana"],
     },
     Tenacity: {
         name: "Tenacity",
-        url: "/Tenacity",
+        url: "https://pathofexile.gamepedia.com/Tenacity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0f/BloodPact_passive_skill_icon.png",
         stats: ["5% increased maximum Life", "Transfiguration of Body"],
         solo: true,
     },
     Freedom_of_Movement: {
         name: "Freedom of Movement",
-        url: "/Freedom_of_Movement",
+        url: "https://pathofexile.gamepedia.com/Freedom_of_Movement",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/07/EvasionAndPhasingNotable_passive_skill_icon.png",
         stats: [
             "30% increased Evasion Rating",
@@ -2647,7 +2659,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Adder_s_Touch: {
         name: "Adder's Touch",
-        url: "/Adder%27s_Touch",
+        url: "https://pathofexile.gamepedia.com/Adder%27s_Touch",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/41/Adderstouch_passive_skill_icon.png",
         stats: [
             "+30% to Critical Strike Multiplier with Daggers",
@@ -2658,13 +2670,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Piercing_Shots: {
         name: "Piercing Shots",
-        url: "/Piercing_Shots",
+        url: "https://pathofexile.gamepedia.com/Piercing_Shots",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/01/PierceNoteable_passive_skill_icon.png",
         stats: ["Projectiles Pierce 2 additional Targets"],
     },
     Dervish: {
         name: "Dervish",
-        url: "/Dervish",
+        url: "https://pathofexile.gamepedia.com/Dervish",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/94/Bladebarrier_passive_skill_icon.png",
         stats: [
             "+2% Chance to Block Attack Damage while Dual Wielding",
@@ -2675,13 +2687,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Crystal_Skin: {
         name: "Crystal Skin",
-        url: "/Crystal_Skin",
+        url: "https://pathofexile.gamepedia.com/Crystal_Skin",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/7d/Diamondskin_passive_skill_icon.png",
         stats: ["15% chance to Avoid Elemental Ailments", "5% reduced Elemental Damage taken", "+5% to all Elemental Resistances"],
     },
     Force_Shaper: {
         name: "Force Shaper",
-        url: "/Force_Shaper",
+        url: "https://pathofexile.gamepedia.com/Force_Shaper",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/43/PhysicalDamageNotable_passive_skill_icon.png",
         stats: [
             "20% increased Physical Damage",
@@ -2692,14 +2704,14 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Frenetic: {
         name: "Frenetic",
-        url: "/Frenetic",
+        url: "https://pathofexile.gamepedia.com/Frenetic",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c0/Chargedex_passive_skill_icon.png",
         stats: ["+1 to Maximum Frenzy Charges"],
     },
     Essence_Extraction: {
-        name: "",
-        url: "",
-        icon: "",
+        name: "Essence Extraction",
+        url: "https://pathofexile.gamepedia.com/Essence_Extraction",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/18/ManaFlasksOften_passive_skill_icon.png",
         stats: [
             "15% increased Mana Regeneration Rate",
             "15% increased Flask Charges gained",
@@ -2709,7 +2721,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Destructive_Apparatus: {
         name: "Destructive Apparatus",
-        url: "/Destructive_Apparatus",
+        url: "https://pathofexile.gamepedia.com/Destructive_Apparatus",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/26/MineTrap_passive_skill_icon.png",
         stats: [
             "20% increased Mine Damage",
@@ -2720,13 +2732,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Vigour: {
         name: "Vigour",
-        url: "/Vigour",
+        url: "https://pathofexile.gamepedia.com/Vigour",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/78/Chargestr_passive_skill_icon.png",
         stats: ["+1 to Maximum Endurance Charges"],
     },
     Divine_Fervour: {
         name: "Divine Fervour",
-        url: "/Divine_Fervour",
+        url: "https://pathofexile.gamepedia.com/Divine_Fervour",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3d/Catalyse_passive_skill_icon.png",
         stats: [
             "24% increased Elemental Damage with Attack Skills",
@@ -2737,8 +2749,8 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Enduring_Bond: {
         name: "Enduring Bond",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Enduring_Bond",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/27/DurationofMinionsNotable_passive_skill_icon.png",
         stats: [
             "15% increased Minion Duration",
             "15% increased Skill Effect Duration",
@@ -2748,31 +2760,31 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Red_Storm: {
         name: "Red Storm",
-        url: "/Red_Storm",
+        url: "https://pathofexile.gamepedia.com/Red_Storm",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/63/Blood2_passive_skill_icon.png",
         stats: ["Attacks have 15% chance to cause Bleeding", "30% increased Physical Damage", "+8% to Damage over Time Multiplier for Bleeding"],
     },
     Forces_of_Nature: {
         name: "Forces of Nature",
-        url: "/Forces_of_Nature",
+        url: "https://pathofexile.gamepedia.com/Forces_of_Nature",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/25/ForceOfNature_passive_skill_icon.png",
         stats: ["20% increased Elemental Damage with Attack Skills", "Damage with Weapons Penetrates 6% Elemental Resistance"],
     },
     Mana_Flows: {
         name: "Mana Flows",
-        url: "/Mana_Flows",
+        url: "https://pathofexile.gamepedia.com/Mana_Flows",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c0/Manaconduit_passive_skill_icon.png",
         stats: ["16% increased maximum Mana", "40% increased Mana Regeneration Rate", "+20 to Intelligence", "+10 to maximum Mana"],
     },
     Foresight: {
         name: "Foresight",
-        url: "/Foresight",
+        url: "https://pathofexile.gamepedia.com/Foresight",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/17/Foresight_passive_skill_icon.png",
         stats: ["+20 to maximum Energy Shield", "14% increased maximum Energy Shield", "10% increased Energy Shield Recharge Rate"],
     },
     Pain_Forger: {
         name: "Pain Forger",
-        url: "/Pain_Forger",
+        url: "https://pathofexile.gamepedia.com/Pain_Forger",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/bb/MaceNotable2_passive_skill_icon.png",
         stats: [
             "8% chance to gain a Power Charge when you Stun with Melee Damage",
@@ -2782,39 +2794,49 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Soul_Thief: {
         name: "Soul Thief",
-        url: "/Soul_Thief",
+        url: "https://pathofexile.gamepedia.com/Soul_Thief",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/36/Newenergyshield_passive_skill_icon.png",
         stats: ["12% increased maximum Energy Shield", "18% increased Evasion Rating", "0.3% of Spell Damage Leeched as Energy Shield"],
     },
     Arsonist: {
         name: "Arsonist",
-        url: "/Arsonist",
+        url: "https://pathofexile.gamepedia.com/Arsonist",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/35/Arsonist_passive_skill_icon.png",
         stats: ["24% increased Fire Damage", "Regenerate 1% of Life per second", "+6% to Fire Damage over Time Multiplier"],
     },
     Fire_Walker: {
         name: "Fire Walker",
-        url: "/Fire_Walker",
+        url: "https://pathofexile.gamepedia.com/Fire_Walker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/ad/Flameborn_passive_skill_icon.png",
         stats: ["25% increased Fire Damage", "+15% to Fire Resistance", "5% increased Cast Speed with Fire Skills"],
     },
-    Expertise: {name: "Expertise", url: "/Expertise", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/ce/Grace_passive_skill_icon.png", stats: ["+30 to Dexterity"]},
-    Physique: {name: "Physique", url: "/Physique", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png", stats: ["+30 to Strength"]},
+    Expertise: {
+        name: "Expertise",
+        url: "https://pathofexile.gamepedia.com/Expertise",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/ce/Grace_passive_skill_icon.png",
+        stats: ["+30 to Dexterity"],
+    },
+    Physique: {
+        name: "Physique",
+        url: "https://pathofexile.gamepedia.com/Physique",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png",
+        stats: ["+30 to Strength"],
+    },
     Arcane_Chemistry: {
         name: "Arcane Chemistry",
-        url: "/Arcane_Chemistry",
+        url: "https://pathofexile.gamepedia.com/Arcane_Chemistry",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/ae/ArcaneChemistry_passive_skill_icon.png",
         stats: ["15% increased maximum Mana", "25% increased Mana Recovery from Flasks", "Flasks applied to you have 8% increased Effect", "15% reduced Flask Charges used"],
     },
     Counterweight: {
         name: "Counterweight",
-        url: "/Counterweight",
+        url: "https://pathofexile.gamepedia.com/Counterweight",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/38/StaffCrit_passive_skill_icon.png",
         stats: ["60% increased Global Critical Strike Chance while wielding a Staff", "+30% to Global Critical Strike Multiplier while wielding a Staff"],
     },
     Gemini: {
         name: "Gemini",
-        url: "/Gemini",
+        url: "https://pathofexile.gamepedia.com/Gemini",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/29/Gemini_passive_skill_icon.png",
         stats: [
             "12% increased Accuracy Rating while Dual Wielding",
@@ -2826,19 +2848,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Arcanist_s_Dominion: {
         name: "Arcanist's Dominion",
-        url: "/Arcanist%27s_Dominion",
+        url: "https://pathofexile.gamepedia.com/Arcanist%27s_Dominion",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/f8/ElementalDominion2_passive_skill_icon.png",
         stats: ["+20 to Intelligence", "5% increased Cast Speed", "20% increased Spell Damage"],
     },
     Lightning_Walker: {
         name: "Lightning Walker",
-        url: "/Lightning_Walker",
+        url: "https://pathofexile.gamepedia.com/Lightning_Walker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/36/Stormborn_passive_skill_icon.png",
         stats: ["25% increased Lightning Damage", "+15% to Lightning Resistance", "5% increased Cast Speed with Lightning Skills"],
     },
     Brutal_Blade: {
         name: "Brutal Blade",
-        url: "/Brutal_Blade",
+        url: "https://pathofexile.gamepedia.com/Brutal_Blade",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a1/Cruelblade_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Swords",
@@ -2850,7 +2872,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Aspect_of_the_Eagle: {
         name: "Aspect of the Eagle",
-        url: "/Aspect_of_the_Eagle",
+        url: "https://pathofexile.gamepedia.com/Aspect_of_the_Eagle",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/8d/AspectoftheEagle_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Bows",
@@ -2862,13 +2884,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Diamond_Skin: {
         name: "Diamond Skin",
-        url: "/Diamond_Skin",
+        url: "https://pathofexile.gamepedia.com/Diamond_Skin",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/f8/Armourmastery_passive_skill_icon.png",
         stats: ["24% increased Armour", "3% increased Movement Speed", "+12% to all Elemental Resistances"],
     },
     Strong_Arm: {
         name: "Strong Arm",
-        url: "/Strong_Arm",
+        url: "https://pathofexile.gamepedia.com/Strong_Arm",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/6a/Strongarm_passive_skill_icon.png",
         stats: [
             "+20 to Strength",
@@ -2879,7 +2901,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Bone_Breaker: {
         name: "Bone Breaker",
-        url: "/Bone_Breaker",
+        url: "https://pathofexile.gamepedia.com/Bone_Breaker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3a/Macedmg_passive_skill_icon.png",
         stats: [
             "30% increased Physical Damage with Maces and Sceptres",
@@ -2890,31 +2912,31 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Totemic_Zeal: {
         name: "Totemic Zeal",
-        url: "/Totemic_Zeal",
+        url: "https://pathofexile.gamepedia.com/Totemic_Zeal",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ec/Totemiczeal_passive_skill_icon.png",
         stats: ["30% increased Totem Placement speed", "Spells Cast by Totems have 6% increased Cast Speed", "Attacks used by Totems have 10% increased Attack Speed"],
     },
     Mental_Rapidity: {
         name: "Mental Rapidity",
-        url: "/Mental_Rapidity",
+        url: "https://pathofexile.gamepedia.com/Mental_Rapidity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b5/MentalRapidity_passive_skill_icon.png",
         stats: ["8% increased Cast Speed", "20% increased Mana Regeneration Rate", "10% increased Energy Shield Recharge Rate"],
     },
     Decay_Ward: {
         name: "Decay Ward",
-        url: "/Decay_Ward",
+        url: "https://pathofexile.gamepedia.com/Decay_Ward",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Minionblockchance_passive_skill_icon.png",
         stats: ["Minions have +10% Chance to Block Attack Damage", "Minions have +10% Chance to Block Spell Damage", "Minions Recover 2% of their Life when they Block"],
     },
     Quickstep: {
         name: "Quickstep",
-        url: "/Quickstep",
+        url: "https://pathofexile.gamepedia.com/Quickstep",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/8/83/Quickstep_passive_skill_icon.png",
         stats: ["6% increased Attack Speed", "4% increased Movement Speed"],
     },
     Inexorable: {
         name: "Inexorable",
-        url: "/Inexorable",
+        url: "https://pathofexile.gamepedia.com/Inexorable",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/57/ArmourChargeNotable_passive_skill_icon.png",
         stats: [
             "20% increased Armour",
@@ -2925,19 +2947,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Breath_of_Lightning: {
         name: "Breath of Lightning",
-        url: "/Breath_of_Lightning",
+        url: "https://pathofexile.gamepedia.com/Breath_of_Lightning",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0d/BreathofLightening2_passive_skill_icon.png",
         stats: ["20% increased Shock Duration on Enemies", "10% chance to Shock", "20% increased Lightning Damage", "15% increased Effect of Shock"],
     },
     Overcharged: {
         name: "Overcharged",
-        url: "/Overcharged",
+        url: "https://pathofexile.gamepedia.com/Overcharged",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/ff/Innerforce_passive_skill_icon.png",
         stats: ["8% chance to gain a Power, Frenzy or Endurance Charge on Kill"],
     },
     Fleetfoot: {
         name: "Fleetfoot",
-        url: "/Fleetfoot",
+        url: "https://pathofexile.gamepedia.com/Fleetfoot",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/eb/Evasion_passive_skill_icon.png",
         stats: [
             "20% increased Evasion Rating",
@@ -2948,37 +2970,37 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Disciple_of_the_Unyielding: {
         name: "Disciple of the Unyielding",
-        url: "/Disciple_of_the_Unyielding",
+        url: "https://pathofexile.gamepedia.com/Disciple_of_the_Unyielding",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0e/EnduranceChargeNotable_passive_skill_icon.png",
         stats: ["+1 to Minimum Endurance Charges", "5% chance to gain an Endurance Charge on Kill", "5% increased Damage per Endurance Charge"],
     },
     Holy_Fire: {
         name: "Holy Fire",
-        url: "/Holy_Fire",
+        url: "https://pathofexile.gamepedia.com/Holy_Fire",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d2/Pyromaniac_passive_skill_icon.png",
         stats: ["20% increased Fire Damage", "15% chance to Ignite", "+12% to Fire Damage over Time Multiplier"],
     },
     Righteous_Decree: {
         name: "Righteous Decree",
-        url: "/Righteous_Decree",
+        url: "https://pathofexile.gamepedia.com/Righteous_Decree",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/14/Righteous_Decree_passive_skill_icon.png",
         stats: ["22% increased maximum Mana", "6% reduced Mana Cost of Skills"],
     },
     Lucidity: {
         name: "Lucidity",
-        url: "/Lucidity",
+        url: "https://pathofexile.gamepedia.com/Lucidity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b3/ConcentrationNotable_passive_skill_icon.png",
         stats: ["Channelling Skills deal 30% increased Damage", "Channelling Skills have -3 to Total Mana Cost", "40% chance to Avoid being Stunned while Channelling"],
     },
     Thrill_Seeker: {
         name: "Thrill Seeker",
-        url: "/Thrill_Seeker",
+        url: "https://pathofexile.gamepedia.com/Thrill_Seeker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/2a/ThrillKiller_passive_skill_icon.png",
         stats: ["+10 Mana gained on Kill", "15% increased maximum Mana", "0.4% of Attack Damage Leeched as Mana"],
     },
     Titanic_Impacts: {
         name: "Titanic Impacts",
-        url: "/Titanic_Impacts",
+        url: "https://pathofexile.gamepedia.com/Titanic_Impacts",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3c/Criticalstrikemultiplier2_passive_skill_icon.png",
         stats: [
             "40% increased Critical Strike Chance with Two Handed Melee Weapons",
@@ -2986,29 +3008,34 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
             "+20% to Critical Strike Multiplier with Two Handed Melee Weapons",
         ],
     },
-    Alacrity: {name: "Alacrity", url: "/Alacrity", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/ce/Grace_passive_skill_icon.png", stats: ["+30 to Dexterity"]},
+    Alacrity: {
+        name: "Alacrity",
+        url: "https://pathofexile.gamepedia.com/Alacrity",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/ce/Grace_passive_skill_icon.png",
+        stats: ["+30 to Dexterity"],
+    },
     Explosive_Runes: {
         name: "Explosive Runes",
-        url: "/Explosive_Runes",
+        url: "https://pathofexile.gamepedia.com/Explosive_Runes",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c8/Brand2_passive_skill_icon.png",
         stats: ["You can Cast an additional Brand", "20% increased Damage with Brand Skills", "10% increased Brand Attachment range"],
     },
     Fatal_Toxins: {
         name: "Fatal Toxins",
-        url: "/Fatal_Toxins",
+        url: "https://pathofexile.gamepedia.com/Fatal_Toxins",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/68/Poison_passive_skill_icon.png",
         stats: ["30% increased Damage with Poison", "10% increased Poison Duration", "+10% to Chaos Resistance", "+10% to Damage over Time Multiplier for Poison"],
     },
     Charisma: {
         name: "Charisma",
-        url: "/Charisma",
+        url: "https://pathofexile.gamepedia.com/Charisma",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/ff/Authority_passive_skill_icon.png",
         stats: ["8% reduced Mana Reserved", "6% increased effect of Non-Curse Auras from your Skills"],
     },
     Fearsome_Force: {
         name: "Fearsome Force",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Fearsome_Force",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/0a/AreaofEffectofMinionsNotable_passive_skill_icon.png",
         stats: [
             "Minions deal 15% increased Damage",
             "Minions have 10% increased Area of Effect",
@@ -3018,7 +3045,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Dark_Arts: {
         name: "Dark Arts",
-        url: "/Dark_Arts",
+        url: "https://pathofexile.gamepedia.com/Dark_Arts",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/30/DualWieldNotable_passive_skill_icon.png",
         stats: [
             "5% increased Cast Speed while Dual Wielding",
@@ -3029,8 +3056,8 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Aqueous_Accelerant: {
         name: "Aqueous Accelerant",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Aqueous_Accelerant",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/15/BenefitsfromHavingaMana_passive_skill_icon.png",
         stats: [
             "Flasks applied to you have 10% increased Effect",
             "10% increased Mana Recovery Rate during Effect of any Mana Flask",
@@ -3039,14 +3066,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Heart_of_the_Warrior: {
         name: "Heart of the Warrior",
-        url: "/Heart_of_the_Warrior",
+        url: "https://pathofexile.gamepedia.com/Heart_of_the_Warrior",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/5b/Heartofthegladiator_passive_skill_icon.png",
         stats: ["+10 to Strength", "+20 to maximum Life", "10% increased maximum Life"],
     },
-    Beef: {name: "Beef", url: "/Beef", icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png", stats: ["+30 to Strength"]},
+    Beef: {
+        name: "Beef",
+        url: "https://pathofexile.gamepedia.com/Beef",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/dd/Oxblood_passive_skill_icon.png",
+        stats: ["+30 to Strength"],
+    },
     Soul_Raker: {
         name: "Soul Raker",
-        url: "/Soul_Raker",
+        url: "https://pathofexile.gamepedia.com/Soul_Raker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ec/Soulraker_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Claws",
@@ -3058,25 +3090,25 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Words_of_Glory: {
         name: "Words of Glory",
-        url: "/Words_of_Glory",
+        url: "https://pathofexile.gamepedia.com/Words_of_Glory",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/64/WordsOfGlory_passive_skill_icon.png",
         stats: ["If you've Warcried Recently, you and nearby allies have 10% increased Attack, Cast and Movement Speed", "30% increased Warcry Duration", "Warcries cost no Mana"],
     },
     Master_of_the_Arena: {
         name: "Master of the Arena",
-        url: "/Master_of_the_Arena",
+        url: "https://pathofexile.gamepedia.com/Master_of_the_Arena",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/12/Meleerange_passive_skill_icon.png",
         stats: ["+20 to Strength", "+2 to Melee Weapon and Unarmed Attack range", "8% increased Melee Physical Damage", "Regenerate 1% of Life per second"],
     },
     Amplify: {
         name: "Amplify",
-        url: "/Amplify",
+        url: "https://pathofexile.gamepedia.com/Amplify",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e7/Amplify_passive_skill_icon.png",
         stats: ["10% increased Area of Effect", "20% increased Area Damage"],
     },
     Blade_Master: {
         name: "Blade Master",
-        url: "/Blade_Master",
+        url: "https://pathofexile.gamepedia.com/Blade_Master",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/cb/Blademaster_passive_skill_icon.png",
         stats: [
             "20% increased Physical Damage with Swords",
@@ -3088,37 +3120,37 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Throatseeker: {
         name: "Throatseeker",
-        url: "/Throatseeker",
+        url: "https://pathofexile.gamepedia.com/Throatseeker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/71/Throatseeker_passive_skill_icon.png",
         stats: ["+30% to Critical Strike Multiplier"],
     },
     Heart_and_Soul: {
         name: "Heart and Soul",
-        url: "/Heart_and_Soul",
+        url: "https://pathofexile.gamepedia.com/Heart_and_Soul",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/75/HeartandSoul_passive_skill_icon.png",
         stats: ["8% increased maximum Life", "12% increased maximum Mana"],
     },
     Survivalist: {
         name: "Survivalist",
-        url: "/Survivalist",
+        url: "https://pathofexile.gamepedia.com/Survivalist",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/d/d9/Survivalist_passive_skill_icon.png",
         stats: ["24% increased Evasion Rating", "+8% to all Elemental Resistances", "+1% to maximum Cold Resistance", "+3% chance to Evade Attacks"],
     },
     Primal_Spirit: {
         name: "Primal Spirit",
-        url: "/Primal_Spirit",
+        url: "https://pathofexile.gamepedia.com/Primal_Spirit",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/6d/Animalspirit_passive_skill_icon.png",
         stats: ["20% increased Mana Regeneration Rate", "20% increased Flask Charges gained", "+20 to Strength and Intelligence", "15% increased maximum Mana"],
     },
     Blood_Siphon: {
         name: "Blood Siphon",
-        url: "/Blood_Siphon",
+        url: "https://pathofexile.gamepedia.com/Blood_Siphon",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/65/BloodSiphon_passive_skill_icon.png",
         stats: ["10% increased maximum Life", "+20 to Strength", "+5 Life gained on Kill"],
     },
     Skull_Cracking: {
         name: "Skull Cracking",
-        url: "/Skull_Cracking",
+        url: "https://pathofexile.gamepedia.com/Skull_Cracking",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/44/Skullcracking_passive_skill_icon.png",
         stats: [
             "30% increased Physical Damage with Maces and Sceptres",
@@ -3129,8 +3161,8 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Searing_Heat: {
         name: "Searing Heat",
-        url: "",
-        icon: "",
+        url: "https://pathofexile.gamepedia.com/Searing_Heat",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/f/f2/SearingHeat_passive_skill_icon.png",
         stats: [
             "45% increased Critical Strike Chance for Spells",
             "+20% to Damage over Time Multiplier for Ignite from Critical Strikes",
@@ -3139,19 +3171,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Frost_Walker: {
         name: "Frost Walker",
-        url: "/Frost_Walker",
+        url: "https://pathofexile.gamepedia.com/Frost_Walker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/58/Frostborn_passive_skill_icon.png",
         stats: ["25% increased Cold Damage", "+15% to Cold Resistance", "5% increased Cast Speed with Cold Skills"],
     },
     Cruel_Preparation: {
         name: "Cruel Preparation",
-        url: "/Cruel_Preparation",
+        url: "https://pathofexile.gamepedia.com/Cruel_Preparation",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/2/28/Thickskin_passive_skill_icon.png",
         stats: ["10% increased maximum Life", "+5% to all Elemental Resistances"],
     },
     Deadly_Draw: {
         name: "Deadly Draw",
-        url: "/Deadly_Draw",
+        url: "https://pathofexile.gamepedia.com/Deadly_Draw",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ee/Deadlydraw_passive_skill_icon.png",
         stats: [
             "20% increased Physical Damage with Bows",
@@ -3162,19 +3194,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Profane_Chemistry: {
         name: "Profane Chemistry",
-        url: "/Profane_Chemistry",
+        url: "https://pathofexile.gamepedia.com/Profane_Chemistry",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/96/ProfaneChemistry_passive_skill_icon.png",
         stats: ["6% increased maximum Life", "30% increased Life Recovery from Flasks", "Flasks applied to you have 8% increased Effect"],
     },
     Unpredictable_Offensive: {
         name: "Unpredictable Offensive",
-        url: "/Unpredictable_Offensive",
+        url: "https://pathofexile.gamepedia.com/Unpredictable_Offensive",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/08/ChannellingAttacksNotable2_passive_skill_icon.png",
         stats: ["Channelling Skills have 10% increased Attack Speed", "20% chance to Avoid being Stunned while Channelling", "5% chance to Dodge Attack Hits while Channelling"],
     },
     Bloodletting: {
         name: "Bloodletting",
-        url: "/Bloodletting",
+        url: "https://pathofexile.gamepedia.com/Bloodletting",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/63/Blood2_passive_skill_icon.png",
         stats: [
             "25% increased Damage with Bleeding",
@@ -3186,19 +3218,19 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Fervour: {
         name: "Fervour",
-        url: "/Fervour",
+        url: "https://pathofexile.gamepedia.com/Fervour",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/c/c0/Chargedex_passive_skill_icon.png",
         stats: ["+1 to Maximum Frenzy Charges"],
     },
     Hasty_Reconstruction: {
         name: "Hasty Reconstruction",
-        url: "/Hasty_Reconstruction",
+        url: "https://pathofexile.gamepedia.com/Hasty_Reconstruction",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/7e/Trap_passive_skill_icon.png",
         stats: ["20% increased Trap Damage", "10% increased Cooldown Recovery Speed for throwing Traps"],
     },
     King_of_the_Hill: {
         name: "King of the Hill",
-        url: "/King_of_the_Hill",
+        url: "https://pathofexile.gamepedia.com/King_of_the_Hill",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/1/15/Kingofthehill_passive_skill_icon.png",
         stats: [
             "Knocks Back Enemies if you get a Critical Strike with a Bow",
@@ -3209,13 +3241,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Dynamo: {
         name: "Dynamo",
-        url: "/Dynamo",
+        url: "https://pathofexile.gamepedia.com/Dynamo",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/b/b2/Dynamo_passive_skill_icon.png",
         stats: ["5% reduced Mana Cost of Skills", "16% increased maximum Mana"],
     },
     Solidity: {
         name: "Solidity",
-        url: "/Solidity",
+        url: "https://pathofexile.gamepedia.com/Solidity",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e7/ShieldAttackDamage_passive_skill_icon.png",
         stats: [
             "+3% Chance to Block Attack Damage while holding a Shield",
@@ -3226,13 +3258,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Fusillade: {
         name: "Fusillade",
-        url: "/Fusillade",
+        url: "https://pathofexile.gamepedia.com/Fusillade",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/6/68/Fussilade_passive_skill_icon.png",
         stats: ["15% increased Attack Speed with Wands", "30% increased Accuracy Rating with Wands"],
     },
     Saboteur: {
         name: "Saboteur",
-        url: "/Saboteur",
+        url: "https://pathofexile.gamepedia.com/Saboteur",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/7/7c/Saboteur_passive_skill_icon.png",
         stats: [
             "30% increased Trap Damage",
@@ -3243,7 +3275,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Nightstalker: {
         name: "Nightstalker",
-        url: "/Nightstalker",
+        url: "https://pathofexile.gamepedia.com/Nightstalker",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/02/Nightstalker_passive_skill_icon.png",
         stats: [
             "20% increased Damage with Daggers",
@@ -3255,7 +3287,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Backstabbing: {
         name: "Backstabbing",
-        url: "/Backstabbing",
+        url: "https://pathofexile.gamepedia.com/Backstabbing",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/96/DaggerNotable1_passive_skill_icon.png",
         stats: [
             "40% increased Critical Strike Chance with Daggers",
@@ -3266,13 +3298,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Growth_and_Decay: {
         name: "Growth and Decay",
-        url: "/Growth_and_Decay",
+        url: "https://pathofexile.gamepedia.com/Growth_and_Decay",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a8/GrowthandDecay_passive_skill_icon.png",
         stats: ["20% increased Damage over Time", "Regenerate 1% of Life per second", "+10% to Damage over Time Multiplier"],
     },
     Swift_Venoms: {
         name: "Swift Venoms",
-        url: "/Swift_Venoms",
+        url: "https://pathofexile.gamepedia.com/Swift_Venoms",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/59/AttackPoisonNotable_passive_skill_icon.png",
         stats: [
             "8% increased Attack Speed",
@@ -3284,7 +3316,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Singular_Focus: {
         name: "Singular Focus",
-        url: "/Singular_Focus",
+        url: "https://pathofexile.gamepedia.com/Singular_Focus",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/5/5f/CombatFocusNotable_passive_skill_icon.png",
         stats: [
             "Channelling Skills deal 15% increased Damage",
@@ -3294,7 +3326,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Arcane_Swiftness: {
         name: "Arcane Swiftness",
-        url: "/Arcane_Swiftness",
+        url: "https://pathofexile.gamepedia.com/Arcane_Swiftness",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/a/a1/ShieldNotable_passive_skill_icon.png",
         stats: [
             "5% increased Spell Damage per 5% Chance to Block Attack Damage",
@@ -3306,13 +3338,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Lethal_Assault: {
         name: "Lethal Assault",
-        url: "/Lethal_Assault",
+        url: "https://pathofexile.gamepedia.com/Lethal_Assault",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/99/LethalAssault_passive_skill_icon.png",
         stats: ["18% increased Damage", "10% increased Projectile Speed", "10% increased Area of Effect"],
     },
     Brinkmanship: {
         name: "Brinkmanship",
-        url: "/Brinkmanship",
+        url: "https://pathofexile.gamepedia.com/Brinkmanship",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/e8/MeleeAoENotable_passive_skill_icon.png",
         stats: [
             "Melee Skills have 10% increased Area of Effect",
@@ -3323,13 +3355,13 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Hard_Knocks: {
         name: "Hard Knocks",
-        url: "/Hard_Knocks",
+        url: "https://pathofexile.gamepedia.com/Hard_Knocks",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/3/3f/Savant_passive_skill_icon.png",
         stats: ["+30 to Intelligence"],
     },
     Charging_Offensive: {
         name: "Charging Offensive",
-        url: "/Charging_Offensive",
+        url: "https://pathofexile.gamepedia.com/Charging_Offensive",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/e/ec/ChannellingAttacksNotable1_passive_skill_icon.png",
         stats: [
             "Channelling Skills deal 16% increased Attack Damage",
@@ -3338,10 +3370,15 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
             "20% chance to gain a Frenzy Charge when Hit while Channelling",
         ],
     },
-    Aligned_Spirits: {name: "", url: "", icon: "", stats: ["15% reduced Mana Cost of Minion Skills", "Minions deal 20% increased Damage", "10% increased maximum Mana"]},
+    Aligned_Spirits: {
+        name: "Aligned Spirits",
+        url: "https://pathofexile.gamepedia.com/Aligned_Spirits",
+        icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/0/08/MinionsandManaNotable_passive_skill_icon.png",
+        stats: ["15% reduced Mana Cost of Minion Skills", "Minions deal 20% increased Damage", "10% increased maximum Mana"],
+    },
     Gladiator_s_Perseverance: {
         name: "Gladiator's Perseverance",
-        url: "/Gladiator%27s_Perseverance",
+        url: "https://pathofexile.gamepedia.com/Gladiator%27s_Perseverance",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/4/47/OneHandedPhysicalAndLeechNotable_passive_skill_icon.png",
         stats: [
             "20% increased Physical Damage with One Handed Melee Weapons",
@@ -3353,7 +3390,7 @@ const PassivesOmited: {[name in keyof typeof PassiveNames]: Omit<PassiveType, "i
     },
     Hunter_s_Gambit: {
         name: "Hunter's Gambit",
-        url: "/Hunter%27s_Gambit",
+        url: "https://pathofexile.gamepedia.com/Hunter%27s_Gambit",
         icon: "https://gamepedia.cursecdn.com/pathofexile_gamepedia/9/91/ProjectilesNotable_passive_skill_icon.png",
         stats: [
             "24% increased Damage with Bows",
@@ -3733,6 +3770,294 @@ const Crafting: {[name in keyof typeof PassiveNames]: Array<keyof typeof OilName
     Soul_of_Steel: ["Golden", "Golden", "Golden"],
 };
 
+export enum TowerTypes {
+    Chilling,
+    Glacial_Cage,
+    Freezebolt,
+
+    Empowering,
+    Temporal,
+    Smothering,
+
+    Summoning,
+    Sentinel,
+    Scout,
+
+    Seismic,
+    Stone_Gaze,
+    Imbuing,
+
+    Fireball,
+    Meteor,
+    Flamethrower,
+
+    Shock_Nova,
+    Arc,
+    Lightning_Storm,
+}
+
+export type Tower = {
+    name: string;
+    icon: string;
+};
+
+export const Towers: {[key in keyof typeof TowerTypes]: Tower} = {
+    Chilling: {name: "Chilling Tower", icon: "./img/tower/Chilling.png"},
+    Glacial_Cage: {name: "Glacial Cage Tower", icon: "./img/tower/Glacial_Cage.png"},
+    Freezebolt: {name: "Freezebolt Tower", icon: "./img/tower/Freezebolt.png"},
+
+    Fireball: {name: "Fireball Tower", icon: "./img/tower/Fireball.png"},
+    Meteor: {name: "Meteor Tower", icon: "./img/tower/Meteor.png"},
+    Flamethrower: {name: "Flamethrower Tower", icon: "./img/tower/Flamethrower.png"},
+
+    Shock_Nova: {name: "Shock Nova Tower", icon: "./img/tower/Shock_Nova.png"},
+    Arc: {name: "Arc Tower", icon: "./img/tower/Arc.png"},
+    Lightning_Storm: {name: "Lightning Storm", icon: "./img/tower/Lightning_Storm.png"},
+
+    Empowering: {name: "Empowering Tower", icon: "./img/tower/Empowering.png"},
+    Smothering: {name: "Smothering Tower", icon: "./img/tower/Smothering.png"},
+    Imbuing: {name: "Imbuing Tower", icon: "./img/tower/Imbuing.png"},
+
+    Summoning: {name: "Summoning Tower", icon: "./img/tower/Summoning.png"},
+    Sentinel: {name: "Scout Tower", icon: "./img/tower/Sentinel.png"},
+    Scout: {name: "Sentinel Tower", icon: "./img/tower/Scout.png"},
+
+    Seismic: {name: "Seismic Tower", icon: "./img/tower/Seismic.png"},
+    Stone_Gaze: {name: "Stonegaze Tower", icon: "./img/tower/Stone_Gaze.png"},
+    Temporal: {name: "Temporal Tower", icon: "./img/tower/Temporal.png"},
+};
+
+export type RingCraftType = {
+    tower: keyof typeof TowerTypes;
+    ingredients: Array<keyof typeof OilNames>;
+    stats: Array<string>;
+};
+
+const RingCrafting: Array<RingCraftType> = [
+    {tower: "Chilling", ingredients: ["Clear", "Clear"], stats: ["Your Chilling Towers deal 25% increased Damage"]},
+    {
+        tower: "Meteor",
+        ingredients: ["Clear", "Verdant"],
+        stats: ["Your Meteor Towers deal 25% increased Damage"],
+    },
+    {tower: "Summoning", ingredients: ["Silver", "Silver"], stats: ["Your Summoning Tower summons 2 additional Minions"]},
+    {tower: "Arc", ingredients: ["Clear", "Silver"], stats: ["Your Arc Towers repeats 1 additional Times"]},
+    {
+        tower: "Empowering",
+        ingredients: ["Silver", "Black"],
+        stats: ["Your Empowering Towers also grant 25% increased Damage"],
+    },
+    {tower: "Meteor", ingredients: ["Crimson", "Crimson"], stats: ["Your Meteor Towers always Stun"]},
+    {
+        tower: "Summoning",
+        ingredients: ["Sepia", "Verdant"],
+        stats: ["Minions summoned by Your Summoning Towers have 25% increased Damage"],
+    },
+    {tower: "Empowering", ingredients: ["Golden", "Golden"], stats: ["All Towers in range of your Empowering Towers have 50% chance to deal Double Damage"]},
+    {
+        tower: "Fireball",
+        ingredients: ["Opalescent", "Sepia"],
+        stats: ["Your Fireball Towers fire an additional 2 Projectiles"],
+    },
+    {tower: "Chilling", ingredients: ["Violet", "Violet"], stats: ["Your Chilling Towers have 25% increased effect of Chill"]},
+    {
+        tower: "Chilling",
+        ingredients: ["Opalescent", "Silver"],
+        stats: ["Your Chilling Towers freeze enemies for 0.2 seconds while they are affected by chilling beams"],
+    },
+    {tower: "Imbuing", ingredients: ["Teal", "Black"], stats: ["Your Imbuing Towers have 25% increased Range"]},
+    {
+        tower: "Empowering",
+        ingredients: ["Silver", "Violet"],
+        stats: ["Your Empowering Towers also grant 20% increased Cast Speed"],
+    },
+    {tower: "Summoning", ingredients: ["Silver", "Teal"], stats: ["Minions summoned by Your Summoning Towers have 50% increased Life"]},
+    {
+        tower: "Scout",
+        ingredients: ["Teal", "Violet"],
+        stats: ["Your Scout Towers have 25% increased Range"],
+    },
+    {tower: "Flamethrower", ingredients: ["Opalescent", "Amber"], stats: ["Your Flamethrower Towers have 15% increased Cast Speed"]},
+    {
+        tower: "Flamethrower",
+        ingredients: ["Amber", "Violet"],
+        stats: ["Your Flamethrower Towers have 25% increased Range"],
+    },
+    {tower: "Sentinel", ingredients: ["Opalescent", "Black"], stats: ["Minions summoned by Your Sentinel Towers have 50% increased Life"]},
+    {
+        tower: "Fireball",
+        ingredients: ["Clear", "Amber"],
+        stats: ["Your Fireball Towers deal 25% increased Damage"],
+    },
+    {tower: "Shock_Nova", ingredients: ["Clear", "Golden"], stats: ["Your Shock Nova Towers have 25% increased effect of Shock"]},
+    {
+        tower: "Temporal",
+        ingredients: ["Silver", "Amber"],
+        stats: ["Your Temporal Towers effects decay 25% slower"],
+    },
+    {tower: "Shock_Nova", ingredients: ["Sepia", "Crimson"], stats: ["Your Shock Nova Towers have 25% increased Range"]},
+    {tower: "Imbuing", ingredients: ["Amber", "Azure"], stats: ["Your Imbuing Towers have 25% increased Effect"]},
+    {
+        tower: "Shock_Nova",
+        ingredients: ["Golden", "Black"],
+        stats: ["Your Shock Nova Towers have 30% increased area of effect per repeat", "Your Shock Nova Towers repeats 2 additional Times"],
+    },
+    {tower: "Summoning", ingredients: ["Opalescent", "Teal"], stats: ["Minions summoned by Your Summoning Towers have 25% increased Movement Speed"]},
+    {
+        tower: "Stone_Gaze",
+        ingredients: ["Verdant", "Teal"],
+        stats: ["Your Stone Gaze Towers have 25% increased Duration"],
+    },
+    {tower: "Sentinel", ingredients: ["Opalescent", "Violet"], stats: ["Minions summoned by Your Sentinel Towers have 25% increased Movement Speed"]},
+    {
+        tower: "Empowering",
+        ingredients: ["Sepia", "Azure"],
+        stats: ["Your Empowering Towers have 25% increased Effect"],
+    },
+    {tower: "Imbuing", ingredients: ["Silver", "Crimson"], stats: ["Your Imbuing Towers also grant 50% increased Critical Strike Chance"]},
+    {
+        tower: "Fireball",
+        ingredients: ["Azure", "Crimson"],
+        stats: ["Your Fireball Towers have 15% increased Cast Speed"],
+    },
+    {tower: "Freezebolt", ingredients: ["Clear", "Violet"], stats: ["Your Freezebolt Towers have 25% increased Range"]},
+    {
+        tower: "Flamethrower",
+        ingredients: ["Violet", "Crimson"],
+        stats: ["Your Flamethrower Towers deal full damage to Fire Enemies"],
+    },
+    {tower: "Chilling", ingredients: ["Verdant", "Azure"], stats: ["Your Chilling Towers have 25% increased Range"]},
+    {
+        tower: "Shock_Nova",
+        ingredients: ["Opalescent", "Crimson"],
+        stats: ["Your Shock Nova Towers deal full damage to Lightning Enemies"],
+    },
+    {tower: "Smothering", ingredients: ["Golden", "Crimson"], stats: ["Your Smothering Towers also grant 10% reduced Damage"]},
+    {
+        tower: "Smothering",
+        ingredients: ["Azure", "Black"],
+        stats: ["Your Smothering Towers have 25% increased Range"],
+    },
+    {tower: "Empowering", ingredients: ["Verdant", "Black"], stats: ["Your Empowering Towers have 25% increased Range"]},
+    {
+        tower: "Stone_Gaze",
+        ingredients: ["Amber", "Black"],
+        stats: ["Your Stone Gaze Cage Towers have 25% increased Range"],
+    },
+    {tower: "Meteor", ingredients: ["Verdant", "Violet"], stats: ["Your Meteor Towers have 25% increased Range"]},
+    {tower: "Temporal", ingredients: ["Sepia", "Black"], stats: ["Your Temporal Towers have 25% increased Range"]},
+    {
+        tower: "Seismic",
+        ingredients: ["Silver", "Golden"],
+        stats: ["Your Seismic Towers has 100% increased length and range of Cascades"],
+    },
+    {tower: "Lightning_Storm", ingredients: ["Black", "Black"], stats: ["Your Lightning Storm Towers have 25% reduced Impact Delay"]},
+    {
+        tower: "Seismic",
+        ingredients: ["Clear", "Black"],
+        stats: ["Your Seismic Towers have 25% increased Range"],
+    },
+    {tower: "Meteor", ingredients: ["Opalescent", "Verdant"], stats: ["Your Meteor Towers drop an additional Meteor"]},
+    {
+        tower: "Lightning_Storm",
+        ingredients: ["Sepia", "Teal"],
+        stats: ["Your Lightning Storm Towers deal 25% increased Damage"],
+    },
+    {tower: "Flamethrower", ingredients: ["Sepia", "Amber"], stats: ["Your Flamethrower Towers deal 25% increased Damage"]},
+    {
+        tower: "Shock_Nova",
+        ingredients: ["Clear", "Crimson"],
+        stats: ["Your Shock Nova Towers have 25% increased Range"],
+    },
+    {tower: "Stone_Gaze", ingredients: ["Silver", "Verdant"], stats: ["Your Stone Gaze Towers have 20% increased Cooldown Recovery"]},
+    {
+        tower: "Arc",
+        ingredients: ["Verdant", "Verdant"],
+        stats: ["Your Arc Towers deal 25% increased Damage"],
+    },
+    {tower: "Scout", ingredients: ["Silver", "Azure"], stats: ["Minions summoned by Your Scout Towers have 50% increased Life"]},
+    {
+        tower: "Glacial_Cage",
+        ingredients: ["Teal", "Crimson"],
+        stats: ["Your Glacial Cage Towers have 20% increased Cooldown Recovery"],
+    },
+    {tower: "Sentinel", ingredients: ["Clear", "Teal"], stats: ["Minions summoned by Your Sentinel Towers have 25% increased Damage"]},
+    {
+        tower: "Scout",
+        ingredients: ["Amber", "Amber"],
+        stats: ["Minions summoned by Your Scout Tower have 25% increased Damage"],
+    },
+    {tower: "Freezebolt", ingredients: ["Verdant", "Crimson"], stats: ["Your Freezebolt Tower deal full damage to Cold Enemies"]},
+    {
+        tower: "Seismic",
+        ingredients: ["Amber", "Teal"],
+        stats: ["Your Seismic Towers deal 25% increased Damage"],
+    },
+    {tower: "Freezebolt", ingredients: ["Clear", "Sepia"], stats: ["Your Freezebolt Towers deal 25% increased Damage"]},
+    {tower: "Arc", ingredients: ["Amber", "Crimson"], stats: ["Your Arc Towers have 25% increased Range"]},
+    {
+        tower: "Summoning",
+        ingredients: ["Azure", "Azure"],
+        stats: ["Your Summoning Towers have25% increased Range"],
+    },
+    {tower: "Smothering", ingredients: ["Opalescent", "Opalescent"], stats: ["Your Smothering Towers also grant 20% reduced Movement Speed"]},
+    {
+        tower: "Glacial_Cage",
+        ingredients: ["Sepia", "Sepia"],
+        stats: ["Your Glacial Cage Towers have 25% increased Duration"],
+    },
+    {tower: "Seismic", ingredients: ["Silver", "Sepia"], stats: ["Your Seismic Towers have 25% increased Stun Duration"]},
+    {
+        tower: "Fireball",
+        ingredients: ["Opalescent", "Golden"],
+        stats: ["Your Fireball Towers fire an additional 8 Projectiles", "Your Fireball Towers Projectiles fire in a Nova"],
+    },
+    {tower: "Scout", ingredients: ["Opalescent", "Azure"], stats: ["Minions summoned by Your Scout Towers have 25% increased Movement Speed"]},
+    {
+        tower: "Sentinel",
+        ingredients: ["Azure", "Violet"],
+        stats: ["Your Sentinel Towers have 25% increased Range"],
+    },
+    {tower: "Imbuing", ingredients: ["Golden", "Violet"], stats: ["Your Imbuing Towers also grant 50% increased Damage"]},
+    {
+        tower: "Stone_Gaze",
+        ingredients: ["Golden", "Azure"],
+        stats: ["Your Stone Gaze Towers have 20% reduced Petrification Delay"],
+    },
+    {tower: "Freezebolt", ingredients: ["Crimson", "Black"], stats: ["Your Freezebolt Towers fire 2 additional Projectiles"]},
+    {
+        tower: "Smothering",
+        ingredients: ["Teal", "Teal"],
+        stats: ["Your Smothering Towers have 25% increased Effect"],
+    },
+    {tower: "Temporal", ingredients: ["Golden", "Teal"], stats: ["Your Temporal Towers also grant you 20% increased action speed"]},
+    {
+        tower: "Fireball",
+        ingredients: ["Sepia", "Violet"],
+        stats: ["Your Fireball Towers have 25% increased Range"],
+    },
+    {tower: "Glacial_Cage", ingredients: ["Teal", "Azure"], stats: ["Your Glacial Cage Towers have 25% increased Range"]},
+    {
+        tower: "Seismic",
+        ingredients: ["Golden", "Verdant"],
+        stats: ["Your Seismic Towers have an additional Cascade"],
+    },
+    {tower: "Temporal", ingredients: ["Clear", "Azure"], stats: ["Your Temporal Towers have 25% increased Effect"]},
+    {
+        tower: "Glacial_Cage",
+        ingredients: ["Clear", "Opalescent"],
+        stats: ["Enemies inside Glacial Cage take 10% increased Damage"],
+    },
+    {tower: "Chilling", ingredients: ["Violet", "Black"], stats: ["Your Chilling Towers have 25% increased Duration"]},
+    {tower: "Arc", ingredients: ["Golden", "Amber"], stats: ["Your Arc Towers have 3 additional chains"]},
+    {
+        tower: "Lightning_Storm",
+        ingredients: ["Golden", "Sepia"],
+        stats: ["Your Lightning Storm Towers have 25% increased explosion Area of Effect"],
+    },
+    {tower: "Shock_Nova", ingredients: ["Amber", "Verdant"], stats: ["Your Shock Nova Towers deal 25% increased Damage"]},
+];
+
 _.forEach(Passives, (pass, id) => {
     pass.id = id as keyof typeof PassiveNames;
 });
@@ -3744,4 +4069,5 @@ export default class Database {
     static Oil = Oil;
     static Passives = Passives;
     static Crafting = Crafting;
+    static RingCrafting = RingCrafting;
 }

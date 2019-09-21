@@ -9,10 +9,18 @@ export default class PassiveCraftingElement extends React.Component<Props> {
     render() {
         return (
             <div className={window.className("passive-item flex-row-center", {"solo-passive": this.props.passive.solo})}>
-                <div className="pre-img" />
-                <img src={this.props.passive.icon} alt={this.props.passive.name} />
-                <div className="grid-col-5">
-                    <header>{this.props.passive.name}</header>
+                <div className="icon-holder">
+                    <div className="pre-img" />
+                    <img src={this.props.passive.icon} alt={this.props.passive.name} />
+                </div>
+
+                <div className="grid-col-4">
+                    <header>
+                        {this.props.passive.name}
+                        <a href={this.props.passive.url} target="_blank" className="margin-left-xs">
+                            [wiki]
+                        </a>
+                    </header>
                     <div className="flex-row-center">
                         {_.map(Database.Crafting[this.props.passive.id], (oilId, idx) => {
                             let oil = Database.Oil[oilId];
@@ -26,7 +34,7 @@ export default class PassiveCraftingElement extends React.Component<Props> {
                     </div>
                 </div>
 
-                <div className="grid-col-5 flex-push-right text-grey-smallest">
+                <div className="grid-col-6 text-grey-smallest">
                     {_.map(this.props.passive.stats, (s, idx) => (
                         <p key={idx}>{s}</p>
                     ))}

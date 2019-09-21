@@ -1,13 +1,16 @@
 import * as React from "react";
-import Database, {OilNames} from "./database";
+import Database, {OilNames, Towers} from "./database";
 import * as _ from "underscore";
 import OilSelectionElement from "./OilSelectionElement";
 import PassiveCraftingElement from "./PassiveCraftingElement";
+import RingCraftingElement from "./RingCraftingElement";
 
 type State = {
     filter: string;
     uncheckedOils: Partial<{[name in keyof typeof OilNames]: boolean}>;
     oilFilterAnyMode: boolean;
+    notablesCollapsed: boolean;
+    ringsCollapsed: boolean;
 };
 
 export default class Application extends React.Component<{}, State> {
@@ -17,25 +20,144 @@ export default class Application extends React.Component<{}, State> {
             filter: "",
             uncheckedOils: {},
             oilFilterAnyMode: false,
+            notablesCollapsed: true,
+            ringsCollapsed: true,
         };
     }
 
+    private renderNatables() {
+        return (
+            <>
+                <header className="flex-row-center col-header">
+                    <a
+                        href="."
+                        onClick={e => {
+                            e.preventDefault();
+                            this.setState({notablesCollapsed: !this.state.notablesCollapsed});
+                        }}
+                        className="margin-right-xs"
+                        title="Collaps/expang group"
+                    >
+                        [+]
+                    </a>
+                    <span title="Can be crafted on amulets and Blight League uniques">Notable passives</span>{" "}
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Filter passives, rings"
+                        value={this.state.filter}
+                        onChange={e => this.setState({filter: e.target.value})}
+                        className="flex-push-right grid-col-4"
+                    />
+                </header>
+                {this.state.notablesCollapsed ? null : (
+                    <div className="passives margin-bottom-m">
+                        {_.chain(Database.Passives)
+                            .filter(
+                                pass =>
+                                    (this.state.oilFilterAnyMode
+                                        ? _.any(Database.Crafting[pass.id], oilId => !this.state.uncheckedOils[oilId as keyof typeof OilNames])
+                                        : _.all(Database.Crafting[pass.id], oilId => !this.state.uncheckedOils[oilId as keyof typeof OilNames])) && // Фильтр пассивок подходит
+                                    (!this.state.filter ||
+                                        pass.name.contains(this.state.filter.trim(), true) ||
+                                        _.any(pass.stats, s => s.contains(this.state.filter.trim(), true)) ||
+                                        ("unlinked".startsWith(this.state.filter.toLocaleLowerCase()) && !!pass.solo))
+                            )
+                            .sortBy(pass => _.reduce(Database.Crafting[pass.id], (memo, oilId) => memo + Database.Oil[oilId].dropLevel, 0))
+                            .map((pass, idx: string) => <PassiveCraftingElement passive={pass} key={`passive-c-${idx}`} />)
+                            .value()}
+                    </div>
+                )}
+            </>
+        );
+    }
+
+    private renderRings() {
+        return (
+            <>
+                <header className="flex-row-center column-header">
+                    <a
+                        href="."
+                        onClick={e => {
+                            e.preventDefault();
+                            this.setState({ringsCollapsed: !this.state.ringsCollapsed});
+                        }}
+                        className="margin-right-xs"
+                        title="Collaps/expang group"
+                    >
+                        [+]
+                    </a>
+                    <span title="Can be crafted on any rings">Ring anoitments</span>{" "}
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Filter passives, rings"
+                        value={this.state.filter}
+                        onChange={e => this.setState({filter: e.target.value})}
+                        className="flex-push-right grid-col-4"
+                    />
+                </header>
+                {this.state.ringsCollapsed ? null : (
+                    <div className="rings margin-bottom-m">
+                        {_.chain(Database.RingCrafting)
+                            .filter(
+                                r =>
+                                    (this.state.oilFilterAnyMode
+                                        ? _.any(r.ingredients, oilId => !this.state.uncheckedOils[oilId as keyof typeof OilNames])
+                                        : _.all(r.ingredients, oilId => !this.state.uncheckedOils[oilId as keyof typeof OilNames])) && // Фильтр пассивок подходит //
+                                    (!this.state.filter ||
+                                    r.tower.contains(this.state.filter.trim(), true) || //
+                                        _.any(r.stats, s => s.contains(this.state.filter.trim(), true))) //
+                            )
+                            .sortBy(r => _.indexOf(_.keys(Towers), r.tower))
+                            .map((r, idx) => <RingCraftingElement ring={r} key={`ring-${idx}-${r.tower}`} />)
+                            .value()}
+                    </div>
+                )}
+            </>
+        );
+    }
+
+    renderOilSelector() {
+        return (
+            <>
+                <header className="col-header">
+                    Oil selector
+                    <span className="text-grey-small margin-left-xs">Select available oils</span>
+                    <a
+                        href="."
+                        className="flex-push-right"
+                        onClick={e => {
+                            e.preventDefault();
+                            this.setState({oilFilterAnyMode: !this.state.oilFilterAnyMode});
+                        }}
+                    >
+                        {this.state.oilFilterAnyMode ? (
+                            <span title="Filter passives that requires any of selected oils">[Any]</span>
+                        ) : (
+                            <span title="Filter passives where all requirements are selected">[All]</span>
+                        )}
+                    </a>
+                </header>
+                <div className="oil-selector">
+                    {_.map(Database.Oil, oil => (
+                        <OilSelectionElement
+                            oil={oil}
+                            selected={!this.state.uncheckedOils[oil.id]!}
+                            onChanged={() => {
+                                // @ts-ignore
+                                this.state.uncheckedOils[oil.id] = !this.state.uncheckedOils[oil.id];
+                                this.setState({uncheckedOils: this.state.uncheckedOils});
+                            }}
+                            key={`oil-${oil.name}`}
+                        />
+                    ))}
+                </div>
+            </>
+        );
+    }
+
     render() {
-        const passivesToRender = _.chain(Database.Passives)
-            .filter(
-                pass =>
-                    (this.state.oilFilterAnyMode
-                        ? _.any(Database.Crafting[pass.id], oilId => this.state.uncheckedOils[oilId as keyof typeof OilNames] != true)
-                        : _.all(Database.Crafting[pass.id], oilId => this.state.uncheckedOils[oilId as keyof typeof OilNames] != true)) &&
-                    // Фильтр пассивок подходит
-                    (!this.state.filter ||
-                        pass.name.contains(this.state.filter.trim(), true) ||
-                        _.any(pass.stats, s => s.contains(this.state.filter.trim(), true)) ||
-                        ("unlinked".startsWith(this.state.filter.toLocaleLowerCase()) && !!pass.solo))
-            )
-            .sortBy(pass => _.reduce(Database.Crafting[pass.id], (memo, oilId) => memo + Database.Oil[oilId].dropLevel, 0))
-            .map((pass, idx: string) => <PassiveCraftingElement passive={pass} key={`passive-c-${idx}`} />)
-            .value();
         return (
             <section className="page-wrapper">
                 <header>
@@ -59,53 +181,12 @@ export default class Application extends React.Component<{}, State> {
 
                 <div className="flex-row grid-col-12 page-content">
                     <div className="grid-col-8">
-                        <header className="flex-row-center col-header">
-                            Notable passives <span className="text-grey-small margin-left-xs">({passivesToRender.length})</span>
-                            <input
-                                type="text"
-                                name="search"
-                                placeholder="Filter passives"
-                                value={this.state.filter}
-                                onChange={e => this.setState({filter: e.target.value})}
-                                className="flex-push-right grid-col-4"
-                            />
-                        </header>
-                        <div className="passives">{passivesToRender}</div>
+                        {this.renderNatables()}
+                        {this.renderRings()}
                     </div>
 
                     <div className="grid-col-4">
-                        <header className="col-header">
-                            Oil selector
-                            <span className="text-grey-small margin-left-xs">Select available oils</span>
-                            <a
-                                href="."
-                                className="flex-push-right"
-                                onClick={e => {
-                                    e.preventDefault();
-                                    this.setState({oilFilterAnyMode: !this.state.oilFilterAnyMode});
-                                }}
-                            >
-                                {this.state.oilFilterAnyMode ? (
-                                    <span title="Filter passives that requires any of selected oils">[Any]</span>
-                                ) : (
-                                    <span title="Filter passives where all requirements are selected">[All]</span>
-                                )}
-                            </a>
-                        </header>
-                        <div className="oil-selector">
-                            {_.map(Database.Oil, oil => (
-                                <OilSelectionElement
-                                    oil={oil}
-                                    selected={!this.state.uncheckedOils[oil.id]!}
-                                    onChanged={() => {
-                                        // @ts-ignore
-                                        this.state.uncheckedOils[oil.id] = !this.state.uncheckedOils[oil.id];
-                                        this.setState({uncheckedOils: this.state.uncheckedOils});
-                                    }}
-                                    key={`oil-${oil.name}`}
-                                />
-                            ))}
-                        </div>
+                        {this.renderOilSelector()}
 
                         <div className="margin-top-l">
                             <p>
