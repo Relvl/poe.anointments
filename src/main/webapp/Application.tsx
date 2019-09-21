@@ -20,8 +20,8 @@ export default class Application extends React.Component<{}, State> {
             filter: "",
             uncheckedOils: {},
             oilFilterAnyMode: false,
-            notablesCollapsed: true,
-            ringsCollapsed: true,
+            notablesCollapsed: false,
+            ringsCollapsed: false,
         };
     }
 
@@ -87,7 +87,7 @@ export default class Application extends React.Component<{}, State> {
                     >
                         [+]
                     </a>
-                    <span title="Can be crafted on any rings">Ring anoitments</span>{" "}
+                    <span title="Can be crafted on any rings">Ring anointments</span>{" "}
                     <input
                         type="text"
                         name="search"
