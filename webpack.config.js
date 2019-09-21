@@ -13,6 +13,7 @@ const paths = {
 };
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     name: "sources",
@@ -21,7 +22,6 @@ module.exports = {
     mode: "development",
     devtool: "source-map",
     entry: {
-        vendor: ["react", "react-dom", "underscore"],
         application: _.flatten(["./init.tsx", "./scss/application.scss"]),
     },
     resolve: {
@@ -33,6 +33,21 @@ module.exports = {
         sourceMapFilename: "[name].[hash:8].map",
         chunkFilename: "[id].[hash:8].js",
     },
+    optimization: {
+        minimize: true,
+        removeAvailableModules: true,
+        removeEmptyChunks: true,
+        minimizer: [
+            new TerserWebpackPlugin({
+                sourceMap: true,
+                cache: false,
+                terserOptions: {
+                    mangle: false,
+                },
+            }),
+        ],
+    },
+
     devServer: {
         contentBase: paths.dist,
         host: "localhost",
@@ -69,7 +84,7 @@ module.exports = {
             template: "./index.html",
             favicon: "./favicon.ico",
         }),
-        new MiniCssExtractPlugin({filename: "[name].css"}),
+        new MiniCssExtractPlugin({filename: "[name].[hash:8].css"}),
         new OptimizeCssAssetsPlugin({
             cssProcessorOptions: {map: {inline: false}},
             cssProcessorPluginOptions: {preset: ["default", {discardComments: {removeAll: true}}]},

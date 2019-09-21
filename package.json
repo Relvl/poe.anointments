@@ -29,6 +29,7 @@
         "react-dom": "latest",
         "sass-loader": "latest",
         "style-loader": "latest",
+        "terser-webpack-plugin": "^2.1.0",
         "typescript": "latest",
         "underscore": "^1.9.1",
         "webpack": "latest",
